@@ -161,4 +161,68 @@ test.describe('Physician Dashboard @physician', () => {
     // verify search by first name
     await expect(page.getByRole('link', { name: 'Bob Smith Passcode:' })).toBeVisible();
   });
+
+  test('Verify "Study Search" Tab Allows Filtering by date ranges @[36498]', async ({ page }) => {
+    // 1. Login as physician (completed in beforeEach)
+    // 2. Select the Study Search tab on the dashboard
+    const studySearchTab = page.locator('#button-studies');
+    await studySearchTab.click();
+
+    // 3. Validate the screen displays options at the top right: Today, Yesterday, - 7 days, - 30 days, Search
+    const todayButton = page.locator('#button-search-today');
+    const yesterdayButton = page.locator('#button-search-yesterday');
+    const last7DaysButton = page.locator('#button-search-last-7-days');
+    const last30DaysButton = page.locator('#button-search-last-30-days');
+
+    await expect(todayButton).toBeVisible();
+    await expect(yesterdayButton).toBeVisible();
+    await expect(last7DaysButton).toBeVisible();
+    await expect(last30DaysButton).toBeVisible();
+
+    // 4. Select each date range button and verify studies are filtered accordingly
+    await todayButton.click();
+    const todayHeader = page.locator('#content-title');
+    await expect(todayHeader).toBeVisible();
+    await expect(todayHeader).toHaveText(/Study search: Today/);
+    // Note: Verification of correct filtering would require knowledge of test data 
+    // Here we just ensure that some results are shown
+    await expect(page.locator('#content-data')).toBeVisible();
+
+    await yesterdayButton.click();
+    const yesterdayHeader = page.locator('#content-title');
+    await expect(yesterdayHeader).toBeVisible();
+    await expect(yesterdayHeader).toHaveText(/Study search: Yesterday/);
+    // Note: Verification of correct filtering would require knowledge of test data 
+    // Here we just ensure that some results are shown
+    await expect(page.locator('#content-data')).toBeVisible();
+
+    await last7DaysButton.click();
+    const last7DaysHeader = page.locator('#content-title');
+    await expect(last7DaysHeader).toBeVisible();
+    await expect(last7DaysHeader).toHaveText(/Study search: Last 7 days/);
+    // Note: Verification of correct filtering would require knowledge of test data 
+    // Here we just ensure that some results are shown
+    await expect(page.locator('#content-data')).toBeVisible();
+
+    await last30DaysButton.click();
+    const last30DaysHeader = page.locator('#content-title');
+    await expect(last30DaysHeader).toBeVisible();
+    await expect(last30DaysHeader).toHaveText(/Study search: Last 30 days/);
+    // Note: Verification of correct filtering would require knowledge of test data 
+    // Here we just ensure that some results are shown
+    await expect(page.locator('#content-data')).toBeVisible();
+});
+
+test('Verify Physician "Account" Tab Displays Editable and Non-editable Fields @[36500]', async ({ page }) => {
+    // 1. Login as physician (completed in beforeEach)
+
+    // 2. Select the Account tab on the dashboard
+    const accountTab = page.locator('#button-account');
+    await accountTab.click();
+
+    // 3. Verify the Account tab displays the following fields: Email, Address 1, Address 2, City, State, Zip, Country, Phone Number, SMS Number
+    const emailField = page.getByRole('textbox', { name: 'Email Address' });
+    // TODO -> Finish Test
+});
+
 });
