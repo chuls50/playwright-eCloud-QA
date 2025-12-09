@@ -1,5 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-import { BasePage } from '../../models/base-page.js';
+import { BasePage } from '../../models/base-page';
 
 test.describe('Physician Dashboard @physician', () => {
   let basePage: BasePage;
