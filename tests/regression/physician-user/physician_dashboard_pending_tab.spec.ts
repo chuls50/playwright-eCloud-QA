@@ -1,8 +1,8 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Page } from '@playwright/test';
 import { BasePage } from '../../models/base-page.js';
 
 test.describe('Physician Dashboard @physician', () => {
-  let basePage;
+  let basePage: BasePage;
 
   test.beforeEach(async ({ page }) => {
     basePage = new BasePage(page);
