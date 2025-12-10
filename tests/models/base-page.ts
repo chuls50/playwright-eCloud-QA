@@ -14,6 +14,14 @@ export class BasePage {
     this.page = page;
   }
 
+  async goto(): Promise<void> {
+    const baseUrl = process.env.QA_ENV;
+    if (!baseUrl) {
+      throw new Error('QA_ENV is not defined in .env file');
+    }
+    await this.page.goto(baseUrl);
+  }
+
   async performPhysicianLogin(options: LoginOptions = {}): Promise<boolean> {
     const { baseUrl = process.env.QA_ENV } = options;
 

@@ -1,7 +1,7 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { BasePage } from '../../models/base-page';
 
-test.describe('Physician Dashboard @physician', () => {
+test.describe('Physician Dashboard - "Pending" Tab @physician', () => {
   let basePage: BasePage;
 
   test.beforeEach(async ({ page }) => {
@@ -10,7 +10,7 @@ test.describe('Physician Dashboard @physician', () => {
     await expect(page).toHaveURL(/.*\/admin/);
   });
 
-  test('Verify Physician Dashboard Includes "Pending" Tab for Unreviewed Studies @[36486]', async ({
+  test('Verify content of "Pending" tab @[36486]', async ({
     page,
   }) => {
     // 1. Login as physician (completed in beforeEach)
@@ -37,7 +37,27 @@ test.describe('Physician Dashboard @physician', () => {
     await expect(modalityType).toBeVisible();
   });
 
-  test('Verify Physician Dashboard includes "Reviewed" Tab for Studies @[36488]', async ({
+  test.skip('Verify content of DICOM image /viewer for an unreviewed study @[123742]', async ({page}) => {
+  });
+
+  test.skip('Verify functionality of DICOM /viewer buttons for an unreviewed study (physician can review study) @[123743]', async ({page}) => {
+  });
+
+  test.skip('Verify functionality of DICOM /viewer Attach button for unreviewed study (physician can attach file) @[123747]', async ({page}) => {
+  });
+
+});
+
+test.describe('Physician Dashboard - "Reviewed" Tab @physician', () => {
+  let basePage: BasePage;
+
+  test.beforeEach(async ({ page }) => {
+    basePage = new BasePage(page);
+    await basePage.performPhysicianLogin();
+    await expect(page).toHaveURL(/.*\/admin/);
+  });
+
+  test('Verify content of "Reviewed" Tab @[36488]', async ({
     page,
   }) => {
     // 1. Login as physician (completed in beforeEach)
@@ -114,6 +134,7 @@ test.describe('Physician Dashboard @physician', () => {
     page,
   }) => {});
 
+  
   test('Verify functionality of "Study Search" Tab (physician can search for studies) @[123725]', async ({
     page,
   }) => {
@@ -211,9 +232,9 @@ test.describe('Physician Dashboard @physician', () => {
     // Note: Verification of correct filtering would require knowledge of test data 
     // Here we just ensure that some results are shown
     await expect(page.locator('#content-data')).toBeVisible();
-});
+  });
 
-test('Verify Physician "Account" Tab Displays Editable and Non-editable Fields @[36500]', async ({ page }) => {
+  test('Verify Physician "Account" Tab Displays Editable and Non-editable Fields @[36500]', async ({ page }) => {
     // 1. Login as physician (completed in beforeEach)
 
     // 2. Select the Account tab on the dashboard
@@ -222,7 +243,142 @@ test('Verify Physician "Account" Tab Displays Editable and Non-editable Fields @
 
     // 3. Verify the Account tab displays the following fields: Email, Address 1, Address 2, City, State, Zip, Country, Phone Number, SMS Number
     const emailField = page.getByRole('textbox', { name: 'Email Address' });
-    // TODO -> Finish Test
-});
+    const smsNumberField = page.getByRole('textbox', { name: 'SMS Number' });
+    const specialtiesField = page.getByRole('textbox', { name: 'Specialties' });
+    const address1Field = page.getByRole('textbox', { name: 'Address 1' });
+    const address2Field = page.getByRole('textbox', { name: 'Address 2' });
+    const cityField = page.getByRole('textbox', { name: 'City' });
+    const stateField = page.getByRole('textbox', { name: 'State' });
+    const countryField = page.getByRole('textbox', { name: 'Country' });
+    const zipField = page.getByRole('textbox', { name: 'Zip' });
+    const phoneNumberField = page.getByRole('textbox', { name: 'Phone' });
+
+    // Validate the editable fields include Email, Address 1, Address 2, City, State, Zip, Country, Phone Number, SMS Number
+    await expect(emailField).toBeVisible();
+    await expect(emailField).toBeEditable();
+
+    await expect(smsNumberField).toBeVisible();
+    await expect(smsNumberField).toBeEditable();
+
+    await expect(specialtiesField).toBeVisible();
+    await expect(specialtiesField).toBeEditable();
+
+    await expect(address1Field).toBeVisible();
+    await expect(address1Field).toBeEditable();
+
+    await expect(address2Field).toBeVisible();
+    await expect(address2Field).toBeEditable();
+
+    await expect(cityField).toBeVisible();
+    await expect(cityField).toBeEditable();
+
+    await expect(stateField).toBeVisible();
+    await expect(stateField).toBeEditable();
+
+    await expect(countryField).toBeVisible();
+    await expect(countryField).toBeEditable();
+
+    await expect(zipField).toBeVisible();
+    await expect(zipField).toBeEditable();
+
+    await expect(phoneNumberField).toBeVisible();
+    await expect(phoneNumberField).toBeEditable();
+
+    // Validate the non-editable fields include Profile, Username, User Full Name
+    const profileField = page.getByRole('textbox', { name: 'Profile' });
+    const usernameField = page.getByRole('textbox', { name: 'Username' });
+    const userFullNameField = page.getByRole('textbox', { name: 'User Full Name' });
+
+    await expect(profileField).toBeVisible();
+    await expect(profileField).toBeDisabled();
+
+    await expect(usernameField).toBeVisible();
+    await expect(usernameField).toBeDisabled();
+
+    await expect(userFullNameField).toBeVisible();
+    await expect(userFullNameField).toBeDisabled();
+
+    // Make a change to an editable field and save
+    const address1Data = '4315 E. Thunderbird Rd';
+    const address2Data = '09-195';
+    const cityData = 'Phoenix';
+    const stateData = 'AZ';
+    const countryData = 'USA';
+    const zipData = '85032';
+    const phoneNumberData = '1234567890';
+
+    await address1Field.fill(address1Data);
+    await address2Field.fill(address2Data);
+    await cityField.fill(cityData);
+    await stateField.fill(stateData);
+    await countryField.fill(countryData);
+    await zipField.fill(zipData);
+    await phoneNumberField.fill(phoneNumberData);
+    await page.waitForTimeout(3000); // wait for 3  seconds to allow for any dynamic validation
+
+    const saveButton = page.locator('#button-save');
+    await saveButton.click();
+    await page.waitForTimeout(3000); // wait for 3  seconds to allow server to respond
+
+    // Verify that user is redirected to the Admin Dashboard after saving
+    await page.waitForURL(/.*\/admin/);
+
+    // Reset state by navigating back to Account tab and clearing the fields
+    await accountTab.click();
+    await address1Field.fill('');
+    await address2Field.fill('');
+    await cityField.fill('');
+    await stateField.fill('');
+    await countryField.fill('');
+    await zipField.fill('');
+    await phoneNumberField.fill('');
+    await saveButton.click();
+    await page.waitForTimeout(3000); // wait for a second to ensure save is processed
+
+    // Verify that user is redirected to the Admin Dashboard after saving
+    await expect(page).toHaveURL(/.*\/admin/);
+
+    // Verify state has been reset
+    await accountTab.click();
+    await expect(address1Field).toHaveValue('');
+    await expect(address2Field).toHaveValue('');
+    await expect(cityField).toHaveValue('');
+    await expect(stateField).toHaveValue('');
+    await expect(countryField).toHaveValue('');
+    await expect(zipField).toHaveValue('');
+    await expect(phoneNumberField).toHaveValue('');
+  });
+
+  test('Verify Physician "Administration" Tab Redirects to Administrative Dashboard @[36501]', async ({ page }) => {
+    // 1. Login as physician (completed in beforeEach)
+
+    // 2. Select the Administration tab on the dashboard
+    const administrationTab = page.locator('#button-admin');
+    await administrationTab.click();
+
+    // Verify user is redirected to the administration dashboard, starting on Patients tab
+    await page.getByText('Patients').first().waitFor();
+    await expect(page.getByText('Patients').first()).toBeVisible();
+    await expect(page).toHaveURL(/.*\/admin\/index.html/);
+
+    // Verify navigation to other admin tabs
+    const patientsTab = page.locator('#button-patients');
+    const worklistTab = page.locator('#button-worklist');
+    const viewStudiesTab = page.locator('#button-view-studies');
+    const accountTab = page.locator('#button-account');
+
+    await patientsTab.click();
+    await expect(page.getByText('Patients').first()).toBeVisible();
+
+    await worklistTab.click();
+    await expect(page.getByText('Worklist Items').first()).toBeVisible();
+
+    await accountTab.click();
+    await expect(page.getByText('Account').first()).toBeVisible();
+
+    await viewStudiesTab.click();
+    await expect(page.getByText('Studies pending review').first()).toBeVisible();
+  });
+
 
 });
