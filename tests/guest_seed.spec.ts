@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { BasePage } from './models/base-page';
 
-test.describe('Test group', () => {
+test.describe('Guest Seed Test', () => {
   let basePage: BasePage;
 
   test.beforeEach(async ({ page }) => {
@@ -14,14 +14,14 @@ test.describe('Test group', () => {
       await page.waitForURL(/.*\/login/);
       await page.waitForLoadState('networkidle');
 
-      // Fill email - use ADMIN_USERNAME
-      const adminUsername = process.env.ADMIN_USERNAME;
-      const adminPassword = process.env.ADMIN_PASSWORD;
+      // Fill email - use GUEST_USERNAME
+      const guestUsername = process.env.GUEST_USERNAME;
+      const guestPassword = process.env.GUEST_PASSWORD;
 
-      await page.locator('#username').fill(adminUsername!);
+      await page.locator('#username').fill(guestUsername!);
 
-      // Fill password - use ADMIN_PASSWORD
-      await page.locator('#password').fill(adminPassword!);
+      // Fill password - use GUEST_PASSWORD
+      await page.locator('#password').fill(guestPassword!);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area

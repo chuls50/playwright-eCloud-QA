@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { BasePage } from './models/base-page';
 
-test.describe('Test group', () => {
+test.describe('Institution Manager Seed Test', () => {
   let basePage: BasePage;
 
   test.beforeEach(async ({ page }) => {
@@ -14,14 +14,14 @@ test.describe('Test group', () => {
       await page.waitForURL(/.*\/login/);
       await page.waitForLoadState('networkidle');
 
-      // Fill email - use ADMIN_USERNAME
-      const adminUsername = process.env.ADMIN_USERNAME;
-      const adminPassword = process.env.ADMIN_PASSWORD;
+      // Fill email - use INSTITUTION_MANAGER_USERNAME
+      const institutionManagerUsername = process.env.INSTITUTION_MANAGER_USERNAME;
+      const institutionManagerPassword = process.env.INSTITUTION_MANAGER_PASSWORD;
 
-      await page.locator('#username').fill(adminUsername!);
+      await page.locator('#username').fill(institutionManagerUsername!);
 
-      // Fill password - use ADMIN_PASSWORD
-      await page.locator('#password').fill(adminPassword!);
+      // Fill password - use INSTITUTION_MANAGER_PASSWORD
+      await page.locator('#password').fill(institutionManagerPassword!);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area

@@ -39,7 +39,7 @@ Minimum bandwidth requirement: 1.5 Mbps. ​
 2 Enable/disable email notifications for study updates. ​
 3 Change password with optional password hint.
 
-    Clinical User Features ​
+    Physician User Features ​
 
 1 View and manage pending studies. ​
 2 View and manage reviewed studies. ​
@@ -48,6 +48,7 @@ Minimum bandwidth requirement: 1.5 Mbps. ​
 5 Study Viewer functionalities:
 
     Image stack navigation. ​
+
 1 Video player for multi-frame images. ​
 2 Image adjustments (zoom, contrast, brightness, inversion, etc. ​).
 3 Report creation with templates (HPI, SOAP, radiologist reports, etc. ​).
