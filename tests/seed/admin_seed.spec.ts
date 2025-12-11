@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { BasePage } from './models/base-page';
+import { BasePage } from '../models/base-page';
 
 test.describe('Test group', () => {
   let basePage: BasePage;

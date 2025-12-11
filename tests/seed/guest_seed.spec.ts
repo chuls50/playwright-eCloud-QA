@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { BasePage } from './models/base-page';
+import { BasePage } from '../models/base-page';
 
 test.describe('Guest Seed Test', () => {
   let basePage: BasePage;
