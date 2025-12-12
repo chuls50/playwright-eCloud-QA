@@ -12,7 +12,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 1.1. Guest Login Success
 
-**File:** `tests/guest-user/guest_login_success.spec.ts`
+**File:** `tests/regression/guest/guest-user/guest_login_success.spec.ts`
 
 **Steps:**
   1. Navigate to eCloud login page
@@ -28,7 +28,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 1.2. Guest Login Invalid Credentials
 
-**File:** `tests/guest-user/guest_login_invalid.spec.ts`
+**File:** `tests/regression/guest/guest-user/guest_login_invalid.spec.ts`
 
 **Steps:**
   1. Navigate to eCloud login page
@@ -43,7 +43,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 1.3. Guest Session Timeout
 
-**File:** `tests/guest-user/guest_session_timeout.spec.ts`
+**File:** `tests/regression/guest/guest-user/guest_session_timeout.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -62,7 +62,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 2.1. Access Study with Valid Passcode
 
-**File:** `tests/guest-user/passcode_valid_access.spec.ts`
+**File:** `tests/regression/guest/guest-user/passcode_valid_access.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -79,7 +79,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 2.2. Access Study with Invalid Passcode
 
-**File:** `tests/guest-user/passcode_invalid_access.spec.ts`
+**File:** `tests/regression/guest/guest-user/passcode_invalid_access.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -95,7 +95,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 2.3. Multiple Passcode Entry
 
-**File:** `tests/guest-user/multiple_passcode_entry.spec.ts`
+**File:** `tests/regression/guest/guest-user/multiple_passcode_entry.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -114,7 +114,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 2.4. Delete Passcode
 
-**File:** `tests/guest-user/passcode_delete.spec.ts`
+**File:** `tests/regression/guest/guest-user/passcode_delete.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -130,7 +130,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 2.5. Passcode Entry Back Navigation
 
-**File:** `tests/guest-user/passcode_back_navigation.spec.ts`
+**File:** `tests/regression/guest/guest-user/passcode_back_navigation.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -149,7 +149,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 3.1. View Shared Studies List
 
-**File:** `tests/guest-user/shared_studies_list.spec.ts`
+**File:** `tests/regression/guest/guest-user/shared_studies_list.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -165,7 +165,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 3.2. Filter All Studies
 
-**File:** `tests/guest-user/filter_all_studies.spec.ts`
+**File:** `tests/regression/guest/guest-user/filter_all_studies.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -180,7 +180,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 3.3. Filter Sent Studies
 
-**File:** `tests/guest-user/filter_sent_studies.spec.ts`
+**File:** `tests/regression/guest/guest-user/filter_sent_studies.spec.ts`
 
 **Steps:**
   1. Login as guest user
@@ -195,7 +195,7 @@ Comprehensive test scenarios for Guest user role in eNcounterCloud PACS system. 
 
 #### 3.4. No Shares Available State
 
-**File:** `tests/guest-user/no_shares_available.spec.ts`
+**File:** `tests/regression/guest/guest-user/no_shares_available.spec.ts`
 
 **Steps:**
   1. Login as guest user

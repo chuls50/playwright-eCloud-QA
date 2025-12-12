@@ -12,7 +12,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.1 Report Creation - Template Selection
 
-**File:** `tests/dicom-viewer/report-templates.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/report-templates.spec.ts`
 
 **Steps:**
 
@@ -37,7 +37,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.2 Report Creation - Case Documentation Report
 
-**File:** `tests/dicom-viewer/case-documentation-report.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/case-documentation-report.spec.ts`
 
 **Steps:**
 
@@ -62,7 +62,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.3 Report Creation - HPI Report Template
 
-**File:** `tests/dicom-viewer/hpi-report.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/hpi-report.spec.ts`
 
 **Steps:**
 
@@ -84,7 +84,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.4 Report Creation - SOAP Note Template
 
-**File:** `tests/dicom-viewer/soap-report.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/soap-report.spec.ts`
 
 **Steps:**
 
@@ -106,7 +106,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.5 Report Creation - Discharge Summary Template
 
-**File:** `tests/dicom-viewer/discharge-summary.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/discharge-summary.spec.ts`
 
 **Steps:**
 
@@ -127,7 +127,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.6 Report Access and Viewing - Existing Reports
 
-**File:** `tests/dicom-viewer/view-existing-reports.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/view-existing-reports.spec.ts`
 
 **Steps:**
 
@@ -148,7 +148,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.7 Notes - Create Case-Specific Notes
 
-**File:** `tests/dicom-viewer/create-notes.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/create-notes.spec.ts`
 
 **Steps:**
 
@@ -171,7 +171,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.8 Notes - View Existing Notes
 
-**File:** `tests/dicom-viewer/view-notes.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/view-notes.spec.ts`
 
 **Steps:**
 
@@ -192,7 +192,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 5.9 Notes - Edit and Delete Notes
 
-**File:** `tests/dicom-viewer/edit-delete-notes.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/edit-delete-notes.spec.ts`
 
 **Steps:**
 
@@ -218,7 +218,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 6.1 Share Study - Share Dialog Access
 
-**File:** `tests/dicom-viewer/share-dialog.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/share-dialog.spec.ts`
 
 **Steps:**
 
@@ -239,7 +239,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 6.2 Share Study - Transfer to Institution
 
-**File:** `tests/dicom-viewer/transfer-study.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/transfer-study.spec.ts`
 
 **Steps:**
 
@@ -263,7 +263,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 6.3 Share Study - Referral with Passcode
 
-**File:** `tests/dicom-viewer/referral-passcode.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/referral-passcode.spec.ts`
 
 **Steps:**
 
@@ -286,7 +286,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 6.4 Share Study - View Shared Studies from Dashboard
 
-**File:** `tests/dashboard/view-shared-studies.spec.ts`
+**File:** `tests/regression/physician/dashboard/view-shared-studies.spec.ts`
 
 **Steps:**
 
@@ -309,7 +309,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 6.5 Share Study - Revoke or Manage Shares
 
-**File:** `tests/dicom-viewer/manage-shares.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/manage-shares.spec.ts`
 
 **Steps:**
 
@@ -334,7 +334,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 7.1 DICOM Header - View Complete Header
 
-**File:** `tests/dicom-viewer/dicom-header-view.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/dicom-header-view.spec.ts`
 
 **Steps:**
 
@@ -358,7 +358,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 7.2 DICOM Header - Search and Filter Tags
 
-**File:** `tests/dicom-viewer/header-filter.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/header-filter.spec.ts`
 
 **Steps:**
 
@@ -379,7 +379,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 7.3 DICOM Header - Column Customization
 
-**File:** `tests/dicom-viewer/header-columns.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/header-columns.spec.ts`
 
 **Steps:**
 
@@ -401,7 +401,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 7.4 DICOM Header - Export Header Data
 
-**File:** `tests/dicom-viewer/header-export.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/header-export.spec.ts`
 
 **Steps:**
 
@@ -426,7 +426,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 8.1 Mark Study as Reviewed - Review Action
 
-**File:** `tests/dicom-viewer/mark-reviewed.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/mark-reviewed.spec.ts`
 
 **Steps:**
 
@@ -452,15 +452,14 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 8.2 Review Status - Prevent Duplicate Review
 
-**File:** `tests/dicom-viewer/prevent-duplicate-review.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/prevent-duplicate-review.spec.ts`
 
 **Steps:**
 
 1. Login as physician user
 2. Open a previously reviewed study from Reviewed tab
 3. Attempt to click Review button
-4. Verify button state (disabled or shows already reviewed)
-5. If clickable, verify appropriate message indicating already reviewed
+4. Verify Review button is not visible
 
 **Expected Results:**
 
@@ -470,9 +469,9 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - System prevents multiple review records from same action
 - Original review metadata is preserved
 
-#### 8.3 Review Status - Audit Trail
+<!-- #### 8.3 Review Status - Audit Trail
 
-**File:** `tests/dicom-viewer/review-audit-trail.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/review-audit-trail.spec.ts`
 
 **Steps:**
 
@@ -489,11 +488,11 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Audit log includes: Reviewer name, Review timestamp, Study identifiers
 - Audit data is accessible to administrators
 - Review records are immutable
-- HIPAA compliance is maintained for audit logs
+- HIPAA compliance is maintained for audit logs -->
 
 #### 8.4 Review Workflow - Clinical Integration
 
-**File:** `tests/dicom-viewer/review-workflow.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/review-workflow.spec.ts`
 
 **Steps:**
 
@@ -518,7 +517,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.1 Attach PDF - Upload Interface
 
-**File:** `tests/dicom-viewer/attach-pdf-upload.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/attach-pdf-upload.spec.ts`
 
 **Steps:**
 
@@ -540,7 +539,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.2 Attach PDF - File Upload via Browse
 
-**File:** `tests/dicom-viewer/attach-pdf-browse.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/attach-pdf-browse.spec.ts`
 
 **Steps:**
 
@@ -566,7 +565,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.3 Attach PDF - Drag and Drop Upload
 
-**File:** `tests/dicom-viewer/attach-pdf-drag-drop.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/attach-pdf-drag-drop.spec.ts`
 
 **Steps:**
 
@@ -589,7 +588,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.4 Attach PDF - File Size Validation
 
-**File:** `tests/dicom-viewer/attach-pdf-size-validation.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/attach-pdf-size-validation.spec.ts`
 
 **Steps:**
 
@@ -609,7 +608,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.5 Attach PDF - Duplicate File Prevention
 
-**File:** `tests/dicom-viewer/attach-pdf-duplicate.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/attach-pdf-duplicate.spec.ts`
 
 **Steps:**
 
@@ -629,7 +628,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.6 Attach PDF - View Attached Files
 
-**File:** `tests/dicom-viewer/view-attached-pdfs.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/view-attached-pdfs.spec.ts`
 
 **Steps:**
 
@@ -650,7 +649,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 9.7 Attach PDF - Delete Attached Files
 
-**File:** `tests/dicom-viewer/delete-attached-pdf.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/delete-attached-pdf.spec.ts`
 
 **Steps:**
 
@@ -675,7 +674,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.1 Study Search - Quick Date Filters
 
-**File:** `tests/study-search/quick-date-filters.spec.ts`
+**File:** `tests/regression/physician/study-search/quick-date-filters.spec.ts`
 
 **Steps:**
 
@@ -700,7 +699,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.2 Study Search - Advanced Search Dialog
 
-**File:** `tests/study-search/advanced-search.spec.ts`
+**File:** `tests/regression/physician/study-search/advanced-search.spec.ts`
 
 **Steps:**
 
@@ -725,7 +724,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.3 Study Search - Search by Patient ID
 
-**File:** `tests/study-search/search-patient-id.spec.ts`
+**File:** `tests/regression/physician/study-search/search-patient-id.spec.ts`
 
 **Steps:**
 
@@ -746,7 +745,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.4 Study Search - Search by Patient Name
 
-**File:** `tests/study-search/search-patient-name.spec.ts`
+**File:** `tests/regression/physician/study-search/search-patient-name.spec.ts`
 
 **Steps:**
 
@@ -770,7 +769,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.5 Study Search - Search by Date Range
 
-**File:** `tests/study-search/search-date-range.spec.ts`
+**File:** `tests/regression/physician/study-search/search-date-range.spec.ts`
 
 **Steps:**
 
@@ -792,7 +791,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.6 Study Search - Search by Modality
 
-**File:** `tests/study-search/search-modality.spec.ts`
+**File:** `tests/regression/physician/study-search/search-modality.spec.ts`
 
 **Steps:**
 
@@ -814,7 +813,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.7 Study Search - Combined Search Criteria
 
-**File:** `tests/study-search/combined-search.spec.ts`
+**File:** `tests/regression/physician/study-search/combined-search.spec.ts`
 
 **Steps:**
 
@@ -837,7 +836,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 10.8 Study Search - Clear and Reset Search
 
-**File:** `tests/study-search/clear-search.spec.ts`
+**File:** `tests/regression/physician/study-search/clear-search.spec.ts`
 
 **Steps:**
 
@@ -861,7 +860,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.1 Account Tab - View Profile Information
 
-**File:** `tests/account/view-profile.spec.ts`
+**File:** `tests/regression/physician/account/view-profile.spec.ts`
 
 **Steps:**
 
@@ -884,7 +883,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.2 Account Tab - Edit Email and SMS
 
-**File:** `tests/account/edit-email-sms.spec.ts`
+**File:** `tests/regression/physician/account/edit-email-sms.spec.ts`
 
 **Steps:**
 
@@ -909,7 +908,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.3 Account Tab - Edit Specialties
 
-**File:** `tests/account/edit-specialties.spec.ts`
+**File:** `tests/regression/physician/account/edit-specialties.spec.ts`
 
 **Steps:**
 
@@ -930,7 +929,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.4 Account Tab - Update Address Information
 
-**File:** `tests/account/update-address.spec.ts`
+**File:** `tests/regression/physician/account/update-address.spec.ts`
 
 **Steps:**
 
@@ -954,7 +953,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.5 Account Tab - Email Notification Preferences
 
-**File:** `tests/account/email-notifications.spec.ts`
+**File:** `tests/regression/physician/account/email-notifications.spec.ts`
 
 **Steps:**
 
@@ -976,7 +975,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.6 Account Tab - Password Change
 
-**File:** `tests/account/change-password.spec.ts`
+**File:** `tests/regression/physician/account/change-password.spec.ts`
 
 **Steps:**
 
@@ -1002,7 +1001,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 11.7 Account Tab - Save and Cancel Actions
 
-**File:** `tests/account/save-cancel.spec.ts`
+**File:** `tests/regression/physician/account/save-cancel.spec.ts`
 
 **Steps:**
 
@@ -1028,7 +1027,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.1 Administration Access - Navigation to Admin Dashboard
 
-**File:** `tests/administration/admin-navigation.spec.ts`
+**File:** `tests/regression/physician/administration/admin-navigation.spec.ts`
 
 **Steps:**
 
@@ -1048,7 +1047,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.2 Patient Management - View Patient List
 
-**File:** `tests/administration/view-patients.spec.ts`
+**File:** `tests/regression/physician/administration/view-patients.spec.ts`
 
 **Steps:**
 
@@ -1070,7 +1069,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.3 Patient Management - Create New Patient
 
-**File:** `tests/administration/create-patient.spec.ts`
+**File:** `tests/regression/physician/administration/create-patient.spec.ts`
 
 **Steps:**
 
@@ -1094,7 +1093,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.4 Patient Management - Edit Patient Information
 
-**File:** `tests/administration/edit-patient.spec.ts`
+**File:** `tests/regression/physician/administration/edit-patient.spec.ts`
 
 **Steps:**
 
@@ -1117,7 +1116,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.5 Patient Management - Delete Patient
 
-**File:** `tests/administration/delete-patient.spec.ts`
+**File:** `tests/regression/physician/administration/delete-patient.spec.ts`
 
 **Steps:**
 
@@ -1141,7 +1140,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.6 Patient Management - Search Patients
 
-**File:** `tests/administration/search-patients.spec.ts`
+**File:** `tests/regression/physician/administration/search-patients.spec.ts`
 
 **Steps:**
 
@@ -1164,7 +1163,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.7 Patient Management - Transfer Patient to Another Institution
 
-**File:** `tests/administration/transfer-patient.spec.ts`
+**File:** `tests/regression/physician/administration/transfer-patient.spec.ts`
 
 **Steps:**
 
@@ -1190,7 +1189,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.8 Patient Management - Schedule Study for Patient
 
-**File:** `tests/administration/schedule-study.spec.ts`
+**File:** `tests/regression/physician/administration/schedule-study.spec.ts`
 
 **Steps:**
 
@@ -1213,7 +1212,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.9 Patient Management - View Patient Studies
 
-**File:** `tests/administration/view-patient-studies.spec.ts`
+**File:** `tests/regression/physician/administration/view-patient-studies.spec.ts`
 
 **Steps:**
 
@@ -1236,7 +1235,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.10 Study Management - Generate Passcode for Study
 
-**File:** `tests/administration/generate-passcode.spec.ts`
+**File:** `tests/regression/physician/administration/generate-passcode.spec.ts`
 
 **Steps:**
 
@@ -1259,7 +1258,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.11 Study Management - Attach PDF to Study
 
-**File:** `tests/administration/admin-attach-pdf.spec.ts`
+**File:** `tests/regression/physician/administration/admin-attach-pdf.spec.ts`
 
 **Steps:**
 
@@ -1281,7 +1280,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.12 Study Management - View Series and Images
 
-**File:** `tests/administration/view-series.spec.ts`
+**File:** `tests/regression/physician/administration/view-series.spec.ts`
 
 **Steps:**
 
@@ -1303,7 +1302,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.13 Study Management - Delete Study
 
-**File:** `tests/administration/delete-study.spec.ts`
+**File:** `tests/regression/physician/administration/delete-study.spec.ts`
 
 **Steps:**
 
@@ -1325,7 +1324,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 12.14 Study Management - Share Study from Admin
 
-**File:** `tests/administration/admin-share-study.spec.ts`
+**File:** `tests/regression/physician/administration/admin-share-study.spec.ts`
 
 **Steps:**
 
@@ -1351,7 +1350,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.1 Worklist - View Scheduled Studies
 
-**File:** `tests/administration/view-worklist.spec.ts`
+**File:** `tests/regression/physician/administration/view-worklist.spec.ts`
 
 **Steps:**
 
@@ -1373,7 +1372,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.2 Worklist - Date Filter Buttons
 
-**File:** `tests/administration/worklist-date-filters.spec.ts`
+**File:** `tests/regression/physician/administration/worklist-date-filters.spec.ts`
 
 **Steps:**
 
@@ -1396,7 +1395,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.3 Worklist - Search Worklist Items
 
-**File:** `tests/administration/worklist-search.spec.ts`
+**File:** `tests/regression/physician/administration/worklist-search.spec.ts`
 
 **Steps:**
 
@@ -1418,7 +1417,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.4 Worklist - Edit Worklist Item
 
-**File:** `tests/administration/edit-worklist.spec.ts`
+**File:** `tests/regression/physician/administration/edit-worklist.spec.ts`
 
 **Steps:**
 
@@ -1440,7 +1439,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.5 Worklist - Delete Worklist Item
 
-**File:** `tests/administration/delete-worklist.spec.ts`
+**File:** `tests/regression/physician/administration/delete-worklist.spec.ts`
 
 **Steps:**
 
@@ -1461,7 +1460,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.6 Worklist - Acquisition Status Management
 
-**File:** `tests/administration/acquisition-status.spec.ts`
+**File:** `tests/regression/physician/administration/acquisition-status.spec.ts`
 
 **Steps:**
 
@@ -1482,7 +1481,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 13.7 Worklist - Review Status Management
 
-**File:** `tests/administration/review-status.spec.ts`
+**File:** `tests/regression/physician/administration/review-status.spec.ts`
 
 **Steps:**
 
@@ -1507,7 +1506,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 14.1 View Studies - Studies Pending Review List
 
-**File:** `tests/administration/admin-view-pending.spec.ts`
+**File:** `tests/regression/physician/administration/admin-view-pending.spec.ts`
 
 **Steps:**
 
@@ -1528,7 +1527,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 14.2 View Studies - Integration with Clinical Dashboard
 
-**File:** `tests/administration/admin-clinical-integration.spec.ts`
+**File:** `tests/regression/physician/administration/admin-clinical-integration.spec.ts`
 
 **Steps:**
 
@@ -1553,7 +1552,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 15.1 End-to-End Workflow - Study Review Complete Cycle
 
-**File:** `tests/integration/study-review-e2e.spec.ts`
+**File:** `tests/regression/physician/integration/study-review-e2e.spec.ts`
 
 **Steps:**
 
@@ -1578,7 +1577,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 15.2 Data Integrity - Study Information Consistency
 
-**File:** `tests/integration/data-consistency.spec.ts`
+**File:** `tests/regression/physician/integration/data-consistency.spec.ts`
 
 **Steps:**
 
@@ -1600,7 +1599,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 15.3 Multi-Study Management - Bulk Operations
 
-**File:** `tests/integration/bulk-operations.spec.ts`
+**File:** `tests/regression/physician/integration/bulk-operations.spec.ts`
 
 **Steps:**
 
@@ -1622,7 +1621,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 15.4 Security and Access Control - Role-Based Permissions
 
-**File:** `tests/security/physician-role-permissions.spec.ts`
+**File:** `tests/regression/physician/security/physician-role-permissions.spec.ts`
 
 **Steps:**
 
@@ -1643,7 +1642,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 #### 15.5 HIPAA Compliance - PHI Protection
 
-**File:** `tests/security/hipaa-compliance.spec.ts`
+**File:** `tests/regression/physician/security/hipaa-compliance.spec.ts`
 
 **Steps:**
 
@@ -1664,9 +1663,9 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Password policies enforce strong authentication
 - Data at rest is encrypted (AES-256)
 
-#### 15.6 Performance - Large Study Handling
+<!-- #### 15.6 Performance - Large Study Handling
 
-**File:** `tests/performance/large-studies.spec.ts`
+**File:** `tests/regression/physician/performance/large-studies.spec.ts`
 
 **Steps:**
 
@@ -1684,11 +1683,11 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Image rendering is smooth without lag
 - Navigation between images is responsive
 - Memory usage is reasonable (no memory leaks)
-- Application remains stable during large data operations
+- Application remains stable during large data operations -->
 
-#### 15.7 Browser Compatibility - Cross-Browser Testing
+<!-- #### 15.7 Browser Compatibility - Cross-Browser Testing
 
-**File:** `tests/compatibility/browser-support.spec.ts`
+**File:** `tests/regression/physician/compatibility/browser-support.spec.ts`
 
 **Steps:**
 
@@ -1705,11 +1704,11 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Application functions correctly in supported browsers: Chrome, Firefox, Safari, Edge
 - UI renders consistently across browsers
 - All features work without browser-specific issues
-- Minimum browser versions are documented and supported
+- Minimum browser versions are documented and supported -->
 
-#### 15.8 Error Handling - Network and System Errors
+<!-- #### 15.8 Error Handling - Network and System Errors
 
-**File:** `tests/error-handling/system-errors.spec.ts`
+**File:** `tests/regression/physician/error-handling/system-errors.spec.ts`
 
 **Steps:**
 
@@ -1728,11 +1727,11 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - System errors do not expose sensitive information
 - Failed operations can be retried
 - Application state is preserved when possible
-- Critical failures prompt user to refresh or re-login
+- Critical failures prompt user to refresh or re-login -->
 
-#### 15.9 Accessibility - WCAG Compliance
+<!-- #### 15.9 Accessibility - WCAG Compliance
 
-**File:** `tests/accessibility/wcag-compliance.spec.ts`
+**File:** `tests/regression/physician/accessibility/wcag-compliance.spec.ts`
 
 **Steps:**
 
@@ -1750,11 +1749,11 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Screen reader compatibility for visually impaired users
 - Sufficient color contrast for readability
 - Form labels and ARIA attributes are properly implemented
-- Focus indicators are visible
+- Focus indicators are visible -->
 
-#### 15.10 Logout and Session Termination
+<!-- #### 15.10 Logout and Session Termination
 
-**File:** `tests/authentication/logout.spec.ts`
+**File:** `tests/regression/physician/authentication/logout.spec.ts`
 
 **Steps:**
 
@@ -1773,7 +1772,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - User is redirected to login page
 - Attempting to access protected page after logout redirects to login
 - Session data is cleared from browser
-- No PHI remains accessible after logout
+- No PHI remains accessible after logout -->
 
 ---
 

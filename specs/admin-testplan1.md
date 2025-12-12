@@ -12,7 +12,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 1.1 Administrator Login - Valid Credentials
 
-**File:** `tests/admin-authentication/admin-login-valid.spec.ts`
+**File:** `tests/regression/admin/admin-authentication/admin-login-valid.spec.ts`
 
 **Steps:**
 
@@ -34,7 +34,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 1.2 Administrator Login - Invalid Credentials
 
-**File:** `tests/admin-authentication/admin-login-invalid.spec.ts`
+**File:** `tests/regression/admin/admin-authentication/admin-login-invalid.spec.ts`
 
 **Steps:**
 
@@ -55,7 +55,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 1.3 Administrator Role Permissions Verification
 
-**File:** `tests/admin-authentication/admin-permissions.spec.ts`
+**File:** `tests/regression/admin/admin-authentication/admin-permissions.spec.ts`
 
 **Steps:**
 
@@ -77,7 +77,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 1.4 Administrator Session Management
 
-**File:** `tests/admin-authentication/admin-session.spec.ts`
+**File:** `tests/regression/admin/admin-authentication/admin-session.spec.ts`
 
 **Steps:**
 
@@ -101,7 +101,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.1 View Institutions List
 
-**File:** `tests/admin-institutions/view-institutions.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/view-institutions.spec.ts`
 
 **Steps:**
 
@@ -125,7 +125,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.2 Institution List Pagination
 
-**File:** `tests/admin-institutions/institutions-pagination.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/institutions-pagination.spec.ts`
 
 **Steps:**
 
@@ -149,7 +149,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.3 Search Institutions
 
-**File:** `tests/admin-institutions/search-institutions.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/search-institutions.spec.ts`
 
 **Steps:**
 
@@ -172,7 +172,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.4 Select Institution for Management
 
-**File:** `tests/admin-institutions/select-institution.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/select-institution.spec.ts`
 
 **Steps:**
 
@@ -193,7 +193,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.5 Edit Institution - Access Edit Interface
 
-**File:** `tests/admin-institutions/edit-institution-access.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/edit-institution-access.spec.ts`
 
 **Steps:**
 
@@ -213,7 +213,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.6 Edit Institution - View Institution Identification
 
-**File:** `tests/admin-institutions/institution-identification.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/institution-identification.spec.ts`
 
 **Steps:**
 
@@ -235,7 +235,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.7 Edit Institution - Manage Destination Institutions
 
-**File:** `tests/admin-institutions/manage-destinations.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/manage-destinations.spec.ts`
 
 **Steps:**
 
@@ -264,7 +264,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.8 Edit Institution - Destination List Management
 
-**File:** `tests/admin-institutions/view-destinations.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/view-destinations.spec.ts`
 
 **Steps:**
 
@@ -286,7 +286,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.9 Edit Institution - Manage Report Templates
 
-**File:** `tests/admin-institutions/manage-report-templates.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/manage-report-templates.spec.ts`
 
 **Steps:**
 
@@ -315,7 +315,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.10 Edit Institution - Template List Display
 
-**File:** `tests/admin-institutions/view-templates.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/view-templates.spec.ts`
 
 **Steps:**
 
@@ -336,7 +336,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.11 Edit Institution - Save Configuration Changes
 
-**File:** `tests/admin-institutions/save-institution.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/save-institution.spec.ts`
 
 **Steps:**
 
@@ -361,7 +361,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.12 Edit Institution - Cancel or Back Without Saving
 
-**File:** `tests/admin-institutions/cancel-institution-edit.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/cancel-institution-edit.spec.ts`
 
 **Steps:**
 
@@ -385,7 +385,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.13 Institution Configuration - Data Integrity
 
-**File:** `tests/admin-institutions/institution-data-integrity.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/institution-data-integrity.spec.ts`
 
 **Steps:**
 
@@ -407,7 +407,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 2.14 Multi-Institution Management
 
-**File:** `tests/admin-institutions/multi-institution-ops.spec.ts`
+**File:** `tests/regression/admin/admin-institutions/multi-institution-ops.spec.ts`
 
 **Steps:**
 
@@ -434,7 +434,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.1 View DICOM Nodes List
 
-**File:** `tests/admin-dicom/view-dicom-nodes.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/view-dicom-nodes.spec.ts`
 
 **Steps:**
 
@@ -460,7 +460,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.2 DICOM Node List Pagination
 
-**File:** `tests/admin-dicom/dicom-pagination.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/dicom-pagination.spec.ts`
 
 **Steps:**
 
@@ -482,7 +482,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.3 Search DICOM Nodes
 
-**File:** `tests/admin-dicom/search-dicom-nodes.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/search-dicom-nodes.spec.ts`
 
 **Steps:**
 
@@ -504,7 +504,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.4 Select DICOM Node for Management
 
-**File:** `tests/admin-dicom/select-dicom-node.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/select-dicom-node.spec.ts`
 
 **Steps:**
 
@@ -526,7 +526,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.5 Create New DICOM Node
 
-**File:** `tests/admin-dicom/create-dicom-node.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/create-dicom-node.spec.ts`
 
 **Steps:**
 
@@ -559,7 +559,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.6 Edit DICOM Node Configuration
 
-**File:** `tests/admin-dicom/edit-dicom-node.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/edit-dicom-node.spec.ts`
 
 **Steps:**
 
@@ -585,7 +585,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.7 DICOM Node - AET Configuration
 
-**File:** `tests/admin-dicom/configure-aet.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/configure-aet.spec.ts`
 
 **Steps:**
 
@@ -607,7 +607,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.8 DICOM Node - Host and Port Configuration
 
-**File:** `tests/admin-dicom/configure-host-port.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/configure-host-port.spec.ts`
 
 **Steps:**
 
@@ -630,7 +630,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.9 DICOM Node - Institution Association
 
-**File:** `tests/admin-dicom/node-institution-association.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/node-institution-association.spec.ts`
 
 **Steps:**
 
@@ -654,7 +654,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.10 DICOM Node - TLS Encryption Configuration
 
-**File:** `tests/admin-dicom/configure-tls.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/configure-tls.spec.ts`
 
 **Steps:**
 
@@ -678,7 +678,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.11 DICOM Node - Advanced Settings
 
-**File:** `tests/admin-dicom/dicom-advanced-settings.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/dicom-advanced-settings.spec.ts`
 
 **Steps:**
 
@@ -700,7 +700,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.12 Delete DICOM Node
 
-**File:** `tests/admin-dicom/delete-dicom-node.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/delete-dicom-node.spec.ts`
 
 **Steps:**
 
@@ -726,7 +726,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.13 DICOM Echo - Test Node Connectivity
 
-**File:** `tests/admin-dicom/dicom-echo-test.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/dicom-echo-test.spec.ts`
 
 **Steps:**
 
@@ -753,7 +753,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.14 DICOM Echo - Connection Troubleshooting
 
-**File:** `tests/admin-dicom/echo-troubleshooting.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/echo-troubleshooting.spec.ts`
 
 **Steps:**
 
@@ -774,7 +774,7 @@ This comprehensive test plan documents all features and functionality for the Ad
 
 #### 3.15 DICOM Node Configuration - Data Validation
 
-**File:** `tests/admin-dicom/dicom-validation.spec.ts`
+**File:** `tests/regression/admin/admin-dicom/dicom-validation.spec.ts`
 
 **Steps:**
 

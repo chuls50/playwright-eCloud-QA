@@ -12,7 +12,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.1. View Account Information
 
-**File:** `tests/guest-user/view_account_information.spec.ts`
+**File:** `tests/regression/guest/guest-user/view_account_information.spec.ts`
 
 **Steps:**
 
@@ -30,7 +30,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.2. Update Email Address
 
-**File:** `tests/guest-user/update_email_address.spec.ts`
+**File:** `tests/regression/guest/guest-user/update_email_address.spec.ts`
 
 **Steps:**
 
@@ -48,7 +48,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.3. Update SMS Number
 
-**File:** `tests/guest-user/update_sms_number.spec.ts`
+**File:** `tests/regression/guest/guest-user/update_sms_number.spec.ts`
 
 **Steps:**
 
@@ -66,7 +66,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.4. Update Address Information
 
-**File:** `tests/guest-user/update_address_information.spec.ts`
+**File:** `tests/regression/guest/guest-user/update_address_information.spec.ts`
 
 **Steps:**
 
@@ -84,7 +84,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.5. Toggle Email Notifications
 
-**File:** `tests/guest-user/toggle_email_notifications.spec.ts`
+**File:** `tests/regression/guest/guest-user/toggle_email_notifications.spec.ts`
 
 **Steps:**
 
@@ -101,7 +101,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 4.6. Change Password
 
-**File:** `tests/guest-user/change_password.spec.ts`
+**File:** `tests/regression/guest/guest-user/change_password.spec.ts`
 
 **Steps:**
 
@@ -124,7 +124,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 5.1. Restricted Navigation Access
 
-**File:** `tests/guest-user/restricted_navigation_access.spec.ts`
+**File:** `tests/regression/guest/guest-user/restricted_navigation_access.spec.ts`
 
 **Steps:**
 
@@ -140,7 +140,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 5.2. Study Access Boundaries
 
-**File:** `tests/guest-user/study_access_boundaries.spec.ts`
+**File:** `tests/regression/guest/guest-user/study_access_boundaries.spec.ts`
 
 **Steps:**
 
@@ -157,7 +157,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 5.3. Audit Trail Logging
 
-**File:** `tests/guest-user/audit_trail_logging.spec.ts`
+**File:** `tests/regression/guest/guest-user/audit_trail_logging.spec.ts`
 
 **Steps:**
 
@@ -173,7 +173,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 5.4. Session Security Timeout
 
-**File:** `tests/guest-user/session_security_timeout.spec.ts`
+**File:** `tests/regression/guest/guest-user/session_security_timeout.spec.ts`
 
 **Steps:**
 
@@ -190,7 +190,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 5.5. Expired Passcode Handling
 
-**File:** `tests/guest-user/expired_passcode_handling.spec.ts`
+**File:** `tests/regression/guest/guest-user/expired_passcode_handling.spec.ts`
 
 **Steps:**
 
@@ -210,7 +210,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 6.1. Invalid Email Validation
 
-**File:** `tests/guest-user/invalid_email_validation.spec.ts`
+**File:** `tests/regression/guest/guest-user/invalid_email_validation.spec.ts`
 
 **Steps:**
 
@@ -227,7 +227,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 6.2. Invalid Phone Number Validation
 
-**File:** `tests/guest-user/invalid_phone_validation.spec.ts`
+**File:** `tests/regression/guest/guest-user/invalid_phone_validation.spec.ts`
 
 **Steps:**
 
@@ -244,7 +244,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 6.3. Empty Required Fields Validation
 
-**File:** `tests/guest-user/empty_required_fields.spec.ts`
+**File:** `tests/regression/guest/guest-user/empty_required_fields.spec.ts`
 
 **Steps:**
 
@@ -261,7 +261,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 6.4. Network Error Handling
 
-**File:** `tests/guest-user/network_error_handling.spec.ts`
+**File:** `tests/regression/guest/guest-user/network_error_handling.spec.ts`
 
 **Steps:**
 
@@ -278,7 +278,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 6.5. Concurrent Login Handling
 
-**File:** `tests/guest-user/concurrent_login_handling.spec.ts`
+**File:** `tests/regression/guest/guest-user/concurrent_login_handling.spec.ts`
 
 **Steps:**
 
@@ -298,7 +298,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 7.1. Access Physician Shared Studies
 
-**File:** `tests/guest-user/physician_shared_study_access.spec.ts`
+**File:** `tests/regression/guest/guest-user/physician_shared_study_access.spec.ts`
 
 **Steps:**
 
@@ -315,7 +315,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 7.2. Access Multi-Role Shared Studies
 
-**File:** `tests/guest-user/multi_role_shared_studies.spec.ts`
+**File:** `tests/regression/guest/guest-user/multi_role_shared_studies.spec.ts`
 
 **Steps:**
 
@@ -332,7 +332,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 7.3. Guest Notification Workflow
 
-**File:** `tests/guest-user/notification_workflow.spec.ts`
+**File:** `tests/regression/guest/guest-user/notification_workflow.spec.ts`
 
 **Steps:**
 
@@ -348,7 +348,7 @@ Additional comprehensive test scenarios for Guest user role covering account man
 
 #### 7.4. Cross-Device Study Access
 
-**File:** `tests/guest-user/cross_device_access.spec.ts`
+**File:** `tests/regression/guest/guest-user/cross_device_access.spec.ts`
 
 **Steps:**
 

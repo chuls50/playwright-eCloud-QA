@@ -12,7 +12,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.1 Nurse Account - Professional Profile Display
 
-**File:** `tests/nurse-account/profile-information.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/profile-information.spec.ts`
 
 **Steps:**
 
@@ -36,7 +36,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.2 Nurse Account - Email Address Management
 
-**File:** `tests/nurse-account/email-management.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/email-management.spec.ts`
 
 **Steps:**
 
@@ -58,7 +58,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.3 Nurse Account - SMS Number Configuration
 
-**File:** `tests/nurse-account/sms-management.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/sms-management.spec.ts`
 
 **Steps:**
 
@@ -79,7 +79,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.4 Nurse Account - Address Information Management
 
-**File:** `tests/nurse-account/address-information.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/address-information.spec.ts`
 
 **Steps:**
 
@@ -100,7 +100,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.5 Nurse Account - Notification Preferences
 
-**File:** `tests/nurse-account/notification-preferences.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/notification-preferences.spec.ts`
 
 **Steps:**
 
@@ -121,7 +121,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 7.6 Nurse Account - Professional License and Specialties
 
-**File:** `tests/nurse-account/professional-credentials.spec.ts`
+**File:** `tests/regression/nurse/nurse-account/professional-credentials.spec.ts`
 
 **Steps:**
 
@@ -146,7 +146,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 8.1 Study Search - Quick Date Filters
 
-**File:** `tests/nurse-search/quick-filters.spec.ts`
+**File:** `tests/regression/nurse/nurse-search/quick-filters.spec.ts`
 
 **Steps:**
 
@@ -168,7 +168,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 8.2 Study Search - Advanced Search Criteria
 
-**File:** `tests/nurse-search/advanced-search.spec.ts`
+**File:** `tests/regression/nurse/nurse-search/advanced-search.spec.ts`
 
 **Steps:**
 
@@ -192,7 +192,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 8.3 Study Search - Modality-Based Filtering
 
-**File:** `tests/nurse-search/modality-filtering.spec.ts`
+**File:** `tests/regression/nurse/nurse-search/modality-filtering.spec.ts`
 
 **Steps:**
 
@@ -213,7 +213,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 8.4 Study Search - Results Display and Navigation
 
-**File:** `tests/nurse-search/search-results.spec.ts`
+**File:** `tests/regression/nurse/nurse-search/search-results.spec.ts`
 
 **Steps:**
 
@@ -234,7 +234,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 8.5 Study Search - Edge Cases and Validation
 
-**File:** `tests/nurse-search/search-edge-cases.spec.ts`
+**File:** `tests/regression/nurse/nurse-search/search-edge-cases.spec.ts`
 
 **Steps:**
 
@@ -259,7 +259,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 9.1 Sharing Overview - Share History and Access
 
-**File:** `tests/nurse-sharing/shares-overview.spec.ts`
+**File:** `tests/regression/nurse/nurse-sharing/shares-overview.spec.ts`
 
 **Steps:**
 
@@ -279,7 +279,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 9.2 Passcode Management - Secure Study Access
 
-**File:** `tests/nurse-sharing/passcode-management.spec.ts`
+**File:** `tests/regression/nurse/nurse-sharing/passcode-management.spec.ts`
 
 **Steps:**
 
@@ -302,7 +302,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 9.3 Study Sharing - Transfer and Referral Workflows
 
-**File:** `tests/nurse-sharing/study-transfer-referral.spec.ts`
+**File:** `tests/regression/nurse/nurse-sharing/study-transfer-referral.spec.ts`
 
 **Steps:**
 
@@ -324,7 +324,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 9.4 Institutional Sharing - Inter-facility Collaboration
 
-**File:** `tests/nurse-sharing/institutional-sharing.spec.ts`
+**File:** `tests/regression/nurse/nurse-sharing/institutional-sharing.spec.ts`
 
 **Steps:**
 
@@ -344,7 +344,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 9.5 Share Audit Trail - Compliance and Tracking
 
-**File:** `tests/nurse-sharing/share-audit-trail.spec.ts`
+**File:** `tests/regression/nurse/nurse-sharing/share-audit-trail.spec.ts`
 
 **Steps:**
 
@@ -369,7 +369,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 10.1 Clinical Review - Nurse Attribution and Tracking
 
-**File:** `tests/nurse-integration/review-attribution.spec.ts`
+**File:** `tests/regression/nurse/nurse-integration/review-attribution.spec.ts`
 
 **Steps:**
 
@@ -390,7 +390,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 10.2 Collaborative Review - Nurse-Physician Workflow
 
-**File:** `tests/nurse-integration/collaborative-review.spec.ts`
+**File:** `tests/regression/nurse/nurse-integration/collaborative-review.spec.ts`
 
 **Steps:**
 
@@ -411,7 +411,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 10.3 Clinical Documentation - Nursing Report Integration
 
-**File:** `tests/nurse-integration/nursing-documentation.spec.ts`
+**File:** `tests/regression/nurse/nurse-integration/nursing-documentation.spec.ts`
 
 **Steps:**
 
@@ -431,7 +431,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 10.4 Patient Care Coordination - Nursing Workflow
 
-**File:** `tests/nurse-integration/patient-care-coordination.spec.ts`
+**File:** `tests/regression/nurse/nurse-integration/patient-care-coordination.spec.ts`
 
 **Steps:**
 
@@ -451,7 +451,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 10.5 Nursing Task Management - Worklist Integration
 
-**File:** `tests/nurse-integration/nursing-task-management.spec.ts`
+**File:** `tests/regression/nurse/nurse-integration/nursing-task-management.spec.ts`
 
 **Steps:**
 
@@ -475,7 +475,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 11.1 Role-Based Access Control - Nursing Scope
 
-**File:** `tests/nurse-security/role-based-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-security/role-based-access.spec.ts`
 
 **Steps:**
 
@@ -495,7 +495,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 11.2 Session Security - PHI Protection
 
-**File:** `tests/nurse-security/session-security.spec.ts`
+**File:** `tests/regression/nurse/nurse-security/session-security.spec.ts`
 
 **Steps:**
 
@@ -515,7 +515,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 11.3 Audit Trail - Nursing Action Compliance
 
-**File:** `tests/nurse-security/audit-compliance.spec.ts`
+**File:** `tests/regression/nurse/nurse-security/audit-compliance.spec.ts`
 
 **Steps:**
 
@@ -535,7 +535,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 11.4 Professional Licensing - Credential Protection
 
-**File:** `tests/nurse-security/professional-licensing.spec.ts`
+**File:** `tests/regression/nurse/nurse-security/professional-licensing.spec.ts`
 
 **Steps:**
 
@@ -555,7 +555,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 11.5 Patient Privacy - HIPAA Compliance
 
-**File:** `tests/nurse-security/patient-privacy.spec.ts`
+**File:** `tests/regression/nurse/nurse-security/patient-privacy.spec.ts`
 
 **Steps:**
 
@@ -579,7 +579,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.1 Network Connectivity - Error Handling
 
-**File:** `tests/nurse-errors/network-issues.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/network-issues.spec.ts`
 
 **Steps:**
 
@@ -599,7 +599,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.2 Study Data Issues - Error Recovery
 
-**File:** `tests/nurse-errors/study-data-issues.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/study-data-issues.spec.ts`
 
 **Steps:**
 
@@ -619,7 +619,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.3 Form Validation - Data Entry Errors
 
-**File:** `tests/nurse-errors/form-validation.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/form-validation.spec.ts`
 
 **Steps:**
 
@@ -639,7 +639,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.4 Concurrent Access - Multi-User Scenarios
 
-**File:** `tests/nurse-errors/concurrent-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/concurrent-access.spec.ts`
 
 **Steps:**
 
@@ -659,7 +659,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.5 Performance Edge Cases - System Load
 
-**File:** `tests/nurse-errors/performance-edge-cases.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/performance-edge-cases.spec.ts`
 
 **Steps:**
 
@@ -679,7 +679,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 
 #### 12.6 Browser Compatibility - Multi-Platform Support
 
-**File:** `tests/nurse-errors/browser-compatibility.spec.ts`
+**File:** `tests/regression/nurse/nurse-errors/browser-compatibility.spec.ts`
 
 **Steps:**
 

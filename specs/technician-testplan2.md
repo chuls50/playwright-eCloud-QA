@@ -12,7 +12,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.1 Technician Account - Professional Profile
 
-**File:** `tests/technician-account/profile-information.spec.ts`
+**File:** `tests/regression/technician/technician-account/profile-information.spec.ts`
 
 **Steps:**
 
@@ -35,7 +35,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.2 Technician Account - Email Configuration
 
-**File:** `tests/technician-account/email-management.spec.ts`
+**File:** `tests/regression/technician/technician-account/email-management.spec.ts`
 
 **Steps:**
 
@@ -57,7 +57,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.3 Technician Account - SMS Notification Setup
 
-**File:** `tests/technician-account/sms-configuration.spec.ts`
+**File:** `tests/regression/technician/technician-account/sms-configuration.spec.ts`
 
 **Steps:**
 
@@ -78,7 +78,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.4 Technician Account - Address Information
 
-**File:** `tests/technician-account/address-management.spec.ts`
+**File:** `tests/regression/technician/technician-account/address-management.spec.ts`
 
 **Steps:**
 
@@ -99,7 +99,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.5 Technician Account - Notification Settings
 
-**File:** `tests/technician-account/notification-preferences.spec.ts`
+**File:** `tests/regression/technician/technician-account/notification-preferences.spec.ts`
 
 **Steps:**
 
@@ -120,7 +120,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 7.6 Technician Account - Security and Password Management
 
-**File:** `tests/technician-account/account-security.spec.ts`
+**File:** `tests/regression/technician/technician-account/account-security.spec.ts`
 
 **Steps:**
 
@@ -146,7 +146,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 8.1 Study Search - Technical Quick Filters
 
-**File:** `tests/technician-search/quick-search-filters.spec.ts`
+**File:** `tests/regression/technician/technician-search/quick-search-filters.spec.ts`
 
 **Steps:**
 
@@ -168,7 +168,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 8.2 Study Search - Advanced Technical Search
 
-**File:** `tests/technician-search/advanced-search-capabilities.spec.ts`
+**File:** `tests/regression/technician/technician-search/advanced-search-capabilities.spec.ts`
 
 **Steps:**
 
@@ -192,7 +192,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 8.3 Study Search - Modality-Based Technical Analysis
 
-**File:** `tests/technician-search/modality-technical-filtering.spec.ts`
+**File:** `tests/regression/technician/technician-search/modality-technical-filtering.spec.ts`
 
 **Steps:**
 
@@ -213,7 +213,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 8.4 Study Search - Technical Results Management
 
-**File:** `tests/technician-search/technical-search-results.spec.ts`
+**File:** `tests/regression/technician/technician-search/technical-search-results.spec.ts`
 
 **Steps:**
 
@@ -234,7 +234,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 8.5 Study Search - Technical Search Validation
 
-**File:** `tests/technician-search/search-validation.spec.ts`
+**File:** `tests/regression/technician/technician-search/search-validation.spec.ts`
 
 **Steps:**
 
@@ -259,7 +259,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 9.1 Technical Sharing - Share Management
 
-**File:** `tests/technician-sharing/technical-shares-overview.spec.ts`
+**File:** `tests/regression/technician/technician-sharing/technical-shares-overview.spec.ts`
 
 **Steps:**
 
@@ -280,7 +280,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 9.2 Technical Passcode Management - Secure Study Access
 
-**File:** `tests/technician-sharing/technical-passcode-management.spec.ts`
+**File:** `tests/regression/technician/technician-sharing/technical-passcode-management.spec.ts`
 
 **Steps:**
 
@@ -302,7 +302,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 9.3 Technical Study Sharing - Inter-Institutional Support
 
-**File:** `tests/technician-sharing/technical-study-sharing.spec.ts`
+**File:** `tests/regression/technician/technician-sharing/technical-study-sharing.spec.ts`
 
 **Steps:**
 
@@ -324,7 +324,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 9.4 Technical Quality Assurance - Inter-Facility Collaboration
 
-**File:** `tests/technician-sharing/technical-quality-sharing.spec.ts`
+**File:** `tests/regression/technician/technician-sharing/technical-quality-sharing.spec.ts`
 
 **Steps:**
 
@@ -345,7 +345,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 9.5 Technical Share Audit - Compliance and Tracking
 
-**File:** `tests/technician-sharing/technical-audit-trail.spec.ts`
+**File:** `tests/regression/technician/technician-sharing/technical-audit-trail.spec.ts`
 
 **Steps:**
 
@@ -370,7 +370,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 10.1 Technical Quality Assurance - Review Attribution
 
-**File:** `tests/technician-qa/technical-review-attribution.spec.ts`
+**File:** `tests/regression/technician/technician-qa/technical-review-attribution.spec.ts`
 
 **Steps:**
 
@@ -391,7 +391,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 10.2 Technical-Clinical Collaboration - Quality Workflow
 
-**File:** `tests/technician-qa/technical-clinical-collaboration.spec.ts`
+**File:** `tests/regression/technician/technician-qa/technical-clinical-collaboration.spec.ts`
 
 **Steps:**
 
@@ -412,7 +412,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 10.3 Technical Quality Documentation - QA Reporting
 
-**File:** `tests/technician-qa/technical-quality-documentation.spec.ts`
+**File:** `tests/regression/technician/technician-qa/technical-quality-documentation.spec.ts`
 
 **Steps:**
 
@@ -433,7 +433,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 10.4 Image Quality Assessment - Technical Standards
 
-**File:** `tests/technician-qa/image-quality-assessment.spec.ts`
+**File:** `tests/regression/technician/technician-qa/image-quality-assessment.spec.ts`
 
 **Steps:**
 
@@ -454,7 +454,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 10.5 Technical Workflow Integration - Operational Efficiency
 
-**File:** `tests/technician-qa/technical-workflow-integration.spec.ts`
+**File:** `tests/regression/technician/technician-qa/technical-workflow-integration.spec.ts`
 
 **Steps:**
 
@@ -479,7 +479,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 11.1 Role-Based Access Control - Technical Scope
 
-**File:** `tests/technician-security/role-based-access-control.spec.ts`
+**File:** `tests/regression/technician/technician-security/role-based-access-control.spec.ts`
 
 **Steps:**
 
@@ -500,7 +500,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 11.2 Technical Session Security - Data Protection
 
-**File:** `tests/technician-security/technical-session-security.spec.ts`
+**File:** `tests/regression/technician/technician-security/technical-session-security.spec.ts`
 
 **Steps:**
 
@@ -521,7 +521,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 11.3 Technical Audit Trail - Quality Compliance
 
-**File:** `tests/technician-security/technical-audit-compliance.spec.ts`
+**File:** `tests/regression/technician/technician-security/technical-audit-compliance.spec.ts`
 
 **Steps:**
 
@@ -542,7 +542,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 11.4 Patient Privacy - Technical HIPAA Compliance
 
-**File:** `tests/technician-security/patient-privacy-technical.spec.ts`
+**File:** `tests/regression/technician/technician-security/patient-privacy-technical.spec.ts`
 
 **Steps:**
 
@@ -563,7 +563,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 11.5 Technical Data Integrity - Quality Control
 
-**File:** `tests/technician-security/technical-data-integrity.spec.ts`
+**File:** `tests/regression/technician/technician-security/technical-data-integrity.spec.ts`
 
 **Steps:**
 
@@ -588,7 +588,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.1 Network Connectivity - Technical Error Handling
 
-**File:** `tests/technician-errors/network-technical-issues.spec.ts`
+**File:** `tests/regression/technician/technician-errors/network-technical-issues.spec.ts`
 
 **Steps:**
 
@@ -609,7 +609,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.2 Image Processing Errors - Technical Recovery
 
-**File:** `tests/technician-errors/image-processing-errors.spec.ts`
+**File:** `tests/regression/technician/technician-errors/image-processing-errors.spec.ts`
 
 **Steps:**
 
@@ -630,7 +630,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.3 Technical Form Validation - Data Entry Errors
 
-**File:** `tests/technician-errors/technical-form-validation.spec.ts`
+**File:** `tests/regression/technician/technician-errors/technical-form-validation.spec.ts`
 
 **Steps:**
 
@@ -651,7 +651,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.4 Concurrent Technical Access - Multi-User Scenarios
 
-**File:** `tests/technician-errors/concurrent-technical-access.spec.ts`
+**File:** `tests/regression/technician/technician-errors/concurrent-technical-access.spec.ts`
 
 **Steps:**
 
@@ -671,7 +671,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.5 Technical Performance - System Load Testing
 
-**File:** `tests/technician-errors/technical-performance.spec.ts`
+**File:** `tests/regression/technician/technician-errors/technical-performance.spec.ts`
 
 **Steps:**
 
@@ -692,7 +692,7 @@ This is Part 2 of the comprehensive Technician test plan for eNcounterCloud PACS
 
 #### 12.6 Technical Browser Compatibility - Multi-Platform Testing
 
-**File:** `tests/technician-errors/technical-browser-compatibility.spec.ts`
+**File:** `tests/regression/technician/technician-errors/technical-browser-compatibility.spec.ts`
 
 **Steps:**
 

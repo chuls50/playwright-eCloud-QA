@@ -12,7 +12,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 5.1. Delete Patient Records
 
-**File:** `tests/institution-manager-user/patient_deletion.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_deletion.spec.ts`
 
 **Steps:**
 
@@ -31,7 +31,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 5.2. Patient Transfer Operations
 
-**File:** `tests/institution-manager-user/patient_transfer.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_transfer.spec.ts`
 
 **Steps:**
 
@@ -49,7 +49,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 5.3. Patient Study Management
 
-**File:** `tests/institution-manager-user/patient_study_management.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_study_management.spec.ts`
 
 **Steps:**
 
@@ -67,7 +67,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 5.4. Patient Studies Overview
 
-**File:** `tests/institution-manager-user/patient_studies_overview.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_studies_overview.spec.ts`
 
 **Steps:**
 
@@ -85,7 +85,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 5.5. Patient Data Export
 
-**File:** `tests/institution-manager-user/patient_data_export.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_data_export.spec.ts`
 
 **Steps:**
 
@@ -106,7 +106,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.1. Worklist Overview
 
-**File:** `tests/institution-manager-user/worklist_overview.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_overview.spec.ts`
 
 **Steps:**
 
@@ -123,7 +123,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.2. Worklist Today Filter
 
-**File:** `tests/institution-manager-user/worklist_today_filter.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_today_filter.spec.ts`
 
 **Steps:**
 
@@ -140,7 +140,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.3. Worklist Tomorrow Filter
 
-**File:** `tests/institution-manager-user/worklist_tomorrow_filter.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_tomorrow_filter.spec.ts`
 
 **Steps:**
 
@@ -157,7 +157,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.4. Worklist +7 Days Filter
 
-**File:** `tests/institution-manager-user/worklist_week_ahead_filter.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_week_ahead_filter.spec.ts`
 
 **Steps:**
 
@@ -174,7 +174,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.5. Worklist Yesterday Filter
 
-**File:** `tests/institution-manager-user/worklist_yesterday_filter.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_yesterday_filter.spec.ts`
 
 **Steps:**
 
@@ -191,7 +191,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.6. Worklist -7 Days Filter
 
-**File:** `tests/institution-manager-user/worklist_week_back_filter.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_week_back_filter.spec.ts`
 
 **Steps:**
 
@@ -208,7 +208,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.7. Worklist Search
 
-**File:** `tests/institution-manager-user/worklist_search.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_search.spec.ts`
 
 **Steps:**
 
@@ -225,7 +225,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 6.8. Worklist Pagination
 
-**File:** `tests/institution-manager-user/worklist_pagination.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/worklist_pagination.spec.ts`
 
 **Steps:**
 
@@ -246,7 +246,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.1. Routing Configuration Overview
 
-**File:** `tests/institution-manager-user/routing_overview.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_overview.spec.ts`
 
 **Steps:**
 
@@ -263,7 +263,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.2. Create Routing Configuration
 
-**File:** `tests/institution-manager-user/routing_creation.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_creation.spec.ts`
 
 **Steps:**
 
@@ -281,7 +281,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.3. Modify Routing Configuration
 
-**File:** `tests/institution-manager-user/routing_modification.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_modification.spec.ts`
 
 **Steps:**
 
@@ -299,7 +299,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.4. Delete Routing Configuration
 
-**File:** `tests/institution-manager-user/routing_deletion.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_deletion.spec.ts`
 
 **Steps:**
 
@@ -316,7 +316,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.5. Modality-Specific Routing
 
-**File:** `tests/institution-manager-user/routing_modality_specific.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_modality_specific.spec.ts`
 
 **Steps:**
 
@@ -333,7 +333,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 7.6. Inter-Institutional Routing
 
-**File:** `tests/institution-manager-user/routing_inter_institutional.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/routing_inter_institutional.spec.ts`
 
 **Steps:**
 
@@ -354,7 +354,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.1. View Account Profile
 
-**File:** `tests/institution-manager-user/account_profile_view.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_profile_view.spec.ts`
 
 **Steps:**
 
@@ -371,7 +371,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.2. Update Email Address
 
-**File:** `tests/institution-manager-user/account_email_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_email_update.spec.ts`
 
 **Steps:**
 
@@ -389,7 +389,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.3. Update SMS Number
 
-**File:** `tests/institution-manager-user/account_sms_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_sms_update.spec.ts`
 
 **Steps:**
 
@@ -407,7 +407,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.4. Update Address Information
 
-**File:** `tests/institution-manager-user/account_address_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_address_update.spec.ts`
 
 **Steps:**
 
@@ -425,7 +425,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.5. Email Notification Preferences
 
-**File:** `tests/institution-manager-user/account_notification_preferences.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_notification_preferences.spec.ts`
 
 **Steps:**
 
@@ -443,7 +443,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 8.6. Change Account Password
 
-**File:** `tests/institution-manager-user/account_password_change.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/account_password_change.spec.ts`
 
 **Steps:**
 
@@ -464,7 +464,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 9.1. Access PHI Logs
 
-**File:** `tests/institution-manager-user/phi_logs_access.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/phi_logs_access.spec.ts`
 
 **Steps:**
 
@@ -481,7 +481,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 9.2. Generate PHI Access Report
 
-**File:** `tests/institution-manager-user/phi_access_report_generation.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/phi_access_report_generation.spec.ts`
 
 **Steps:**
 
@@ -498,7 +498,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 9.3. Verify PHI Access Report Content
 
-**File:** `tests/institution-manager-user/phi_access_report_content.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/phi_access_report_content.spec.ts`
 
 **Steps:**
 
@@ -515,7 +515,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 9.4. Historical PHI Access Tracking
 
-**File:** `tests/institution-manager-user/phi_historical_access_tracking.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/phi_historical_access_tracking.spec.ts`
 
 **Steps:**
 
@@ -532,7 +532,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 9.5. Role-Based PHI Access Monitoring
 
-**File:** `tests/institution-manager-user/phi_role_based_access_monitoring.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/phi_role_based_access_monitoring.spec.ts`
 
 **Steps:**
 
@@ -553,7 +553,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 10.1. Network Error Handling
 
-**File:** `tests/institution-manager-user/network_error_handling.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/network_error_handling.spec.ts`
 
 **Steps:**
 
@@ -570,7 +570,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 10.2. Large Dataset Performance
 
-**File:** `tests/institution-manager-user/large_dataset_performance.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/large_dataset_performance.spec.ts`
 
 **Steps:**
 
@@ -587,7 +587,7 @@ Additional comprehensive test scenarios for Institution Manager role covering ad
 
 #### 10.3. Concurrent Access Handling
 
-**File:** `tests/institution-manager-user/concurrent_access_handling.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/concurrent_access_handling.spec.ts`
 
 **Steps:**
 

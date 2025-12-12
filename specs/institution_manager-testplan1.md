@@ -12,7 +12,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 1.1. Institution Manager Login Success
 
-**File:** `tests/institution-manager-user/institution_manager_login_success.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/institution_manager_login_success.spec.ts`
 
 **Steps:**
   1. Navigate to eCloud login page
@@ -28,7 +28,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 1.2. Institution Manager Invalid Login
 
-**File:** `tests/institution-manager-user/institution_manager_login_invalid.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/institution_manager_login_invalid.spec.ts`
 
 **Steps:**
   1. Navigate to eCloud login page
@@ -43,7 +43,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 1.3. Institution Manager Session Timeout
 
-**File:** `tests/institution-manager-user/institution_manager_session_timeout.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/institution_manager_session_timeout.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -62,7 +62,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.1. Access Patient Creation Interface
 
-**File:** `tests/institution-manager-user/patient_creation_interface.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_creation_interface.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -78,7 +78,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.2. Create Complete Patient Record
 
-**File:** `tests/institution-manager-user/create_complete_patient.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/create_complete_patient.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -97,7 +97,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.3. Patient Creation Field Validation
 
-**File:** `tests/institution-manager-user/patient_creation_validation.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_creation_validation.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -112,7 +112,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.4. Patient Birth Date Validation
 
-**File:** `tests/institution-manager-user/patient_birth_date_validation.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_birth_date_validation.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -127,7 +127,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.5. Prevent Duplicate Patient IDs
 
-**File:** `tests/institution-manager-user/patient_duplicate_id_prevention.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_duplicate_id_prevention.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -141,7 +141,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 2.6. Patient Gender Selection
 
-**File:** `tests/institution-manager-user/patient_gender_selection.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_gender_selection.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -160,7 +160,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.1. Access Patient Search Interface
 
-**File:** `tests/institution-manager-user/patient_search_interface.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_search_interface.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -175,7 +175,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.2. Search Patients by Last Name
 
-**File:** `tests/institution-manager-user/patient_search_by_last_name.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_search_by_last_name.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -190,7 +190,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.3. Search Patients by Patient ID
 
-**File:** `tests/institution-manager-user/patient_search_by_id.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_search_by_id.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -205,7 +205,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.4. Multi-Criteria Patient Search
 
-**File:** `tests/institution-manager-user/patient_multi_criteria_search.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_multi_criteria_search.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -220,7 +220,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.5. Patient List Navigation
 
-**File:** `tests/institution-manager-user/patient_list_navigation.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_list_navigation.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -235,7 +235,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 3.6. Patient List Selection
 
-**File:** `tests/institution-manager-user/patient_list_selection.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_list_selection.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -254,7 +254,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 4.1. Access Patient Edit Interface
 
-**File:** `tests/institution-manager-user/patient_edit_access.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_edit_access.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -269,7 +269,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 4.2. Update Patient Demographics
 
-**File:** `tests/institution-manager-user/patient_demographic_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_demographic_update.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -284,7 +284,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 4.3. Update Patient Medical Information
 
-**File:** `tests/institution-manager-user/patient_medical_info_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_medical_info_update.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -299,7 +299,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 4.4. Update Patient Address Information
 
-**File:** `tests/institution-manager-user/patient_address_update.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_address_update.spec.ts`
 
 **Steps:**
   1. Login as institution manager
@@ -314,7 +314,7 @@ Comprehensive test scenarios for Institution Manager role in eNcounterCloud PACS
 
 #### 4.5. Patient Physician Assignment
 
-**File:** `tests/institution-manager-user/patient_physician_assignment.spec.ts`
+**File:** `tests/regression/institution-manager/institution-manager-user/patient_physician_assignment.spec.ts`
 
 **Steps:**
   1. Login as institution manager

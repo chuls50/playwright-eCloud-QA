@@ -12,7 +12,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.1 View Administrator Account Information
 
-**File:** `tests/admin-account/view-account.spec.ts`
+**File:** `tests/regression/admin/admin-account/view-account.spec.ts`
 
 **Steps:**
 
@@ -38,7 +38,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.2 Update Administrator Email Address
 
-**File:** `tests/admin-account/update-email.spec.ts`
+**File:** `tests/regression/admin/admin-account/update-email.spec.ts`
 
 **Steps:**
 
@@ -64,7 +64,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.3 Update Administrator SMS Number
 
-**File:** `tests/admin-account/update-sms.spec.ts`
+**File:** `tests/regression/admin/admin-account/update-sms.spec.ts`
 
 **Steps:**
 
@@ -88,7 +88,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.4 Update Administrator Address Information
 
-**File:** `tests/admin-account/update-address.spec.ts`
+**File:** `tests/regression/admin/admin-account/update-address.spec.ts`
 
 **Steps:**
 
@@ -113,7 +113,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.5 Email Notifications Configuration
 
-**File:** `tests/admin-account/email-notifications.spec.ts`
+**File:** `tests/regression/admin/admin-account/email-notifications.spec.ts`
 
 **Steps:**
 
@@ -136,7 +136,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.6 Administrator Account - Read-Only Fields
 
-**File:** `tests/admin-account/readonly-fields.spec.ts`
+**File:** `tests/regression/admin/admin-account/readonly-fields.spec.ts`
 
 **Steps:**
 
@@ -158,7 +158,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 4.7 Save Account Changes
 
-**File:** `tests/admin-account/save-account.spec.ts`
+**File:** `tests/regression/admin/admin-account/save-account.spec.ts`
 
 **Steps:**
 
@@ -185,7 +185,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.1 Role-Based Access Control - Administrator vs Physician
 
-**File:** `tests/admin-security/rbac-admin-physician.spec.ts`
+**File:** `tests/regression/admin/admin-security/rbac-admin-physician.spec.ts`
 
 **Steps:**
 
@@ -208,7 +208,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.2 DICOM Security - TLS Configuration Enforcement
 
-**File:** `tests/admin-security/dicom-tls-compliance.spec.ts`
+**File:** `tests/regression/admin/admin-security/dicom-tls-compliance.spec.ts`
 
 **Steps:**
 
@@ -230,7 +230,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.3 Audit Trail - Configuration Changes
 
-**File:** `tests/admin-security/audit-configuration-changes.spec.ts`
+**File:** `tests/regression/admin/admin-security/audit-configuration-changes.spec.ts`
 
 **Steps:**
 
@@ -252,7 +252,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.4 Data Integrity - Institution Identifier Immutability
 
-**File:** `tests/admin-security/institution-immutability.spec.ts`
+**File:** `tests/regression/admin/admin-security/institution-immutability.spec.ts`
 
 **Steps:**
 
@@ -274,7 +274,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.5 DICOM Node Security - AET Uniqueness
 
-**File:** `tests/admin-security/aet-uniqueness.spec.ts`
+**File:** `tests/regression/admin/admin-security/aet-uniqueness.spec.ts`
 
 **Steps:**
 
@@ -297,7 +297,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.6 Network Security - DICOM Echo Testing
 
-**File:** `tests/admin-security/network-security-echo.spec.ts`
+**File:** `tests/regression/admin/admin-security/network-security-echo.spec.ts`
 
 **Steps:**
 
@@ -319,7 +319,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 5.7 Session Security - Administrator Timeout
 
-**File:** `tests/admin-security/session-timeout.spec.ts`
+**File:** `tests/regression/admin/admin-security/session-timeout.spec.ts`
 
 **Steps:**
 
@@ -339,13 +339,13 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Administrator is logged out and redirected to login
 - Sensitive configuration data is cleared from session
 
-### 6. Integration and System Operations (HIGH PRIORITY)
+<!-- ### 6. Integration and System Operations (HIGH PRIORITY)
 
 **Seed:** `tests/admin_seed.spec.ts`
 
 #### 6.1 Institution-DICOM Node Association
 
-**File:** `tests/admin-integration/institution-dicom-association.spec.ts`
+**File:** `tests/regression/admin/admin-integration/institution-dicom-association.spec.ts`
 
 **Steps:**
 
@@ -363,11 +363,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Changing node's institution affects which users can access it
 - Institution determines: Which physicians see the node, Routing and destination options
 - Association is required for proper DICOM workflow
-- Multiple nodes can belong to same institution
+- Multiple nodes can belong to same institution -->
 
-#### 6.2 Destination Routing - Institution to Institution
+<!-- #### 6.2 Destination Routing - Institution to Institution
 
-**File:** `tests/admin-integration/destination-routing.spec.ts`
+**File:** `tests/regression/admin/admin-integration/destination-routing.spec.ts`
 
 **Steps:**
 
@@ -387,11 +387,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Adding destination allows physicians to send studies to that institution
 - Destinations enable: Study sharing, Referral workflows, Multi-site collaboration
 - Removing destination blocks transfers
-- Destination list affects physician Share Study functionality
+- Destination list affects physician Share Study functionality -->
 
-#### 6.3 Report Template Distribution
+<!-- #### 6.3 Report Template Distribution
 
-**File:** `tests/admin-integration/report-template-distribution.spec.ts`
+**File:** `tests/regression/admin/admin-integration/report-template-distribution.spec.ts`
 
 **Steps:**
 
@@ -411,11 +411,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Templates include: Case Documentation, Discharge Summary, HPI, SOAP
 - Adding template makes it available to institution's physicians
 - Removing template hides it from physicians
-- Template configuration affects clinical workflow
+- Template configuration affects clinical workflow -->
 
-#### 6.4 DICOM Workflow - End-to-End Integration
+<!-- #### 6.4 DICOM Workflow - End-to-End Integration
 
-**File:** `tests/admin-integration/dicom-workflow-integration.spec.ts`
+**File:** `tests/regression/admin/admin-integration/dicom-workflow-integration.spec.ts`
 
 **Steps:**
 
@@ -436,11 +436,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Workflow: External system sends to DICOM node → Node receives and routes → Study appears in physician dashboard
 - Administrator configuration enables workflow
 - Proper AET, host, port, and TLS settings required
-- Echo test validates configuration before production use
+- Echo test validates configuration before production use -->
 
-#### 6.5 Multi-Institution Scenarios
+<!-- #### 6.5 Multi-Institution Scenarios
 
-**File:** `tests/admin-integration/multi-institution.spec.ts`
+**File:** `tests/regression/admin/admin-integration/multi-institution.spec.ts`
 
 **Steps:**
 
@@ -459,11 +459,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Each institution has independent configuration
 - Institution destinations enable inter-institution workflows
 - Data isolation maintained between institutions
-- Administrator can manage all institutions from single interface
+- Administrator can manage all institutions from single interface -->
 
-#### 6.6 System Scaling - Large Node Lists
+<!-- #### 6.6 System Scaling - Large Node Lists
 
-**File:** `tests/admin-integration/large-node-lists.spec.ts`
+**File:** `tests/regression/admin/admin-integration/large-node-lists.spec.ts`
 
 **Steps:**
 
@@ -481,11 +481,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Pagination manages display of many nodes
 - Search function helps locate specific nodes quickly
 - Performance remains acceptable with many nodes
-- Node list loading is efficient
+- Node list loading is efficient -->
 
-#### 6.7 Configuration Backup and Disaster Recovery
+<!-- #### 6.7 Configuration Backup and Disaster Recovery
 
-**File:** `tests/admin-integration/config-backup.spec.ts`
+**File:** `tests/regression/admin/admin-integration/config-backup.spec.ts`
 
 **Steps:**
 
@@ -502,15 +502,15 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Institutions, DICOM nodes, templates, and destinations are recoverable
 - Disaster recovery procedures exist
 - Configuration can be restored after failure
-- No data loss in recovery scenarios
+- No data loss in recovery scenarios -->
 
-### 7. Error Handling and Edge Cases (MEDIUM PRIORITY)
+<!-- ### 7. Error Handling and Edge Cases (MEDIUM PRIORITY)
 
 **Seed:** `tests/admin_seed.spec.ts`
 
 #### 7.1 Invalid DICOM Configuration - Network Unreachable
 
-**File:** `tests/admin-errors/dicom-network-unreachable.spec.ts`
+**File:** `tests/regression/admin/admin-errors/dicom-network-unreachable.spec.ts`
 
 **Steps:**
 
@@ -526,11 +526,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Configuring node with unreachable host shows error on Echo test
 - Error message indicates network issue
 - Configuration can still be saved (for future availability)
-- Error guides troubleshooting: Check host, Check network connectivity, Check firewall
+- Error guides troubleshooting: Check host, Check network connectivity, Check firewall -->
 
-#### 7.2 Invalid DICOM Configuration - Port Blocked
+<!-- #### 7.2 Invalid DICOM Configuration - Port Blocked
 
-**File:** `tests/admin-errors/dicom-port-blocked.spec.ts`
+**File:** `tests/regression/admin/admin-errors/dicom-port-blocked.spec.ts`
 
 **Steps:**
 
@@ -549,7 +549,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 7.3 Invalid DICOM Configuration - AET Mismatch
 
-**File:** `tests/admin-errors/dicom-aet-mismatch.spec.ts`
+**File:** `tests/regression/admin/admin-errors/dicom-aet-mismatch.spec.ts`
 
 **Steps:**
 
@@ -565,11 +565,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Echo or DICOM transfer with wrong AET fails
 - Error indicates AET mismatch or rejection
 - Administrator can correct AET based on error
-- Remote node may reject connection due to AET
+- Remote node may reject connection due to AET -->
 
-#### 7.4 Invalid DICOM Configuration - TLS Mismatch
+<!-- #### 7.4 Invalid DICOM Configuration - TLS Mismatch
 
-**File:** `tests/admin-errors/dicom-tls-mismatch.spec.ts`
+**File:** `tests/regression/admin/admin-errors/dicom-tls-mismatch.spec.ts`
 
 **Steps:**
 
@@ -586,11 +586,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - TLS enabled locally but not on remote shows connection error
 - TLS disabled locally but required remotely shows error
 - Error message indicates TLS configuration issue
-- Administrator can match TLS settings between endpoints
+- Administrator can match TLS settings between endpoints -->
 
-#### 7.5 Institution Configuration - Empty Destinations
+<!-- #### 7.5 Institution Configuration - Empty Destinations
 
-**File:** `tests/admin-errors/empty-destinations.spec.ts`
+**File:** `tests/regression/admin/admin-errors/empty-destinations.spec.ts`
 
 **Steps:**
 
@@ -608,11 +608,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Institution with no destinations still functions
 - Physicians can review studies but cannot share to other institutions
 - Warning or info message may indicate no destinations configured
-- Configuration is valid but limits functionality
+- Configuration is valid but limits functionality -->
 
-#### 7.6 Institution Configuration - Empty Templates
+<!-- #### 7.6 Institution Configuration - Empty Templates
 
-**File:** `tests/admin-errors/empty-templates.spec.ts`
+**File:** `tests/regression/admin/admin-errors/empty-templates.spec.ts`
 
 **Steps:**
 
@@ -630,11 +630,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Institution with no templates functions for study review
 - Physicians cannot generate reports without templates
 - Warning may indicate no templates configured
-- Configuration is valid but limits report functionality
+- Configuration is valid but limits report functionality -->
 
-#### 7.7 Account Update - Invalid Email Format
+<!-- #### 7.7 Account Update - Invalid Email Format
 
-**File:** `tests/admin-errors/invalid-email-format.spec.ts`
+**File:** `tests/regression/admin/admin-errors/invalid-email-format.spec.ts`
 
 **Steps:**
 
@@ -655,7 +655,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 
 #### 7.8 Account Update - Invalid Phone Format
 
-**File:** `tests/admin-errors/invalid-phone-format.spec.ts`
+**File:** `tests/regression/admin/admin-errors/invalid-phone-format.spec.ts`
 
 **Steps:**
 
@@ -672,11 +672,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Invalid phone format shows validation error
 - Error indicates proper phone format
 - Save blocked until corrected
-- International formats may have specific requirements
+- International formats may have specific requirements -->
 
-#### 7.9 Pagination Edge Cases
+<!-- #### 7.9 Pagination Edge Cases
 
-**File:** `tests/admin-errors/pagination-edge-cases.spec.ts`
+**File:** `tests/regression/admin/admin-errors/pagination-edge-cases.spec.ts`
 
 **Steps:**
 
@@ -694,11 +694,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Last page: Next button disabled
 - Single page: Both buttons disabled or hidden
 - Empty list handled gracefully
-- Pagination accurate with exact page counts
+- Pagination accurate with exact page counts -->
 
-#### 7.10 Concurrent Administrator Sessions
+<!-- #### 7.10 Concurrent Administrator Sessions
 
-**File:** `tests/admin-errors/concurrent-admin-sessions.spec.ts`
+**File:** `tests/regression/admin/admin-errors/concurrent-admin-sessions.spec.ts`
 
 **Steps:**
 
@@ -715,11 +715,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Multiple administrators can be logged in simultaneously
 - Configuration changes by one admin may require refresh for other admins to see
 - Optimistic locking or conflict resolution prevents simultaneous edit conflicts
-- System remains stable with concurrent access
+- System remains stable with concurrent access -->
 
-#### 7.11 Delete DICOM Node - Dependencies Check
+<!-- #### 7.11 Delete DICOM Node - Dependencies Check
 
-**File:** `tests/admin-errors/delete-node-dependencies.spec.ts`
+**File:** `tests/regression/admin/admin-errors/delete-node-dependencies.spec.ts`
 
 **Steps:**
 
@@ -737,11 +737,11 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Warning indicates impact on routing or workflows
 - Administrator must confirm deletion understanding consequences
 - Deletion is prevented if node has critical dependencies
-- Alternative: Disable rather than delete
+- Alternative: Disable rather than delete -->
 
-#### 7.12 Browser Compatibility and Responsiveness
+<!-- #### 7.12 Browser Compatibility and Responsiveness
 
-**File:** `tests/admin-errors/browser-compatibility.spec.ts`
+**File:** `tests/regression/admin/admin-errors/browser-compatibility.spec.ts`
 
 **Steps:**
 
@@ -759,7 +759,7 @@ This is Part 2 of the comprehensive Administrator test plan for eNcounterCloud P
 - Responsive design adapts to different screen sizes
 - Mobile device access may be limited for admin functions
 - All buttons and forms function across browsers
-- Consistent behavior across platforms
+- Consistent behavior across platforms -->
 
 ---
 

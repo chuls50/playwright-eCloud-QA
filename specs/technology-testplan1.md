@@ -12,7 +12,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 1.1 Technology User Login - Valid Credentials
 
-**File:** `tests/technology-authentication/technology-login-valid.spec.ts`
+**File:** `tests/regression/technology/technology-authentication/technology-login-valid.spec.ts`
 
 **Steps:**
 
@@ -34,7 +34,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 1.2 Technology User Login - Invalid Credentials
 
-**File:** `tests/technology-authentication/technology-login-invalid.spec.ts`
+**File:** `tests/regression/technology/technology-authentication/technology-login-invalid.spec.ts`
 
 **Steps:**
 
@@ -55,7 +55,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 1.3 EULA Acceptance - First Time Technology User Login
 
-**File:** `tests/technology-authentication/eula-acceptance.spec.ts`
+**File:** `tests/regression/technology/technology-authentication/eula-acceptance.spec.ts`
 
 **Steps:**
 
@@ -77,7 +77,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 1.4 Technology User Role Permissions Verification
 
-**File:** `tests/technology-authentication/technology-permissions.spec.ts`
+**File:** `tests/regression/technology/technology-authentication/technology-permissions.spec.ts`
 
 **Steps:**
 
@@ -98,7 +98,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 1.5 Technology User Session Management
 
-**File:** `tests/technology-authentication/session-management.spec.ts`
+**File:** `tests/regression/technology/technology-authentication/session-management.spec.ts`
 
 **Steps:**
 
@@ -122,7 +122,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 2.1 Pending Studies - Technology Support Queue
 
-**File:** `tests/technology-dashboard/pending-studies-display.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/pending-studies-display.spec.ts`
 
 **Steps:**
 
@@ -145,7 +145,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 2.2 Pending Studies - Technology Study Access
 
-**File:** `tests/technology-dashboard/pending-study-access.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/pending-study-access.spec.ts`
 
 **Steps:**
 
@@ -167,7 +167,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 2.3 Pending Studies - Queue Pagination
 
-**File:** `tests/technology-dashboard/pending-pagination.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/pending-pagination.spec.ts`
 
 **Steps:**
 
@@ -188,7 +188,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 2.4 Pending Studies - Empty Queue Handling
 
-**File:** `tests/technology-dashboard/pending-empty-state.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/pending-empty-state.spec.ts`
 
 **Steps:**
 
@@ -211,7 +211,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 3.1 Reviewed Studies - Technology Review History
 
-**File:** `tests/technology-dashboard/reviewed-studies-display.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/reviewed-studies-display.spec.ts`
 
 **Steps:**
 
@@ -232,7 +232,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 3.2 Reviewed Studies - Post-Review Technology Analysis
 
-**File:** `tests/technology-dashboard/reviewed-study-access.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/reviewed-study-access.spec.ts`
 
 **Steps:**
 
@@ -253,7 +253,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 3.3 Reviewed Studies - Technology Performance Monitoring
 
-**File:** `tests/technology-dashboard/reviewed-studies-management.spec.ts`
+**File:** `tests/regression/technology/technology-dashboard/reviewed-studies-management.spec.ts`
 
 **Steps:**
 
@@ -276,7 +276,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.1 DICOM Viewer - Patient Information Header
 
-**File:** `tests/technology-viewer/patient-identification.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/patient-identification.spec.ts`
 
 **Steps:**
 
@@ -296,7 +296,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.2 DICOM Viewer - Technology Toolbar Access
 
-**File:** `tests/technology-viewer/toolbar-functionality.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/toolbar-functionality.spec.ts`
 
 **Steps:**
 
@@ -317,7 +317,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.3 DICOM Viewer - Series and Image Navigation
 
-**File:** `tests/technology-viewer/series-navigation.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/series-navigation.spec.ts`
 
 **Steps:**
 
@@ -338,7 +338,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.4 DICOM Viewer - Image Zoom and Magnification
 
-**File:** `tests/technology-viewer/zoom-controls.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/zoom-controls.spec.ts`
 
 **Steps:**
 
@@ -361,7 +361,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.5 DICOM Viewer - Image Enhancement Tools
 
-**File:** `tests/technology-viewer/image-enhancement.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/image-enhancement.spec.ts`
 
 **Steps:**
 
@@ -383,7 +383,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.6 DICOM Viewer - Image Polarity Inversion
 
-**File:** `tests/technology-viewer/image-invert.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/image-invert.spec.ts`
 
 **Steps:**
 
@@ -404,7 +404,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.7 DICOM Viewer - Image Reset and Refresh
 
-**File:** `tests/technology-viewer/image-refresh.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/image-refresh.spec.ts`
 
 **Steps:**
 
@@ -425,7 +425,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 4.8 DICOM Viewer - Multi-Frame Image Navigation
 
-**File:** `tests/technology-viewer/multiframe-navigation.spec.ts`
+**File:** `tests/regression/technology/technology-viewer/multiframe-navigation.spec.ts`
 
 **Steps:**
 
@@ -450,7 +450,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 5.1 Technology Reporting - Report Interface Access
 
-**File:** `tests/technology-documentation/report-access.spec.ts`
+**File:** `tests/regression/technology/technology-documentation/report-access.spec.ts`
 
 **Steps:**
 
@@ -469,7 +469,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 5.2 Technology Reporting - Template Selection
 
-**File:** `tests/technology-documentation/report-templates.spec.ts`
+**File:** `tests/regression/technology/technology-documentation/report-templates.spec.ts`
 
 **Steps:**
 
@@ -489,7 +489,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 5.3 Technology Notes - System Analysis Documentation
 
-**File:** `tests/technology-documentation/technology-notes.spec.ts`
+**File:** `tests/regression/technology/technology-documentation/technology-notes.spec.ts`
 
 **Steps:**
 
@@ -511,7 +511,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 5.4 Technology Review - Study Completion
 
-**File:** `tests/technology-documentation/technology-review.spec.ts`
+**File:** `tests/regression/technology/technology-documentation/technology-review.spec.ts`
 
 **Steps:**
 
@@ -533,7 +533,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 5.5 Technology Attachments - Supporting Documentation
 
-**File:** `tests/technology-documentation/technology-attachments.spec.ts`
+**File:** `tests/regression/technology/technology-documentation/technology-attachments.spec.ts`
 
 **Steps:**
 
@@ -557,7 +557,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 6.1 Patient Administration - Technology Data Management
 
-**File:** `tests/technology-admin/patient-administration.spec.ts`
+**File:** `tests/regression/technology/technology-admin/patient-administration.spec.ts`
 
 **Steps:**
 
@@ -577,7 +577,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 6.2 Patient List - Technology Data Access
 
-**File:** `tests/technology-admin/patient-list-management.spec.ts`
+**File:** `tests/regression/technology/technology-admin/patient-list-management.spec.ts`
 
 **Steps:**
 
@@ -598,7 +598,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 6.3 Worklist Management - Technology Task Organization
 
-**File:** `tests/technology-admin/worklist-management.spec.ts`
+**File:** `tests/regression/technology/technology-admin/worklist-management.spec.ts`
 
 **Steps:**
 
@@ -618,7 +618,7 @@ This comprehensive test plan documents all features and functionality for the Te
 
 #### 6.4 Study Management - Technology Study Operations
 
-**File:** `tests/technology-admin/study-management.spec.ts`
+**File:** `tests/regression/technology/technology-admin/study-management.spec.ts`
 
 **Steps:**
 

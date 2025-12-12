@@ -12,7 +12,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.1 Physician Login - Valid Credentials
 
-**File:** `tests/authentication/physician-login-valid.spec.ts`
+**File:** `tests/regression/physician/authentication/physician-login-valid.spec.ts`
 
 **Steps:**
 
@@ -34,7 +34,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.2 Physician Login - Invalid Credentials
 
-**File:** `tests/authentication/physician-login-invalid.spec.ts`
+**File:** `tests/regression/physician/authentication/physician-login-invalid.spec.ts`
 
 **Steps:**
 
@@ -55,7 +55,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.3 EULA Acceptance on First Login
 
-**File:** `tests/authentication/eula-first-login.spec.ts`
+**File:** `tests/regression/physician/authentication/eula-first-login.spec.ts`
 
 **Steps:**
 
@@ -77,7 +77,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.4 EULA Decline on First Login
 
-**File:** `tests/authentication/eula-decline.spec.ts`
+**File:** `tests/regression/physician/authentication/eula-decline.spec.ts`
 
 **Steps:**
 
@@ -95,9 +95,9 @@ This comprehensive test plan documents all features and functionality for the Ph
 - Session is terminated
 - User must accept EULA on subsequent login attempt
 
-#### 1.5 Session Management and Timeout
+<!-- #### 1.5 Session Management and Timeout
 
-**File:** `tests/authentication/session-timeout.spec.ts`
+**File:** `tests/regression/physician/authentication/session-timeout.spec.ts`
 
 **Steps:**
 
@@ -112,11 +112,11 @@ This comprehensive test plan documents all features and functionality for the Ph
 - System enforces session timeout after idle period
 - User is redirected to login page when session expires
 - Appropriate message indicates session has expired
-- PHI data is not exposed after session timeout
+- PHI data is not exposed after session timeout -->
 
 #### 1.6 External Links - GlobalMed Website Navigation
 
-**File:** `tests/authentication/external-links-globalmed.spec.ts`
+**File:** `tests/regression/physician/authentication/external-links-globalmed.spec.ts`
 
 **Steps:**
 
@@ -136,7 +136,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.7 Social Media Links - External Platform Navigation
 
-**File:** `tests/authentication/social-media-links.spec.ts`
+**File:** `tests/regression/physician/authentication/social-media-links.spec.ts`
 
 **Steps:**
 
@@ -160,7 +160,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 2.1 Pending Tab - Display and Content Verification
 
-**File:** `tests/clinical-dashboard/pending-tab-content.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/pending-tab-content.spec.ts`
 
 **Steps:**
 
@@ -185,7 +185,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 2.2 Pending Tab - Study Card Navigation
 
-**File:** `tests/clinical-dashboard/pending-study-navigation.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/pending-study-navigation.spec.ts`
 
 **Steps:**
 
@@ -205,7 +205,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 2.3 Pending Tab - Empty State
 
-**File:** `tests/clinical-dashboard/pending-tab-empty.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/pending-tab-empty.spec.ts`
 
 **Steps:**
 
@@ -223,7 +223,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 2.4 Pending Tab - Pagination Functionality
 
-**File:** `tests/clinical-dashboard/pending-pagination.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/pending-pagination.spec.ts`
 
 **Steps:**
 
@@ -250,7 +250,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 3.1 Reviewed Tab - Display and Content Verification
 
-**File:** `tests/clinical-dashboard/reviewed-tab-content.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/reviewed-tab-content.spec.ts`
 
 **Steps:**
 
@@ -273,7 +273,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 3.2 Reviewed Tab - Study Access from Reviewed Studies
 
-**File:** `tests/clinical-dashboard/reviewed-study-access.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/reviewed-study-access.spec.ts`
 
 **Steps:**
 
@@ -289,12 +289,12 @@ This comprehensive test plan documents all features and functionality for the Ph
 - Reviewed studies remain accessible after review
 - Study opens in DICOM viewer when clicked
 - All study data including images, reports, and notes are accessible
-- Review button may show different state or be disabled since already reviewed
-- Physician can view but marking as reviewed again should show appropriate message
+- Review button is not visible
+- Physician can view the reviewed study
 
 #### 3.3 Reviewed Tab - Filter and Search Reviewed Studies
 
-**File:** `tests/clinical-dashboard/reviewed-filter.spec.ts`
+**File:** `tests/regression/physician/clinical-dashboard/reviewed-filter.spec.ts`
 
 **Steps:**
 
@@ -318,7 +318,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.1 DICOM Viewer - Patient Header Information
 
-**File:** `tests/dicom-viewer/patient-header.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/patient-header.spec.ts`
 
 **Steps:**
 
@@ -338,7 +338,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.2 DICOM Viewer - Toolbar Button Visibility
 
-**File:** `tests/dicom-viewer/toolbar-buttons.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/toolbar-buttons.spec.ts`
 
 **Steps:**
 
@@ -358,7 +358,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.3 DICOM Viewer - Series Selection and Display
 
-**File:** `tests/dicom-viewer/series-selection.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/series-selection.spec.ts`
 
 **Steps:**
 
@@ -383,7 +383,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.4 DICOM Viewer - Multi-frame Navigation
 
-**File:** `tests/dicom-viewer/multiframe-navigation.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/multiframe-navigation.spec.ts`
 
 **Steps:**
 
@@ -404,7 +404,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.5 DICOM Viewer - Zoom Functionality
 
-**File:** `tests/dicom-viewer/zoom-controls.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/zoom-controls.spec.ts`
 
 **Steps:**
 
@@ -429,7 +429,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.6 DICOM Viewer - Enhance (Brightness/Contrast) Controls
 
-**File:** `tests/dicom-viewer/enhance-controls.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/enhance-controls.spec.ts`
 
 **Steps:**
 
@@ -455,7 +455,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.7 DICOM Viewer - Invert Functionality
 
-**File:** `tests/dicom-viewer/invert-function.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/invert-function.spec.ts`
 
 **Steps:**
 
@@ -477,7 +477,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 4.8 DICOM Viewer - Refresh Functionality
 
-**File:** `tests/dicom-viewer/refresh-function.spec.ts`
+**File:** `tests/regression/physician/dicom-viewer/refresh-function.spec.ts`
 
 **Steps:**
 

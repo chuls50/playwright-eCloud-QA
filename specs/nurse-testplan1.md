@@ -12,7 +12,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 1.1. Nurse Login - Valid Credentials
 
-**File:** `tests/nurse-authentication/nurse-login-valid.spec.ts`
+**File:** `tests/regression/nurse/nurse-authentication/nurse-login-valid.spec.ts`
 
 **Steps:**
 
@@ -34,7 +34,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 1.2 Nurse Login - Invalid Credentials
 
-**File:** `tests/nurse-authentication/nurse-login-invalid.spec.ts`
+**File:** `tests/regression/nurse/nurse-authentication/nurse-login-invalid.spec.ts`
 
 **Steps:**
 
@@ -55,7 +55,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 1.3 EULA Acceptance on First Nurse Login
 
-**File:** `tests/nurse-authentication/nurse-eula-acceptance.spec.ts`
+**File:** `tests/regression/nurse/nurse-authentication/nurse-eula-acceptance.spec.ts`
 
 **Steps:**
 
@@ -76,7 +76,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 1.4 Nurse Session Management and Timeout
 
-**File:** `tests/nurse-authentication/nurse-session-timeout.spec.ts`
+**File:** `tests/regression/nurse/nurse-authentication/nurse-session-timeout.spec.ts`
 
 **Steps:**
 
@@ -95,7 +95,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 1.5 Nurse Role Permissions Verification
 
-**File:** `tests/nurse-authentication/nurse-permissions.spec.ts`
+**File:** `tests/regression/nurse/nurse-authentication/nurse-permissions.spec.ts`
 
 **Steps:**
 
@@ -121,7 +121,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 2.1 Pending Studies - Display and Content
 
-**File:** `tests/nurse-clinical/pending-studies-display.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/pending-studies-display.spec.ts`
 
 **Steps:**
 
@@ -144,7 +144,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 2.2 Pending Studies - Study Access and Navigation
 
-**File:** `tests/nurse-clinical/pending-study-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/pending-study-access.spec.ts`
 
 **Steps:**
 
@@ -165,7 +165,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 2.3 Pending Studies - Pagination Functionality
 
-**File:** `tests/nurse-clinical/pending-pagination.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/pending-pagination.spec.ts`
 
 **Steps:**
 
@@ -187,7 +187,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 2.4 Pending Studies - Empty State Handling
 
-**File:** `tests/nurse-clinical/pending-empty-state.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/pending-empty-state.spec.ts`
 
 **Steps:**
 
@@ -209,7 +209,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 3.1 Reviewed Studies - Display and Content
 
-**File:** `tests/nurse-clinical/reviewed-studies-display.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/reviewed-studies-display.spec.ts`
 
 **Steps:**
 
@@ -232,7 +232,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 3.2 Reviewed Studies - Post-Review Access
 
-**File:** `tests/nurse-clinical/reviewed-study-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/reviewed-study-access.spec.ts`
 
 **Steps:**
 
@@ -253,7 +253,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 3.3 Reviewed Studies - Filtering and Search
 
-**File:** `tests/nurse-clinical/reviewed-studies-filter.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/reviewed-studies-filter.spec.ts`
 
 **Steps:**
 
@@ -277,7 +277,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.1 DICOM Viewer - Patient Header Information
 
-**File:** `tests/nurse-dicom/patient-header-display.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/patient-header-display.spec.ts`
 
 **Steps:**
 
@@ -297,7 +297,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.2 DICOM Viewer - Toolbar Button Access
 
-**File:** `tests/nurse-dicom/toolbar-accessibility.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/toolbar-accessibility.spec.ts`
 
 **Steps:**
 
@@ -317,7 +317,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.3 DICOM Viewer - Series Selection and Image Display
 
-**File:** `tests/nurse-dicom/series-navigation.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/series-navigation.spec.ts`
 
 **Steps:**
 
@@ -339,7 +339,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.4 DICOM Viewer - Multi-frame Navigation
 
-**File:** `tests/nurse-dicom/image-navigation.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/image-navigation.spec.ts`
 
 **Steps:**
 
@@ -360,7 +360,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.5 DICOM Viewer - Zoom Controls for Clinical Review
 
-**File:** `tests/nurse-dicom/zoom-functionality.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/zoom-functionality.spec.ts`
 
 **Steps:**
 
@@ -383,7 +383,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.6 DICOM Viewer - Image Enhancement Controls
 
-**File:** `tests/nurse-dicom/image-enhancement.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/image-enhancement.spec.ts`
 
 **Steps:**
 
@@ -407,7 +407,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.7 DICOM Viewer - Invert Functionality
 
-**File:** `tests/nurse-dicom/image-inversion.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/image-inversion.spec.ts`
 
 **Steps:**
 
@@ -429,7 +429,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 4.8 DICOM Viewer - Refresh and Reset
 
-**File:** `tests/nurse-dicom/refresh-reset.spec.ts`
+**File:** `tests/regression/nurse/nurse-dicom/refresh-reset.spec.ts`
 
 **Steps:**
 
@@ -454,7 +454,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 5.1 Clinical Reports - Access and Template Selection
 
-**File:** `tests/nurse-clinical/report-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/report-access.spec.ts`
 
 **Steps:**
 
@@ -475,7 +475,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 5.2 Clinical Reports - Template Availability
 
-**File:** `tests/nurse-clinical/report-templates.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/report-templates.spec.ts`
 
 **Steps:**
 
@@ -497,7 +497,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 5.3 Clinical Notes - Creation and Management
 
-**File:** `tests/nurse-clinical/notes-functionality.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/notes-functionality.spec.ts`
 
 **Steps:**
 
@@ -518,7 +518,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 5.4 Study Review - Mark as Reviewed by Nurse
 
-**File:** `tests/nurse-clinical/study-review.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/study-review.spec.ts`
 
 **Steps:**
 
@@ -541,7 +541,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 5.5 Study Sharing - Clinical Collaboration
 
-**File:** `tests/nurse-clinical/study-sharing.spec.ts`
+**File:** `tests/regression/nurse/nurse-clinical/study-sharing.spec.ts`
 
 **Steps:**
 
@@ -566,7 +566,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 6.1 Patient Management - Patient List Access
 
-**File:** `tests/nurse-admin/patient-list-management.spec.ts`
+**File:** `tests/regression/nurse/nurse-admin/patient-list-management.spec.ts`
 
 **Steps:**
 
@@ -588,7 +588,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 6.2 Patient Management - Create and Search Operations
 
-**File:** `tests/nurse-admin/patient-operations.spec.ts`
+**File:** `tests/regression/nurse/nurse-admin/patient-operations.spec.ts`
 
 **Steps:**
 
@@ -609,7 +609,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 6.3 Worklist Management - Clinical Task List
 
-**File:** `tests/nurse-admin/worklist-access.spec.ts`
+**File:** `tests/regression/nurse/nurse-admin/worklist-access.spec.ts`
 
 **Steps:**
 
@@ -628,7 +628,7 @@ This comprehensive test plan documents all features and functionality for the Nu
 
 #### 6.4 View Studies - Alternative Study Access
 
-**File:** `tests/nurse-admin/view-studies.spec.ts`
+**File:** `tests/regression/nurse/nurse-admin/view-studies.spec.ts`
 
 **Steps:**
 

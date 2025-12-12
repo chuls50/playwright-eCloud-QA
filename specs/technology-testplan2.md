@@ -12,7 +12,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.1 Technology User Account - Professional Profile
 
-**File:** `tests/technology-account/profile-information.spec.ts`
+**File:** `tests/regression/technology/technology-account/profile-information.spec.ts`
 
 **Steps:**
 
@@ -35,7 +35,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.2 Technology User Account - Email Configuration
 
-**File:** `tests/technology-account/email-configuration.spec.ts`
+**File:** `tests/regression/technology/technology-account/email-configuration.spec.ts`
 
 **Steps:**
 
@@ -57,7 +57,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.3 Technology User Account - SMS Notification Setup
 
-**File:** `tests/technology-account/sms-configuration.spec.ts`
+**File:** `tests/regression/technology/technology-account/sms-configuration.spec.ts`
 
 **Steps:**
 
@@ -78,7 +78,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.4 Technology User Account - Address Information
 
-**File:** `tests/technology-account/address-management.spec.ts`
+**File:** `tests/regression/technology/technology-account/address-management.spec.ts`
 
 **Steps:**
 
@@ -99,7 +99,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.5 Technology User Account - Notification Settings
 
-**File:** `tests/technology-account/notification-preferences.spec.ts`
+**File:** `tests/regression/technology/technology-account/notification-preferences.spec.ts`
 
 **Steps:**
 
@@ -120,7 +120,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 7.6 Technology User Account - Security and Password Management
 
-**File:** `tests/technology-account/account-security.spec.ts`
+**File:** `tests/regression/technology/technology-account/account-security.spec.ts`
 
 **Steps:**
 
@@ -146,7 +146,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 8.1 Study Search - Technology Quick Filters
 
-**File:** `tests/technology-search/quick-search-filters.spec.ts`
+**File:** `tests/regression/technology/technology-search/quick-search-filters.spec.ts`
 
 **Steps:**
 
@@ -168,7 +168,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 8.2 Study Search - Advanced Technology Search
 
-**File:** `tests/technology-search/advanced-search-capabilities.spec.ts`
+**File:** `tests/regression/technology/technology-search/advanced-search-capabilities.spec.ts`
 
 **Steps:**
 
@@ -192,7 +192,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 8.3 Study Search - Modality-Based Technology Analysis
 
-**File:** `tests/technology-search/modality-technology-filtering.spec.ts`
+**File:** `tests/regression/technology/technology-search/modality-technology-filtering.spec.ts`
 
 **Steps:**
 
@@ -213,7 +213,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 8.4 Study Search - Technology Results Management
 
-**File:** `tests/technology-search/technology-search-results.spec.ts`
+**File:** `tests/regression/technology/technology-search/technology-search-results.spec.ts`
 
 **Steps:**
 
@@ -234,7 +234,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 8.5 Study Search - Technology Search Validation
 
-**File:** `tests/technology-search/search-validation.spec.ts`
+**File:** `tests/regression/technology/technology-search/search-validation.spec.ts`
 
 **Steps:**
 
@@ -259,7 +259,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 9.1 Technology Sharing - Share Management
 
-**File:** `tests/technology-sharing/technology-shares-overview.spec.ts`
+**File:** `tests/regression/technology/technology-sharing/technology-shares-overview.spec.ts`
 
 **Steps:**
 
@@ -280,7 +280,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 9.2 Technology Passcode Management - Secure Study Access
 
-**File:** `tests/technology-sharing/technology-passcode-management.spec.ts`
+**File:** `tests/regression/technology/technology-sharing/technology-passcode-management.spec.ts`
 
 **Steps:**
 
@@ -302,7 +302,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 9.3 Technology Study Sharing - Inter-Institutional Support
 
-**File:** `tests/technology-sharing/technology-study-sharing.spec.ts`
+**File:** `tests/regression/technology/technology-sharing/technology-study-sharing.spec.ts`
 
 **Steps:**
 
@@ -324,7 +324,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 9.4 Technology System Optimization - Inter-Facility Collaboration
 
-**File:** `tests/technology-sharing/technology-optimization-sharing.spec.ts`
+**File:** `tests/regression/technology/technology-sharing/technology-optimization-sharing.spec.ts`
 
 **Steps:**
 
@@ -345,7 +345,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 9.5 Technology Share Audit - Compliance and Tracking
 
-**File:** `tests/technology-sharing/technology-audit-trail.spec.ts`
+**File:** `tests/regression/technology/technology-sharing/technology-audit-trail.spec.ts`
 
 **Steps:**
 
@@ -370,7 +370,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 10.1 Technology System Monitoring - Review Attribution
 
-**File:** `tests/technology-integration/technology-review-attribution.spec.ts`
+**File:** `tests/regression/technology/technology-integration/technology-review-attribution.spec.ts`
 
 **Steps:**
 
@@ -391,7 +391,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 10.2 Technology-Clinical Collaboration - System Workflow
 
-**File:** `tests/technology-integration/technology-clinical-collaboration.spec.ts`
+**File:** `tests/regression/technology/technology-integration/technology-clinical-collaboration.spec.ts`
 
 **Steps:**
 
@@ -412,7 +412,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 10.3 Technology System Documentation - Monitoring Reporting
 
-**File:** `tests/technology-integration/technology-system-documentation.spec.ts`
+**File:** `tests/regression/technology/technology-integration/technology-system-documentation.spec.ts`
 
 **Steps:**
 
@@ -433,7 +433,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 10.4 System Performance Monitoring - Technology Standards
 
-**File:** `tests/technology-integration/system-performance-monitoring.spec.ts`
+**File:** `tests/regression/technology/technology-integration/system-performance-monitoring.spec.ts`
 
 **Steps:**
 
@@ -454,7 +454,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 10.5 Technology Workflow Integration - Operational Excellence
 
-**File:** `tests/technology-integration/technology-workflow-integration.spec.ts`
+**File:** `tests/regression/technology/technology-integration/technology-workflow-integration.spec.ts`
 
 **Steps:**
 
@@ -479,7 +479,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 11.1 Role-Based Access Control - Technology Scope
 
-**File:** `tests/technology-security/role-based-access-control.spec.ts`
+**File:** `tests/regression/technology/technology-security/role-based-access-control.spec.ts`
 
 **Steps:**
 
@@ -500,7 +500,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 11.2 Technology Session Security - Data Protection
 
-**File:** `tests/technology-security/technology-session-security.spec.ts`
+**File:** `tests/regression/technology/technology-security/technology-session-security.spec.ts`
 
 **Steps:**
 
@@ -521,7 +521,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 11.3 Technology Audit Trail - System Compliance
 
-**File:** `tests/technology-security/technology-audit-compliance.spec.ts`
+**File:** `tests/regression/technology/technology-security/technology-audit-compliance.spec.ts`
 
 **Steps:**
 
@@ -542,7 +542,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 11.4 Patient Privacy - Technology HIPAA Compliance
 
-**File:** `tests/technology-security/patient-privacy-technology.spec.ts`
+**File:** `tests/regression/technology/technology-security/patient-privacy-technology.spec.ts`
 
 **Steps:**
 
@@ -563,7 +563,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 11.5 Technology System Integrity - Monitoring Control
 
-**File:** `tests/technology-security/technology-system-integrity.spec.ts`
+**File:** `tests/regression/technology/technology-security/technology-system-integrity.spec.ts`
 
 **Steps:**
 
@@ -588,7 +588,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.1 Network Connectivity - Technology Error Handling
 
-**File:** `tests/technology-errors/network-technology-issues.spec.ts`
+**File:** `tests/regression/technology/technology-errors/network-technology-issues.spec.ts`
 
 **Steps:**
 
@@ -609,7 +609,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.2 System Processing Errors - Technology Recovery
 
-**File:** `tests/technology-errors/system-processing-errors.spec.ts`
+**File:** `tests/regression/technology/technology-errors/system-processing-errors.spec.ts`
 
 **Steps:**
 
@@ -630,7 +630,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.3 Technology Form Validation - Data Entry Errors
 
-**File:** `tests/technology-errors/technology-form-validation.spec.ts`
+**File:** `tests/regression/technology/technology-errors/technology-form-validation.spec.ts`
 
 **Steps:**
 
@@ -651,7 +651,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.4 Concurrent Technology Access - Multi-User Scenarios
 
-**File:** `tests/technology-errors/concurrent-technology-access.spec.ts`
+**File:** `tests/regression/technology/technology-errors/concurrent-technology-access.spec.ts`
 
 **Steps:**
 
@@ -671,7 +671,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.5 Technology Performance - System Load Testing
 
-**File:** `tests/technology-errors/technology-performance.spec.ts`
+**File:** `tests/regression/technology/technology-errors/technology-performance.spec.ts`
 
 **Steps:**
 
@@ -692,7 +692,7 @@ This is Part 2 of the comprehensive Technology User test plan for eNcounterCloud
 
 #### 12.6 Technology Browser Compatibility - Multi-Platform Testing
 
-**File:** `tests/technology-errors/technology-browser-compatibility.spec.ts`
+**File:** `tests/regression/technology/technology-errors/technology-browser-compatibility.spec.ts`
 
 **Steps:**
 
