@@ -95,7 +95,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 - Session is terminated
 - User must accept EULA on subsequent login attempt
 
-<!-- #### 1.5 Session Management and Timeout
+#### 1.5 Session Management and Timeout
 
 **File:** `tests/regression/physician/authentication/session-timeout.spec.ts`
 
@@ -112,7 +112,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 - System enforces session timeout after idle period
 - User is redirected to login page when session expires
 - Appropriate message indicates session has expired
-- PHI data is not exposed after session timeout -->
+- PHI data is not exposed after session timeout
 
 #### 1.6 External Links - GlobalMed Website Navigation
 

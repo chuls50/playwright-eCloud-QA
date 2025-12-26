@@ -468,6 +468,7 @@ This is Part 2 of the comprehensive Nurse test plan for eNcounterCloud PACS. Thi
 - Task completion tracking works for nurses
 - Worklist integrates with overall clinical workflow
 - Nursing productivity tools are effective
+<!--
 
 ### 11. Security and Compliance - Nursing Role (CRITICAL PRIORITY)
 
@@ -733,4 +734,4 @@ Professional Licensing: Nurses have License ID field (like physicians) and Speci
 Role Attribution: Review actions are attributed specifically to nurse users
 Clinical Administration: Access to patient management, worklist, and study administration features
 Same Clinical Capabilities: Full access to study review, reporting, sharing, and documentation
-The test plans document the complete nurse workflow while maintaining the same quality and structure as the physician and administrator test plans, ensuring the Product team can extract comprehensive user stories for the nurse role.
+The test plans document the complete nurse workflow while maintaining the same quality and structure as the physician and administrator test plans, ensuring the Product team can extract comprehensive user stories for the nurse role. -->

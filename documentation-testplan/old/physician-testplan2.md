@@ -1546,7 +1546,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Data consistency maintained between admin and clinical views
 - User can switch between admin and clinical dashboards seamlessly
 
-### 15. Cross-Functional and Integration Tests (HIGH PRIORITY)
+<!-- ### 15. Cross-Functional and Integration Tests (HIGH PRIORITY)
 
 **Seed:** `tests/physician_seed.spec.ts`
 
@@ -1617,9 +1617,9 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Bulk operations available where applicable (e.g., bulk delete, bulk transfer)
 - Confirmation prompts for bulk operations
 - Bulk operations complete successfully for all selected items
-- Error handling for partial failures in bulk operations
+- Error handling for partial failures in bulk operations -->
 
-#### 15.4 Security and Access Control - Role-Based Permissions
+<!-- #### 15.4 Security and Access Control - Role-Based Permissions
 
 **File:** `tests/regression/physician/security/physician-role-permissions.spec.ts`
 
@@ -1638,9 +1638,9 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Physician can view all patients from their institution (if checkbox is enabled)
 - Physician cannot access functions outside their role (if such restrictions exist)
 - PHI is protected and only accessible to authorized physician
-- Audit logs record physician access to studies
+- Audit logs record physician access to studies -->
 
-#### 15.5 HIPAA Compliance - PHI Protection
+<!-- #### 15.5 HIPAA Compliance - PHI Protection
 
 **File:** `tests/regression/physician/security/hipaa-compliance.spec.ts`
 
@@ -1661,7 +1661,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 - Session timeout protects unattended workstations
 - Audit trail logs all PHI access
 - Password policies enforce strong authentication
-- Data at rest is encrypted (AES-256)
+- Data at rest is encrypted (AES-256) -->
 
 <!-- #### 15.6 Performance - Large Study Handling
 
@@ -1776,7 +1776,7 @@ This is Part 2 of the comprehensive physician user test plan for eNcounterCloud 
 
 ---
 
-Summary of What Was Created:
+<!-- Summary of What Was Created:
 Part 1 (physician-testplan1.md) covers:
 Authentication and Security (7 tests) - CRITICAL PRIORITY
 Clinical Dashboard - Pending Studies Tab (4 tests) - HIGH PRIORITY
@@ -1804,4 +1804,4 @@ Key Features:
 ✅ User story extraction ready - structured for Product team to derive requirements
 ✅ Based on actual application exploration - all features verified through browser testing
 
-This test plan provides your Product team with the comprehensive documentation they need to extract user stories and requirements for the legacy eCloud application!
+This test plan provides your Product team with the comprehensive documentation they need to extract user stories and requirements for the legacy eCloud application! -->

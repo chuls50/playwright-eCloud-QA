@@ -89,19 +89,44 @@ playwright-eCloud-QA/
 │   └── workflows/
 │       └── playwright.yml              # CI/CD workflow configuration
 ├── tests/
+│   ├── data/                           # 🆕 CENTRALIZED TEST DATA MANAGEMENT
+│   │   ├── test-data.ts                # Core test data (users, patients, studies)
+│   │   ├── environments.ts             # Environment-specific configuration
+│   │   ├── data-generators.ts          # Dynamic data generation utilities
+│   │   ├── physician-data.ts           # Physician-specific test scenarios
+│   │   ├── admin-data.ts               # Administrator-specific data
+│   │   ├── nurse-data.ts               # Nurse-specific test data
+│   │   ├── technician-data.ts          # Technician workflow data
+│   │   ├── technology-data.ts          # Technology role data
+│   │   ├── guest-data.ts               # Guest user scenarios
+│   │   └── institution-manager-data.ts # Institution manager data
 │   ├── models/
 │   │   └── base-page.ts                # Base page with reusable methods
 │   ├── regression/
-│   │   ├── administrator-user/         # Admin user tests
-│   │   ├── e3/                         # E3 feature tests
-│   │   ├── guest-user/                 # Guest user tests
-│   │   ├── institution-manager-user/   # Institution manager tests
-│   │   ├── login-page/                 # Login functionality tests
-│   │   ├── nurse-user/                 # Nurse user tests
-│   │   ├── physician-user/             # Physician user tests
-│   │   ├── technician-user/            # Technician user tests
-│   │   └── technology-user/            # Technology user tests
-│   └── example.spec.ts                 # Example test file
+│   │   ├── administrative/
+│   │   │   ├── administrator/          # Admin user tests
+│   │   │   └── institution-manager/    # Institution manager tests
+│   │   ├── clinician/
+│   │   │   ├── nurse/                  # Nurse user tests
+│   │   │   ├── physician/              # Physician user tests
+│   │   │   ├── technician/             # Technician user tests
+│   │   │   └── technology/             # Technology user tests
+│   │   └── shared/
+│   │       └── authentication/         # Shared authentication tests
+│   ├── seed/                           # Environment setup scripts
+│   │   ├── admin_seed.spec.ts          # Admin environment setup
+│   │   ├── guest_seed.spec.ts          # Guest environment setup
+│   │   ├── institution_manager_seed.spec.ts
+│   │   ├── nurse_seed.spec.ts          # Nurse environment setup
+│   │   ├── physician_seed.spec.ts      # Physician environment setup
+│   │   ├── technician_seed.spec.ts     # Technician environment setup
+│   │   └── technology_seed.spec.ts     # Technology environment setup
+│   └── old-examples/                   # Legacy test examples
+├── documentation-testplan/             # Test plan documentation
+│   ├── eCloudModern-feature-list.md    # Feature documentation
+│   ├── eCloudModernAutomation-AzureTestPlan.csv
+│   ├── testdata-agent.md               # 🆕 GitHub agent guide
+│   └── AzureTestPlan/                  # Azure DevOps integration
 ├── test-results/                       # Test execution results (git-ignored)
 ├── playwright-report/                  # HTML test reports (git-ignored)
 ├── playwright.config.ts                # Playwright configuration
