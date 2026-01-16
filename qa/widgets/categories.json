@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"ef2aed1a51c51d29bcc222fb25af0210","name":"Flaky tests","statistic":{"failed":2,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":7}},{"uid":"40f16b7589a18610ab68a6632973ea15","name":"Failed tests","statistic":{"failed":2,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":2}}]}
+{"total":1,"items":[{"uid":"ef2aed1a51c51d29bcc222fb25af0210","name":"Flaky tests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}
