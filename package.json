@@ -1,16 +1,26 @@
 {
   "name": "playwright-ecloud-qa",
   "version": "1.0.0",
-  "description": "",
+  "description": "eCloud QA Automation with Playwright and Allure Reporting",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "npx playwright test",
+    "test:regression": "npx playwright test tests/regression",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report:open": "npx playwright show-report",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": ["playwright", "testing", "automation", "ecloud", "qa", "allure"],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^24.10.2",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "allure-playwright": "^3.1.0"
   }
 }
