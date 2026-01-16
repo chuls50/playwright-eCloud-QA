@@ -1,12 +1,8 @@
 # 🏥 eCloud QA Automation Framework
 
-![eCloud Logo](https://via.placeholder.com/150x50/0066cc/ffffff?text=eCloud+QA)
-
-[![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
-[![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
-[![Quality Gate](https://img.shields.io/badge/Quality-Gate-brightgreen)](https://github.com/chuls50/playwright-eCloud-QA)
 [![Playwright](https://img.shields.io/badge/Playwright-1.57.0-blue)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-orange)](https://allure.qatools.ru/)
 
 TypeScript-based test automation framework for eNcounterCloud (eCloud) using Playwright with comprehensive Allure reporting for the secure cloud-based medical image archiving and management system.
 
@@ -16,7 +12,6 @@ TypeScript-based test automation framework for eNcounterCloud (eCloud) using Pla
 
 - **[🔥 QA Environment Report](https://chuls50.github.io/playwright-eCloud-QA/qa/)** - QA environment test results with Allure reporting
 - **[🚀 UAT Environment Report](https://chuls50.github.io/playwright-eCloud-QA/uat/)** - UAT environment test results with Allure reporting
-- **[📈 Test Trends & Analytics](https://chuls50.github.io/playwright-eCloud-QA/)** - Historical test data and performance metrics
 
 [![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
 [![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
@@ -378,82 +373,6 @@ Visit **[Live Test Dashboard](https://chuls50.github.io/playwright-eCloud-QA/)**
 - **⚡ Flaky Test Detection** - Identify unstable tests
 - **📱 Multi-Browser Results** - Cross-browser compatibility status
 
-## 🧪 Writing Effective Tests
-
-### 🎯 Test Naming Conventions
-
-```typescript
-// Format: [Role] can [Action] [Expected Result] @tags
-test('Physician can search patient by ID successfully @smoke @physician', async ({ page }) => {
-  // Test implementation
-});
-
-test('Admin can create new user account with valid data @admin @user-management', async ({
-  page,
-}) => {
-  // Test implementation
-});
-```
-
-### 📝 Test Documentation with Allure
-
-```typescript
-import { allure } from 'allure-playwright';
-
-test('Patient image viewing workflow', async ({ page, physicianAuth }) => {
-  await allure.description('Verify physician can view patient images with proper DICOM metadata');
-  await allure.feature('Medical Imaging');
-  await allure.story('Image Viewing');
-  await allure.tag('dicom', 'physician', 'imaging');
-  await allure.severity('blocker');
-
-  await test.step('Navigate to patient images', async () => {
-    await allure.attachment('screenshot', await page.screenshot(), 'image/png');
-    // Test step implementation
-  });
-});
-```
-
-## 🔍 Debugging & Troubleshooting
-
-### 🐛 Common Issues & Solutions
-
-**❌ Issue: Tests fail with authentication errors**
-
-```bash
-# ✅ Solution: Verify environment variables
-cat .env  # Check credentials are set
-npm run test:debug -- tests/shared/authentication/
-```
-
-**❌ Issue: Allure report not generating**
-
-```bash
-# ✅ Solution: Install Allure CLI and regenerate
-npm install -g allure-commandline
-npm run allure:generate
-```
-
-**❌ Issue: Browser not launching in CI**
-
-```bash
-# ✅ Solution: Ensure proper CI configuration
-CI=true npx playwright install --with-deps
-```
-
-### 🔧 Debug Mode Testing
-
-```bash
-# Visual debugging with browser
-npm run test:debug
-
-# Headed mode for observation
-npm run test:headed
-
-# Trace viewer for detailed analysis
-npx playwright show-trace trace.zip
-```
-
 ## 📚 Resources & Documentation
 
 ### 🔗 External Links
@@ -479,22 +398,14 @@ npx playwright show-trace trace.zip
 - **Team Lead**: Contact your assigned team lead
 - **Documentation**: Check [project wiki](https://github.com/chuls50/playwright-eCloud-QA/wiki)
 
-**🎯 Quick Links**
-
-- [🔥 Live Test Results](https://chuls50.github.io/playwright-eCloud-QA/)
-- [🚀 GitHub Actions](https://github.com/chuls50/playwright-eCloud-QA/actions)
-- [📊 Test Coverage](https://chuls50.github.io/playwright-eCloud-QA/)
-
 ---
 
 <div align="center">
 
-**🎭 Happy Testing with Playwright + Allure! 🎯**
+**🎭 Happy Testing with Playwright + MCP + Allure! 🎯**
 
 _Built with ❤️ for eCloud Quality Assurance_
 
-[![Quality Gate](https://img.shields.io/badge/Quality-Gate%20Passed-brightgreen)](https://github.com/chuls50/playwright-eCloud-QA)
-[![Test Coverage](https://img.shields.io/badge/Coverage-95%25-brightgreen)](https://chuls50.github.io/playwright-eCloud-QA/)
 [![Last Updated](https://img.shields.io/badge/Updated-January%202026-blue)](https://github.com/chuls50/playwright-eCloud-QA)
 
 </div>
