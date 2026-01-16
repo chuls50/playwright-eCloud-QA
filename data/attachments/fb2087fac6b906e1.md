@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e2]:
+  - generic [ref=e3]:
+    - img "eNcounter Cloud Logo" [ref=e5]
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - textbox "Username" [ref=e19]
+          - textbox "Password" [ref=e21]
+        - generic [ref=e22]:
+          - generic [ref=e24] [cursor=pointer]:
+            - paragraph [ref=e25]: Sign in
+            - paragraph
+          - link "Password Hint" [ref=e29] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - button "English" [ref=e34] [cursor=pointer]:
+              - generic [ref=e35]: English
+            - combobox [ref=e36]:
+              - option "English" [selected]
+              - option "Português"
+              - option "Español"
+              - option "Français"
+              - option "Tiếng Việt"
+          - generic [ref=e37]:
+            - generic [ref=e38] [cursor=pointer]: I have a passcode
+            - checkbox [ref=e39]
+      - paragraph [ref=e41]: missing username
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - paragraph [ref=e47]: Connect with us
+      - link [ref=e48] [cursor=pointer]:
+        - /url: https://www.facebook.com/globalmed
+        - img [ref=e49]
+      - link [ref=e50] [cursor=pointer]:
+        - /url: https://twitter.com/GlobalMed_USA
+        - img [ref=e51]
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://www.youtube.com/user/GlobalMediaTelemed
+        - img [ref=e53]
+      - link [ref=e54] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/839991
+        - img [ref=e55]
+    - generic [ref=e57]:
+      - link "Send feedback" [ref=e60] [cursor=pointer]:
+        - /url: https://www.globalmed.com/contact-us/
+      - link "Legal information" [ref=e63] [cursor=pointer]:
+        - /url: https://www.globalmed.com/legal
+      - link "Privacy statement" [ref=e66] [cursor=pointer]:
+        - /url: https://www.globalmed.com/legal/privacy-statement
+  - generic [ref=e68]:
+    - generic [ref=e70]:
+      - link [ref=e72] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e73]
+      - generic [ref=e74]:
+        - heading "HIPAA Compliance" [level=4] [ref=e75]
+        - paragraph [ref=e76]: Strengthens HIPAA compliance with the best security features and encryption algorithms available
+    - generic [ref=e77]:
+      - link [ref=e79] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e80]
+      - generic [ref=e81]:
+        - heading "Web Viewer" [level=4] [ref=e82]
+        - paragraph [ref=e83]: Avoids the compatibility issues of multiple DICOM viewers with a single web-based viewer which runs in your browser without additional plugins and downloads
+    - generic [ref=e84]:
+      - link [ref=e86] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e87]
+      - generic [ref=e88]:
+        - heading "PDF Reports" [level=4] [ref=e89]
+        - paragraph [ref=e90]: Increases potential for collaboration by providing helpful tools which aid the process (Passcode Access, PDF Report Generation, Email Notifications).
+    - generic [ref=e92]:
+      - text: © 2002-2026 GlobalMed
+      - superscript [ref=e93]: ®
+      - text: . All Rights Reserved. v3.0.0
+```

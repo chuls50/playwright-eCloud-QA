@@ -1,0 +1,46 @@
+❌ Physician authentication failed: page.waitForURL: Timeout 15000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+    at Object.physicianAuth (/home/runner/work/playwright-eCloud-QA/playwright-eCloud-QA/tests/fixtures/auth.fixtures.ts:38:18) {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/home/runner/work/playwright-eCloud-QA/playwright-eCloud-QA/tests/fixtures/auth.fixtures.ts',
+      line: 38,
+      column: 18,
+      function: 'Object.physicianAuth'
+    },
+    category: 'pw:api',
+    title: 'Wait for navigation',
+    apiName: 'page.waitForURL',
+    params: { info: [Object] },
+    group: undefined,
+    stepId: 'pw:api@42',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@42',
+      _title: 'Wait for navigation',
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1768598980470,
+    error: {
+      message: 'TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n' +
+        '=========================== logs ===========================\n' +
+        'waiting for navigation until "load"\n' +
+        '============================================================',
+      stack: 'TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n' +
+        '=========================== logs ===========================\n' +
+        'waiting for navigation until "load"\n' +
+        '============================================================\n' +
+        '    at Object.physicianAuth (/home/runner/work/playwright-eCloud-QA/playwright-eCloud-QA/tests/fixtures/auth.fixtures.ts:38:18)',
+      cause: undefined
+    }
+  }
+}
