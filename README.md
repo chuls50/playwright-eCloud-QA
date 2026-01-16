@@ -12,8 +12,8 @@ TypeScript-based test automation framework for eNcounterCloud (eCloud) using Pla
 - **[🔥 QA Environment Report](https://chuls50.github.io/playwright-eCloud-QA/qa/)** - QA environment test results with Allure reporting
 - **[🚀 UAT Environment Report](https://chuls50.github.io/playwright-eCloud-QA/uat/)** - UAT environment test results with Allure reporting
 
-[![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
-[![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
+[![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg?branch=main&event=push)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
+[![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg?branch=main&event=push)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
 
 **Automated Test Schedule:**
 
