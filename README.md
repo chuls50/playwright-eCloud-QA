@@ -2,7 +2,6 @@
 
 [![Playwright](https://img.shields.io/badge/Playwright-1.57.0-blue)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
-[![Allure Report](https://img.shields.io/badge/Allure-Report-orange)](https://allure.qatools.ru/)
 
 TypeScript-based test automation framework for eNcounterCloud (eCloud) using Playwright with comprehensive Allure reporting for the secure cloud-based medical image archiving and management system.
 
