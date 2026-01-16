@@ -1,0 +1,504 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e5]:
+        - link "Homepage" [ref=e7] [cursor=pointer]:
+          - /url: https://www.globalmed.com
+          - img [ref=e9]
+          - img [ref=e12]
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - generic [ref=e27]:
+              - text: What we do
+              - img [ref=e28]
+            - generic:
+              - generic:
+                - generic:
+                  - generic: What we do
+                  - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                      - link "Software solutions":
+                        - /url: https://www.globalmed.com/software
+                    - generic:
+                      - generic:
+                        - img
+                      - link "Delivery systems":
+                        - /url: https://www.globalmed.com/delivery-systems
+                    - generic:
+                      - generic:
+                        - img
+                      - link "Integrated Devices":
+                        - /url: https://www.globalmed.com/integrated-devices
+                    - generic:
+                      - generic:
+                        - img
+                      - link "Wellness Apps":
+                        - /url: https://globalmedwellness.com/home/
+          - link "Who we serve" [ref=e32] [cursor=pointer]:
+            - /url: https://www.globalmed.com/who-we-serve
+          - link "Who we are" [ref=e35] [cursor=pointer]:
+            - /url: https://www.globalmed.com/who-we-are
+          - link "Resources" [ref=e38] [cursor=pointer]:
+            - /url: https://www.globalmed.com/resources
+          - link "Contact" [ref=e41] [cursor=pointer]:
+            - /url: https://www.globalmed.com/contact
+      - generic:
+        - generic:
+          - generic:
+            - link "What we do":
+              - /url: ""
+              - text: What we do
+              - img
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - link "Software solutions":
+                    - /url: https://www.globalmed.com/software
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - link "Delivery systems":
+                    - /url: https://www.globalmed.com/delivery-systems
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - link "Integrated Devices":
+                    - /url: https://www.globalmed.com/integrated-devices
+              - generic:
+                - generic:
+                  - img
+                - generic:
+                  - link "Wellness Apps":
+                    - /url: https://globalmedwellness.com/home/
+          - generic:
+            - link "Who we serve":
+              - /url: https://www.globalmed.com/who-we-serve
+          - generic:
+            - link "Who we are":
+              - /url: https://www.globalmed.com/who-we-are
+          - generic:
+            - link "Resources":
+              - /url: https://www.globalmed.com/resources
+          - generic:
+            - link "Contact":
+              - /url: https://www.globalmed.com/contact
+    - main [ref=e42]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - strong [ref=e48]: Consider reading
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Terms of Use" [ref=e52] [cursor=pointer]:
+                - /url: https://www.globalmed.com/terms-of-use
+            - listitem [ref=e53]:
+              - link "Software Release Notes" [ref=e54] [cursor=pointer]:
+                - /url: https://www.globalmed.com/release-notes
+            - listitem [ref=e55]:
+              - link "Customer Terms and Conditions" [ref=e56] [cursor=pointer]:
+                - /url: https://www.globalmed.com/customer-terms-and-conditions
+            - listitem [ref=e57]:
+              - link "Supplier Terms and Conditions" [ref=e58] [cursor=pointer]:
+                - /url: https://www.globalmed.com/supplier-terms-and-conditions
+            - listitem [ref=e59]:
+              - link "Trademarks" [ref=e60] [cursor=pointer]:
+                - /url: https://www.globalmed.com/trademarks
+            - listitem [ref=e61]:
+              - link "Patents" [ref=e62] [cursor=pointer]:
+                - /url: https://www.globalmed.com/patents
+            - listitem [ref=e63]:
+              - link "Legal" [ref=e64] [cursor=pointer]:
+                - /url: https://www.globalmed.com/legal
+        - generic [ref=e65]:
+          - heading "Privacy Statement" [level=1] [ref=e66]
+          - generic [ref=e67]: "Last updated: May 9, 2025"
+          - generic [ref=e69]:
+            - paragraph [ref=e70]:
+              - text: GlobalMed Holdings, LLC, doing business as GlobalMed®
+              - strong [ref=e71]
+              - text: (“
+              - strong [ref=e72]: GlobalMed,
+              - text: ” “
+              - strong [ref=e73]: us
+              - text: ",” “"
+              - strong [ref=e74]: we
+              - text: ” or “
+              - strong [ref=e75]: our
+              - text: ”) created this Privacy Statement to ensure the confidence of visitors (“
+              - strong [ref=e76]: you
+              - text: ” or “
+              - strong [ref=e77]: your
+              - text: ”) to
+              - link "www.globalmed.com" [ref=e78] [cursor=pointer]:
+                - /url: https://www.globalmed.com
+              - text: (the “
+              - strong [ref=e79]: Site
+              - text: ”) and to demonstrate our commitment to fair information practices and the protection of your privacy. This Privacy Statement has been compiled to better serve those who are concerned with how their personally identifiable information (“Personal Information”) is being used online. Please read our Privacy Statement carefully to get a clear understanding of how we collect, use, protect, or otherwise handle your Personal Information through the Site.
+            - paragraph [ref=e80]: "This Statement applies to information we collect:"
+            - list [ref=e81]:
+              - listitem [ref=e82]: On the Site;
+              - listitem [ref=e83]: From email, text, and other electronic messages between you and the Site.
+            - paragraph [ref=e84]: "The Statement does not apply to information collected by:"
+            - list [ref=e85]:
+              - listitem [ref=e86]: GlobalMed from you offline or through any other means, including on any other website operated by us; or
+              - listitem [ref=e87]: Any third party, including through any application or content (including advertising) that may link to or be accessible from the Site.
+            - paragraph [ref=e88]: Please read this Statement carefully to understand our policies and practices regarding your information and how we will treat it. By accessing or using the Site, you agree to this Privacy Statement. If you do not agree with our policies and practices, your option is to not use the Site. This Statement may change from time to time. Your continued use of the Site after we make changes is deemed to be acceptance of those changes, so please check this Statement periodically for updates.
+            - paragraph [ref=e89]:
+              - strong [ref=e90]: 1. Categories of Personal Information We Collect.
+            - paragraph [ref=e91]:
+              - text: Personal Information is data that can be used to identify or contact a single person. We collect information that identifies, relates to, describes, references, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or device (“
+              - strong [ref=e92]: Personal Information
+              - text: "”). In particular, we have (or have not as indicated) collected the following categories of personal information from individuals within the last twelve months, or anticipate collecting this type of information in the next twelve months:"
+            - figure [ref=e94]:
+              - table [ref=e95]:
+                - rowgroup [ref=e96]:
+                  - row "Category Examples Collected Yes or No" [ref=e97]:
+                    - columnheader "Category" [ref=e98]
+                    - columnheader "Examples" [ref=e99]
+                    - columnheader "Collected Yes or No" [ref=e100]:
+                      - paragraph [ref=e101]: Collected
+                      - paragraph [ref=e102]: Yes or No
+                - rowgroup [ref=e103]:
+                  - row "A. Identifiers. A real name, online identifier, Internet Protocol address, email address. Yes" [ref=e104]:
+                    - cell "A. Identifiers." [ref=e105]
+                    - cell "A real name, online identifier, Internet Protocol address, email address." [ref=e106]
+                    - cell "Yes" [ref=e107]
+                  - row "B. Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e)). A signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. (Some personal information included in this category may overlap with other categories). Yes" [ref=e108]:
+                    - cell "B. Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e))." [ref=e109]
+                    - cell "A signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. (Some personal information included in this category may overlap with other categories)." [ref=e110]:
+                      - paragraph [ref=e111]: A signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver’s license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information.
+                      - paragraph [ref=e112]: (Some personal information included in this category may overlap with other categories).
+                    - cell "Yes" [ref=e113]
+                  - row "C. Protected classification characteristics under state or federal law. Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status, genetic information (including familial genetic information). No" [ref=e114]:
+                    - cell "C. Protected classification characteristics under state or federal law." [ref=e115]
+                    - cell "Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status, genetic information (including familial genetic information)." [ref=e116]
+                    - cell "No" [ref=e117]
+                  - row "D. Commercial information. Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies. No" [ref=e118]:
+                    - cell "D. Commercial information." [ref=e119]
+                    - cell "Records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies." [ref=e120]
+                    - cell "No" [ref=e121]
+                  - row "E. Biometric information. Genetic, physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as, fingerprints, faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns, and sleep, health, or exercise data. No" [ref=e122]:
+                    - cell "E. Biometric information." [ref=e123]
+                    - cell "Genetic, physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as, fingerprints, faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns, and sleep, health, or exercise data." [ref=e124]
+                    - cell "No" [ref=e125]
+                  - row "F. Internet or other similar network activity. Browsing history, search history, information on a consumer’s interaction with a website, application, or advertisement. Yes" [ref=e126]:
+                    - cell "F. Internet or other similar network activity." [ref=e127]
+                    - cell "Browsing history, search history, information on a consumer’s interaction with a website, application, or advertisement." [ref=e128]
+                    - cell "Yes" [ref=e129]
+                  - row "G. Geolocation data. Physical location or movements. No" [ref=e130]:
+                    - cell "G. Geolocation data." [ref=e131]
+                    - cell "Physical location or movements." [ref=e132]
+                    - cell "No" [ref=e133]
+                  - row "H. Sensory data. Audio, electronic, visual, thermal, olfactory, or similar information. No" [ref=e134]:
+                    - cell "H. Sensory data." [ref=e135]
+                    - cell "Audio, electronic, visual, thermal, olfactory, or similar information." [ref=e136]
+                    - cell "No" [ref=e137]
+                  - row "I. Professional or employment-related information. Current or past job history or performance evaluations. No" [ref=e138]:
+                    - cell "I. Professional or employment-related information." [ref=e139]
+                    - cell "Current or past job history or performance evaluations." [ref=e140]
+                    - cell "No" [ref=e141]
+                  - row "J. Non-public education information (per the Family Educational Rights and Privacy Act (20 U.S.C. Section 1232g, 34 C.F.R. Part 99)). Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records. No" [ref=e142]:
+                    - cell "J. Non-public education information (per the Family Educational Rights and Privacy Act (20 U.S.C. Section 1232g, 34 C.F.R. Part 99))." [ref=e143]
+                    - cell "Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records." [ref=e144]
+                    - cell "No" [ref=e145]
+                  - row "K. Inferences drawn from other personal information. Profile reflecting a person’s preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes. No" [ref=e146]:
+                    - cell "K. Inferences drawn from other personal information." [ref=e147]
+                    - cell "Profile reflecting a person’s preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes." [ref=e148]
+                    - cell "No" [ref=e149]
+            - paragraph [ref=e150]: "More specifically, we collect the following types of information from you from the Site:"
+            - list [ref=e151]:
+              - listitem [ref=e152]: Contact Data which includes your name, telephone number, and email addresses;
+              - listitem [ref=e153]: Online Tracking information, which is described below; and
+              - listitem [ref=e154]: Your browsing history when visiting the Site.
+            - paragraph [ref=e155]:
+              - strong [ref=e156]: 2. How We Collect Personal Information From You
+              - text: .
+            - paragraph [ref=e157]: You directly provide us with most of the data that we collect from you. We collect Personal Information from you when you enter information on our contact us or support page. We collect data when you use or view the Site (see Section 3, below).
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: 3. Other Data We Collect, And How We Collect It
+              - text: .
+            - paragraph [ref=e160]: "In addition to Personal Information, we may collect information about your internet connection, the equipment you use to access the Site, and details about your usage of the Site, including your browsing patterns. This information is collected using automatic data collection technologies and may also include:"
+            - list [ref=e161]:
+              - listitem [ref=e162]: Details of your visits to the Site, including traffic data, location data, and other communication data and the resources that you access and use on the Site.
+              - listitem [ref=e163]: Information about your computer and internet connection, including your IP address, operating system, and browser type.
+            - paragraph [ref=e164]: We will retain and evaluate information on your recent visits to our website and how you move around different sections of our Site for analytics purposes to understand how people use our Site so that we can make it more intuitive. We will also keep a record of the resources on our Site that you have clicked on and use that information to target advertising on this Site to you that is relevant to your interests, which we have identified based on resources that you used.
+            - paragraph [ref=e165]: "The technologies we use for this automatic data collection may include:"
+            - list [ref=e166]:
+              - listitem [ref=e167]: Cookies (or browser cookies). A cookie is a small file placed on the hard drive of your computer. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting you may be unable to access certain parts of the Site. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to the Site.
+              - listitem [ref=e168]: Flash Cookies. Certain features of the Site may use local stored objects (or Flash cookies) to collect and store information about your preferences and navigation to, from, and on the Site. Flash cookies are not managed by the same browser settings as are used for browser cookies. For information about managing your privacy and security settings for Flash cookies, see Choices About How We Use and Disclose Your Information.
+              - listitem [ref=e169]: Web Beacons. Pages of our Site, and our e-mails, may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit Us to, for example, count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of certain website content and verifying system and server integrity).
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: 4. Use Of Cookies
+            - paragraph [ref=e172]: Cookies are different depending on each site that you access. Generally speaking, a cookie is information that is stored on your computer or mobile device by the Site.For purposes of our Site, we use cookies for website analytics and indexing. Third party applications on the Site may use additional cookies.
+            - paragraph [ref=e173]: The browser you are using will dictate how your cookies are managed. All standard browsers will allow you to elect to not accept cookies. If you make such a setting within your browser, there is a chance that our Site will not work or will not work as efficiently as it would if you allowed cookies.
+            - paragraph [ref=e174]:
+              - strong [ref=e175]: 5. How We Store Your Data.
+            - paragraph [ref=e176]: We store your personal information in our U.S.-based cloud infrastructure.
+            - paragraph [ref=e177]:
+              - strong [ref=e178]: 6. How We Use Your Data.
+            - paragraph [ref=e179]: We use Contact Data to contact you if you opt in to send periodic marketing and sales emails. We may also use your information for internal purposes, such as auditing, data analysis, and research to improve our products, services, and customer communications. With your specific consent, we may also use your information for any other identified or stated purpose at the time of that consent.
+            - paragraph [ref=e180]:
+              - strong [ref=e181]: 7. Third Party Collection of Personally Identifiable Information.
+            - paragraph [ref=e182]:
+              - strong [ref=e183]
+              - text: We approve third parties to collect certain information from the Site for the purpose of integrating those third-party tools with the Site. We utilize Google Analytics.
+            - paragraph [ref=e184]:
+              - strong [ref=e185]: 8. Disclosure of Personal Information to Third Parties
+            - paragraph [ref=e186]: "We do not disclose your personal information to third parties or affiliates. No mobile opt-in or text message consent will be shared with third parties or affiliates. We may, however, disclose your personal information:"
+            - list [ref=e187]:
+              - listitem [ref=e188]: To comply with any court order, law, or legal process, including to respond to any government or regulatory request.
+              - listitem [ref=e189]: If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of GlobalMed, our customers, or others.
+              - listitem [ref=e190]: In the event of a sale, to the purchaser of all or substantially all the assets of GlobalMed.
+            - paragraph [ref=e191]:
+              - strong [ref=e192]: 9. Data Protection Rights – EU residents only
+            - paragraph [ref=e193]:
+              - text: This Section 9 of the Privacy Statement only applies to residents of the European Union who are identified as covered by the GDPR, including those persons identified at
+              - link "https://gdpr.eu/companies-outside-of-europe/" [ref=e194] [cursor=pointer]:
+                - /url: https://gdpr.eu/companies-outside-of-europe/
+              - text: .
+            - paragraph [ref=e195]: "For EU residents, you have the right to be fully aware of all options to protect your personal data. Each EU resident who is also a user of the Site is entitled to the following:"
+            - list [ref=e196]:
+              - listitem [ref=e197]: The right to access – You have the right to request from us copies of your personal data. We may charge you a fee for this service.
+              - listitem [ref=e198]: The right to rectification – You have the right to request that we correct any information that we control that you believe is inaccurate. You also have the right to request that we complete any information you believe is incomplete.
+              - listitem [ref=e199]: The right to erasure – You have the right to request that we erase your personal data that we control, under certain conditions.
+              - listitem [ref=e200]: The right to restrict processing – You have the right to request that we restrict the processing of your personal data that we control, under certain conditions.
+              - listitem [ref=e201]: The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
+              - listitem [ref=e202]: The right to data portability – You have the right to request that we transfer the data we have collected to another organization or directly to you, under certain conditions.
+            - paragraph [ref=e203]:
+              - strong [ref=e204]
+              - text: We have one month from the date of your request to respond to it. Please make your request in writing and send it to
+              - link "help@globalmed.com" [ref=e205] [cursor=pointer]:
+                - /url: mailto:help@globalmed.com
+              - text: .
+            - paragraph [ref=e206]:
+              - strong [ref=e207]: 10. Data Privacy Rights
+            - paragraph [ref=e208]: I. Access to Specific Information and Data Portability Rights
+            - paragraph [ref=e209]: "You have the right to request that we disclose certain information to you about our collection and use of your personal information over the past 12 months. Once we receive and confirm your verifiable consumer request, we will disclose to you:"
+            - list [ref=e210]:
+              - listitem [ref=e211]: The categories of personal information we collected about you.
+              - listitem [ref=e212]: The categories of sources for the personal information we collected about you.
+              - listitem [ref=e213]: Our business or commercial purpose for collecting or selling that personal information.
+              - listitem [ref=e214]: The categories of third parties with whom we share that personal information.
+              - listitem [ref=e215]: The specific pieces of personal information we collected about you (also called a data portability request).
+              - listitem [ref=e216]:
+                - text: "If we sold or disclosed your personal information for a business purpose, two separate lists disclosing:"
+                - list [ref=e217]:
+                  - listitem [ref=e218]: sales, identifying the personal information categories that each category of recipient purchased; and
+                  - listitem [ref=e219]: disclosures for a business purpose, identifying the personal information categories that each category of recipient obtained.
+            - paragraph [ref=e220]: II. Deletion Request Rights
+            - paragraph [ref=e221]: You have the right to request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions. Once we receive and confirm your verifiable consumer request, we will delete (and direct our service providers to delete) your personal information from our records, unless an exception applies.
+            - paragraph [ref=e222]: "We may deny your deletion request if retaining the information is necessary for us or our service provider(s) to:"
+            - list [ref=e223]:
+              - listitem [ref=e224]: Complete the transaction for which we collected the personal information, provide a good or service that you requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform our contract with you.
+              - listitem [ref=e225]: Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities.
+              - listitem [ref=e226]: Comply with the California Electronic Communications Privacy Act (Cal. Penal Code § 1546 et seq.) (for California residents only).
+              - listitem [ref=e227]: Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us.
+              - listitem [ref=e228]: Comply with a legal obligation.
+              - listitem [ref=e229]: Make other internal and lawful uses of that information that are compatible with the context in which you provided it.
+            - paragraph [ref=e230]: III. Exercising Access, Data Portability, and Deletion Rights
+            - paragraph [ref=e231]: To exercise your rights to access, data portability, and deletion of your personal information from the Site, you must submit a verifiable consumer request to the Operator by emailing us at <dpo@globalmed.com>.
+            - paragraph [ref=e232]: Only you or someone legally authorized to act on your behalf may make a verifiable consumer request related to your personal information. You may also make a verifiable consumer request on behalf of your minor child.
+            - paragraph [ref=e233]: "You may only make a verifiable consumer request for access or data portability twice within a 12-month period. The verifiable consumer request must:"
+            - list [ref=e234]:
+              - listitem [ref=e235]: Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.
+              - listitem [ref=e236]: Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to the request.
+            - paragraph [ref=e237]: We cannot respond to your request or provide you with personal information if we cannot verify your identity or authority to make the request and confirm the personal information relates to you. We will only use personal information provided in a verifiable consumer request to verify the requestor’s identity or authority to make the request.
+            - paragraph [ref=e238]: IV. Response Timing and Format
+            - paragraph [ref=e239]: We endeavor to respond to a verifiable consumer request within sixty days of its receipt. If we require more time, we will inform you of the reason and extension period in writing.
+            - paragraph [ref=e240]: We will deliver our written response by mail or electronically, at your option.
+            - paragraph [ref=e241]: Any disclosures we provide will only cover the 12-month period preceding the verifiable consumer request’s receipt. The response we provide will also explain the reasons we cannot comply with a request, if applicable.
+            - paragraph [ref=e242]: We do not charge a fee to process or respond to your verifiable consumer request unless it is excessive, repetitive, or manifestly unfounded. If we determine that the request warrants a fee, we will tell you why we made that decision and provide you with a cost estimate before completing your request.
+            - paragraph [ref=e243]: V. Non-Discrimination
+            - paragraph [ref=e244]: We will not discriminate against you for exercising any of your California Consumer Privacy Act of 2018 (“CCPA”) rights.
+            - paragraph [ref=e245]: VI. Shine The Light Law (CA Residents only)
+            - paragraph [ref=e246]: California’s “Shine the Light” law (Civil Code Section § 1798.83) permits users of the Site who are California residents to request certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please send an email to <dpo@globalmed.com>.
+            - paragraph [ref=e247]: VII. Additional Resources
+            - paragraph [ref=e248]: If you would like further information or need further assistance, or to object or report information regarding the protection of your data, the following resources are available in various jurisdictions.
+            - list [ref=e249]:
+              - listitem [ref=e250]:
+                - text: "Argentina: Argentinian data protection authority:"
+                - link "https://www.argentina.gob.ar/aaip" [ref=e251] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=argentina.gob.ar&u=aHR0cHM6Ly93d3cuYXJnZW50aW5hLmdvYi5hci9hYWlw&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=d0dlMlBFamVxK0RBMzd0OTJIMy9GOW05SlNIVlhsNDV6OEM5NDAwOWFScz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e252]:
+                - text: "Brazil: Brazilian data protection authority:"
+                - link "https://www.gov.br/anpd/pt-br" [ref=e253] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=www.gov.br&u=aHR0cHM6Ly93d3cuZ292LmJyL2FucGQvcHQtYnI=&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=YzY5bjJabmNReWRnQTZyZXhKN0U2Uk9Oa3FTdXJ1QlNidHY4OE5ob3ZpVT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e254]:
+                - text: "California: Attorney General of California:"
+                - link "https://oag.ca.gov" [ref=e255] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=ca.gov&u=aHR0cHM6Ly9vYWcuY2EuZ292Lw==&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=TTFpWmNTYmpDVjR6Z0FNSEZQY2JvWHlzMFJnWkZOK1AzY3VSRzkwSG50TT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e256]:
+                - text: "Canada: Office of the Privacy Commissioner of Canada:"
+                - link "https://www.priv.gc.ca/en/" [ref=e257] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=priv.gc.ca&u=aHR0cHM6Ly93d3cucHJpdi5nYy5jYS9lbi8=&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=aE9wWk5iL3dmZExwTDcrY3pqZUVpdWZqd0d6Y3ROQ1lyVml3SE1lbjZCUT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e258]:
+                - text: "China: The Cyberspace Administration of China:"
+                - link "http://www.cac.gov.cn" [ref=e259] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=cac.gov.cn&u=aHR0cDovL3d3dy5jYWMuZ292LmNuLw==&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=d3B2c3J3aUdMdStwTGZ6UExmQlZtWVcrNjUzb3VTczQzQWNxTk1vN3YzND0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e260]:
+                - text: "Colorado: The Colorado Attorney General:"
+                - link "https://coag.gov" [ref=e261] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=coag.gov&u=aHR0cHM6Ly9jb2FnLmdvdi8=&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=MWhvU05ITnAxR3N6N1lJRHVQdENQdzZUUUJaTVJCV1lxMVlpenlzaEkybz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e262]:
+                - text: "Connecticut: The Connecticut Attorney General:"
+                - link "https://portal.ct.gov/AG" [ref=e263] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=ct.gov&u=aHR0cHM6Ly9wb3J0YWwuY3QuZ292L0FH&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=c0lIV09SRGsyc2pSZ2dxYTdIRVN4R09LdnhKc0V2OUdVdHhMa3lUODdRMD0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e264]:
+                - text: "European Union:"
+                - link "https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" [ref=e265] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=europa.eu&u=aHR0cHM6Ly9lYy5ldXJvcGEuZXUvanVzdGljZS9hcnRpY2xlLTI5L3N0cnVjdHVyZS9kYXRhLXByb3RlY3Rpb24tYXV0aG9yaXRpZXMvaW5kZXhfZW4uaHRt&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=QndqQmNkRkU4bjRaRER2YXpUS2lsRU5hZDFEbk9GSGVYTS85K2tScE1RZz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e266]:
+                - text: "India: Ministry of Electronics and Information Technology:"
+                - link "https://www.meity.gov.in" [ref=e267] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=meity.gov.in&u=aHR0cHM6Ly93d3cubWVpdHkuZ292LmluLw==&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=ai8vZlB1am1tbGhIT0s0dHBYMWh2MGs3bnJUS0VMRGtjWDg1R1NkR0I5ND0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e268]:
+                - text: "Malaysia: Ministry of Communications and Multimedia Commission:"
+                - link "https://www.pdp.gov.my/jpdpv2/my-calendar/" [ref=e269] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=pdp.gov.my&u=aHR0cHM6Ly93d3cucGRwLmdvdi5teS9qcGRwdjIvbXktY2FsZW5kYXIv&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=MzEyNXc2UFp3SjVQb0s4N3NpcEFoV3JXRXg3b0Z2YnhCZm5xT3lVdk5tbz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e270]:
+                - text: "Mexico: National Institute of Transparency for Access to Information and Personal Data Protection:"
+                - link "http://inicio.inai.org.mx/SitePages/English_Section.aspx" [ref=e271] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=inai.org.mx&u=aHR0cDovL2luaWNpby5pbmFpLm9yZy5teC9TaXRlUGFnZXMvRW5nbGlzaF9TZWN0aW9uLmFzcHg=&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=NU5WSnFIVzRtcVYvRjRDNDNZTHFsbzlEc21iemlNN1I1N3hWTjRsTlN2RT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e272]:
+                - text: "Philippines: National Privacy Commission:"
+                - link "https://www.privacy.gov.ph" [ref=e273] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=privacy.gov.ph&u=aHR0cHM6Ly93d3cucHJpdmFjeS5nb3YucGgv&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=SmFiQUxTMUdUK2ZhZW9ycHVVQzJlcStjRGNkTVdTMnFIbUV6ZEpWMjcvZz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e274]:
+                - text: "Saudi Arabia: The Saudi Data & Artificial Intelligence Authority:"
+                - link "https://sdaia.gov.sa/ar/default.aspx" [ref=e275] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=sdaia.gov.sa&u=aHR0cHM6Ly9zZGFpYS5nb3Yuc2EvYXIvZGVmYXVsdC5hc3B4&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=b3MycVE0anF2THNjWGVGLzNNaHlwZmtTK3AwYmc0YW9vbW9OaXhLNGVCdz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e276]:
+                - text: "United Kingdom: Information Commissioner’s Office:"
+                - link "https://www.gov.uk/government/organisations/information-commissioner-s-office" [ref=e277] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=www.gov.uk&u=aHR0cHM6Ly93d3cuZ292LnVrL2dvdmVybm1lbnQvb3JnYW5pc2F0aW9ucy9pbmZvcm1hdGlvbi1jb21taXNzaW9uZXItcy1vZmZpY2U=&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=aWk3RDZESGQxc1c3NjJBQStCSy9tNjFBb2xlcHhQM0VKb0d1K2lDbCtTRT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e278]:
+                - text: "Utah: The Utah Attorney General:"
+                - link "https://attorneygeneral.utah.gov" [ref=e279] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=utah.gov&u=aHR0cHM6Ly9hdHRvcm5leWdlbmVyYWwudXRhaC5nb3Yv&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=ZnNmejZia2lPbi9NWUJrUDhuN01xQStmbXhzNi9XK3hLeXFtbWErdGN5cz0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+              - listitem [ref=e280]:
+                - text: "Virginia: The Virginia Attorney General:"
+                - link "https://www.oag.state.va.us" [ref=e281] [cursor=pointer]:
+                  - /url: https://us-east-2.protection.sophos.com?d=state.va.us&u=aHR0cHM6Ly93d3cub2FnLnN0YXRlLnZhLnVzLw==&i=NWZjN2YyZWUwNTI4YjkwZGVjOTJiNTMw&t=dkJUZ2tOSFdkOHp0V0htS2JDUnpuSHRCV0poVGRvRkxzQ3g5dERLekY5TT0=&h=9e6f2a0fb00f4d3b921af53c4911a9e5&s=AVNPUEhUT0NFTkNSWVBUSVa664aF_EpRfzRLxd9WIO6WgL4ri41HJ91_uwkpOiSxqQ
+            - paragraph [ref=e282]:
+              - strong [ref=e283]: 11. Data Security.
+            - paragraph [ref=e284]: Secure Sockets Layer, or SSL, is an encryption technology that provides secure communications over the Internet. It does this by verifying that the server to which you are connected is actually the one it claims to be. It also encrypts all transactions between the parties communicating. Encryption is the scrambling of information as it is transmitted over the Internet to protect your confidentiality. Personal information passing between your computer and/or mobile device and many of our services is encrypted. This means that while your information is in transit it is scrambled so that only we can reassemble it in its original text format. The support page form where you input your information has HTTPS automatically enabled.
+            - paragraph [ref=e285]: Unfortunately, transmission of information through the Internet cannot be completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to us through the Site. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Site.
+            - paragraph [ref=e286]:
+              - strong [ref=e287]: 12. Other Limits to Your Privacy.
+            - paragraph [ref=e288]: We may provide you with links to other websites and may approve other websites to obtain online tracking information from the Site. We are not responsible for the privacy practices or the content of such websites.
+            - paragraph [ref=e289]:
+              - strong [ref=e290]: 13. CAN-SPAM Act.
+            - paragraph [ref=e291]: The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them.
+            - paragraph [ref=e292]: If at any time you would like to unsubscribe from receiving future emails, you can email us at <help@globalmed.com> and we will promptly remove you from ALL correspondence.
+            - paragraph [ref=e293]:
+              - strong [ref=e294]: 14. Updates and Changes to Privacy Statement.
+            - paragraph [ref=e295]: We reserve the right to change, update, or modify this Privacy Statement. We will post all privacy changes and, if we have your contact information to do so, we will notify you of any material change in our privacy practices. Any such change, update, or modification will be effective immediately upon publication. Our failure to provide notice through direct communication will not be grounds to invalidate any provision of our Privacy Statement. We will maintain prior versions of our Privacy Statement which will be available for your review.
+            - paragraph [ref=e296]:
+              - strong [ref=e297]: 15. SMS Consent
+            - paragraph [ref=e298]:
+              - text: If you supply your phone number either via direct message or form on our
+              - link "contact page" [ref=e299] [cursor=pointer]:
+                - /url: https://www.globalmed.com/contact
+              - text: ", you are consenting to opt-in to our SMS."
+            - paragraph [ref=e300]:
+              - strong [ref=e301]: 16. Contact
+              - strong [ref=e302]: Information
+            - paragraph [ref=e303]: "If you have any questions or comments about this notice, the ways in which GlobalMed collects and uses your information described here, your choices and rights regarding such use, or wish to exercise your rights under the law, please do not hesitate to contact us at:"
+            - paragraph [ref=e304]:
+              - strong [ref=e305]: Phone
+              - text: ": +1 (480) 922-0044"
+            - paragraph [ref=e306]:
+              - strong [ref=e307]: Email
+              - text: ": dpo@globalmed.com"
+            - paragraph [ref=e308]:
+              - strong [ref=e309]: Postal Address
+              - text: ": 15023 N 73rd Street, Scottsdale, AZ 85260"
+            - paragraph [ref=e310]:
+              - strong [ref=e311]: Data Protection Officer
+              - text: ": Michael Johnson"
+    - contentinfo [ref=e312]:
+      - generic [ref=e314]:
+        - generic [ref=e315]:
+          - generic [ref=e316]: Better Data. Better Health.
+          - generic [ref=e317]: Just Better.™
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - strong [ref=e320]: What we do
+            - list [ref=e321]:
+              - listitem [ref=e322]:
+                - link "Software solutions" [ref=e323] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/software
+              - listitem [ref=e324]:
+                - link "Integrated devices" [ref=e325] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/integrated-devices
+              - listitem [ref=e326]:
+                - link "Delivery systems" [ref=e327] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/delivery-systems
+              - listitem [ref=e328]:
+                - link "Wellness apps" [ref=e329] [cursor=pointer]:
+                  - /url: https://globalmedwellness.com/home/
+          - generic [ref=e330]:
+            - strong [ref=e331]: About
+            - list [ref=e332]:
+              - listitem [ref=e333]:
+                - link "Who we serve" [ref=e334] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/who-we-serve
+              - listitem [ref=e335]:
+                - link "Who we are" [ref=e336] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/who-we-are
+              - listitem [ref=e337]:
+                - link "Resources" [ref=e338] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/resources
+              - listitem [ref=e339]:
+                - link "Contact" [ref=e340] [cursor=pointer]:
+                  - /url: https://www.globalmed.com/contact
+              - listitem [ref=e341]:
+                - link "LinkedIn" [ref=e342] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/globalmed-telemedicine/
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - paragraph [ref=e345]: © 2002-2026 All Rights Reserved
+            - generic [ref=e346]:
+              - link "Terms of Use" [ref=e347] [cursor=pointer]:
+                - /url: https://www.globalmed.com/terms-of-use
+              - link "Privacy Policy" [ref=e348] [cursor=pointer]:
+                - /url: https://www.globalmed.com/privacy-statement
+              - link "Sitemap" [ref=e349] [cursor=pointer]:
+                - /url: https://www.globalmed.com/sitemaps-1-sitemap.xml
+              - link "Installer Portal" [ref=e350] [cursor=pointer]:
+                - /url: https://downloads.globalmed.com/
+          - paragraph [ref=e352]: 15023 North 73rd Street Scottsdale, Arizona, 85260, USA
+      - paragraph [ref=e355]:
+        - text: GlobalMed Holdings, LLC, d/b/a GlobalMed strives to make our website accessible. We are committed to meeting the needs of all of our customers, including those with disabilities. We are continually improving our website to comply with the accessibility guidelines in WCAG 2.1 Levels A and AA. Further accessibility efforts are under way and we continue to update our website to improve accessibility. In the meantime, if the format of any material on our web pages interferes with your ability to access the information, please contact us to request assistance or if you have questions or comments about our website’s accessibility. Please call +1 480-922-0044 or email
+        - link "telemed@globalmed.com" [ref=e356] [cursor=pointer]:
+          - /url: mailto:telemed@globalmed.com
+        - text: to submit an inquiry.
+  - region "Chat Widget" [ref=e357]:
+    - iframe [ref=e358]:
+      - generic [ref=f15e2]:
+        - generic [ref=f15e5]:
+          - generic [ref=f15e6]:
+            - button "Open live chat" [ref=f15e7]:
+              - img "Avatar of GlobalMed" [ref=f15e13]
+              - paragraph [ref=f15e14]: Unlock access to the next generation of digital health technology. Click to discuss how we can help streamline your digital health workflows & more, start now!
+            - button "Close welcome page" [ref=f15e15]:
+              - img [ref=f15e17]
+          - generic [ref=f15e23]:
+            - button "Software solutions" [ref=f15e24] [cursor=pointer]
+            - button "Delivery systems" [ref=f15e25] [cursor=pointer]
+            - button "Integrated devices" [ref=f15e26] [cursor=pointer]
+            - button "Wellness apps" [ref=f15e27] [cursor=pointer]
+        - button "Open live chat" [ref=f15e30]:
+          - img [ref=f15e33]
+          - img [ref=f15e40]
+```
