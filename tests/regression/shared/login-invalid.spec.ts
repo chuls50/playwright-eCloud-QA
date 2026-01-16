@@ -4,11 +4,13 @@
 import { test, expect } from '../../fixtures/auth.fixtures';
 import { TEST_DATA } from '../../data/test-data';
 import { getCurrentEnvironment } from '../../data/environments';
+import { LoginPage } from '../../pages/login.page';
 
-test('Verify Invalid Credentials Handling @[123781] @physician @ui', async ({ page, loginPage }) => {
+test('Verify Invalid Credentials Handling @[123781] @physician @ui', async ({ page }) => {
   const env = getCurrentEnvironment();
   const invalidCredentials = TEST_DATA.authentication.invalidCredentials;
   const expectedErrorMessage = TEST_DATA.authentication.errorMessages.authenticationFailed;
+  const loginPage = new LoginPage(page);
 
   // Step 1: Navigate to the eCloud application login page
   await test.step('Navigate to the eCloud application login page', async () => {
