@@ -100,8 +100,13 @@ playwright-eCloud-QA/
 │   │   ├── technology-data.ts          # Technology role data
 │   │   ├── guest-data.ts               # Guest user scenarios
 │   │   └── institution-manager-data.ts # Institution manager data
-│   ├── models/
-│   │   └── base-page.ts                # Base page with reusable methods
+│   ├── pages/                          # Page Object Model classes
+│   │   ├── base.page.ts                # Base page with reusable methods
+│   │   ├── login.page.ts               # Login page object
+│   │   ├── dashboard.page.ts           # Dashboard page object
+│   │   └── index.ts                    # Page exports
+│   ├── fixtures/                       # Test fixtures for authentication
+│   │   └── auth.fixtures.ts            # Authentication fixtures
 │   ├── regression/
 │   │   ├── administrative/
 │   │   │   ├── administrator/          # Admin user tests
@@ -144,38 +149,42 @@ playwright-eCloud-QA/
 
 The framework uses a Page Object Model (POM) approach with a `BasePage` class containing reusable methods:
 
-**Location**: `tests/models/base-page.ts`
+**Location**: `tests/pages/base.page.ts`
 
 **Features**:
 
-- `performPhysicianLogin(options)` - Authenticates as a physician user
-- Automatically loads environment variables from `.env`
-- Provides consistent error handling and logging
+- `goto()` - Navigate to application based on current environment
+- `waitForLoad()` - Wait for page to be fully loaded
+- `getCurrentEnv()` - Get current environment information
+- Integrates with the environment management system
+- Works with auth fixtures for authentication
 
 ### Writing New Tests
 
 Example test structure:
 
 ```typescript
-import { test, expect, Page } from '@playwright/test';
-import { BasePage } from '../../models/base-page';
+import { test, expect } from '@playwright/test';
+import { BasePage } from '../pages/base.page';
+import { TEST_DATA } from '../data/test-data';
 
 test.describe('Feature Name @tag', () => {
   let basePage: BasePage;
 
   test.beforeEach(async ({ page }) => {
     basePage = new BasePage(page);
-    await basePage.performPhysicianLogin();
-    await expect(page).toHaveURL(/.*\/admin/);
+    await basePage.goto();
   });
 
-  test('Test description @[ticket-number]', async ({ page }) => {
-    // 1. First step description
-    const element = page.locator('#element-id');
-    await expect(element).toBeVisible();
+  test('Test description @[ticket-number]', async ({ page, physicianAuth }) => {
+    await test.step('First step description', async () => {
+      const element = page.locator(TEST_DATA.selectors.elementId);
+      await expect(element).toBeVisible();
+    });
 
-    // 2. Next step description
-    await element.click();
+    await test.step('Next step description', async () => {
+      await element.click();
+    });
   });
 });
 ```
@@ -183,7 +192,7 @@ test.describe('Feature Name @tag', () => {
 ### Key Guidelines
 
 1. **TypeScript**: All test files should be `.spec.ts` files
-2. **Imports**: No file extension needed thanks to `"moduleResolution": "bundler"` (e.g., `from '../../models/base-page'`)
+2. **Imports**: No file extension needed thanks to `"moduleResolution": "bundler"` (e.g., `from '../pages/base.page'`)
 3. **Single Quotes**: Project uses single quotes (configured in `.prettierrc.json`)
 4. **Type Safety**: Add type annotations for variables and parameters
 5. **Organize by Role**: Place tests in appropriate user role folders
@@ -333,7 +342,7 @@ Reports include:
 
 ```bash
 # Solution: Check your import paths are correct
-import { BasePage } from '../../models/base-page';
+import { BasePage } from '../pages/base.page';
 ```
 
 **Issue**: Browser not launching

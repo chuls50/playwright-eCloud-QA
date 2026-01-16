@@ -1,70 +1,103 @@
 /**
  * Environment-specific configuration data
  * 
- * Manages different environment settings for QA, Staging, and Production
+ * Manages different environment settings for QA and UAT
  * All environment-sensitive values should be stored in .env files
  */
+
+import dotenv from 'dotenv';
+
+// Load environment variables quietly
+dotenv.config({ quiet: true });
 
 export const ENVIRONMENTS = {
   qa: {
     name: 'QA Environment',
-    baseUrl: process.env.QA_BASE_URL || 'https://qa.ecloudmodern.com',
-    apiEndpoint: process.env.QA_API_ENDPOINT || 'https://api-qa.ecloudmodern.com',
-    dicomPort: parseInt(process.env.QA_DICOM_PORT || '11112'),
-    databaseUrl: process.env.QA_DATABASE_URL,
+    baseUrl: process.env.QA_ENV || 'https://ecloud-modern.qa-encounterservices.com',
     features: {
       enableDebugMode: true,
       enableTestDataReset: true,
       allowDataExport: true,
-      enablePerformanceLogging: true
     },
-    timeouts: {
-      pageLoad: 30000,
-      apiResponse: 10000,
-      studyUpload: 60000,
-      reportGeneration: 45000
+    users: {
+      newUser: {
+        username: process.env.QA_NEW_USER_USERNAME || '',
+        password: process.env.QA_NEW_USER_PASSWORD || ''
+      },
+      physician: {
+        username: process.env.QA_PHYSICIAN_USERNAME || '',
+        password: process.env.QA_PHYSICIAN_PASSWORD || ''
+      },
+      admin: {
+        username: process.env.QA_ADMIN_USERNAME || '',
+        password: process.env.QA_ADMIN_PASSWORD || ''
+      },
+      nurse: {
+        username: process.env.QA_NURSE_USERNAME || '',
+        password: process.env.QA_NURSE_PASSWORD || ''
+      },
+      technician: {
+        username: process.env.QA_TECHNICIAN_USERNAME || '',
+        password: process.env.QA_TECHNICIAN_PASSWORD || ''
+      },
+      technology: {
+        username: process.env.QA_TECHNOLOGY_USERNAME || '',
+        password: process.env.QA_TECHNOLOGY_PASSWORD || ''
+      },
+      guest: {
+        username: process.env.QA_GUEST_USERNAME || '',
+        password: process.env.QA_GUEST_PASSWORD || ''
+      },
+      institutionManager: {
+        username: process.env.QA_INSTITUTION_MANAGER_USERNAME || '',
+        password: process.env.QA_INSTITUTION_MANAGER_PASSWORD || ''
+      }
     }
   },
-  
-  staging: {
-    name: 'Staging Environment',
-    baseUrl: process.env.STAGING_BASE_URL || 'https://staging.ecloudmodern.com',
-    apiEndpoint: process.env.STAGING_API_ENDPOINT || 'https://api-staging.ecloudmodern.com',
-    dicomPort: parseInt(process.env.STAGING_DICOM_PORT || '11112'),
-    databaseUrl: process.env.STAGING_DATABASE_URL,
+  uat: {
+    name: 'UAT Environment',
+    baseUrl: process.env.UAT_ENV || 'https://ecloud-modern.demo-encounterservices.com',
     features: {
-      enableDebugMode: false,
-      enableTestDataReset: false,
-      allowDataExport: false,
-      enablePerformanceLogging: true
+      enableDebugMode: true,
+      enableTestDataReset: true,
+      allowDataExport: true,
     },
-    timeouts: {
-      pageLoad: 20000,
-      apiResponse: 8000,
-      studyUpload: 45000,
-      reportGeneration: 30000
+    users: {
+      newUser: {
+        username: process.env.UAT_NEW_USER_USERNAME || '',
+        password: process.env.UAT_NEW_USER_PASSWORD || ''
+      },
+      physician: {
+        username: process.env.UAT_PHYSICIAN_USERNAME || '',
+        password: process.env.UAT_PHYSICIAN_PASSWORD || ''
+      },
+      admin: {
+        username: process.env.UAT_ADMIN_USERNAME || '',
+        password: process.env.UAT_ADMIN_PASSWORD || ''
+      },
+      nurse: {
+        username: process.env.UAT_NURSE_USERNAME || '',
+        password: process.env.UAT_NURSE_PASSWORD || ''
+      },
+      technician: {
+        username: process.env.UAT_TECHNICIAN_USERNAME || '',
+        password: process.env.UAT_TECHNICIAN_PASSWORD || ''
+      },
+      technology: {
+        username: process.env.UAT_TECHNOLOGY_USERNAME || '',
+        password: process.env.UAT_TECHNOLOGY_PASSWORD || ''
+      },
+      guest: {
+        username: process.env.UAT_GUEST_USERNAME || '',
+        password: process.env.UAT_GUEST_PASSWORD || ''
+      },
+      institutionManager: {
+        username: process.env.UAT_INSTITUTION_MANAGER_USERNAME || '',
+        password: process.env.UAT_INSTITUTION_MANAGER_PASSWORD || ''
+      }
     }
   },
-  
-  production: {
-    name: 'Production Environment',
-    baseUrl: process.env.PROD_BASE_URL || 'https://ecloudmodern.com',
-    apiEndpoint: process.env.PROD_API_ENDPOINT || 'https://api.ecloudmodern.com',
-    dicomPort: parseInt(process.env.PROD_DICOM_PORT || '11112'),
-    databaseUrl: process.env.PROD_DATABASE_URL,
-    features: {
-      enableDebugMode: false,
-      enableTestDataReset: false,
-      allowDataExport: false,
-      enablePerformanceLogging: false
-    },
-    timeouts: {
-      pageLoad: 15000,
-      apiResponse: 5000,
-      studyUpload: 30000,
-      reportGeneration: 20000
-    }
-  }
+
 };
 
 /**
@@ -74,44 +107,18 @@ export const getCurrentEnvironment = () => {
   const env = process.env.NODE_ENV || 'qa';
   
   switch (env.toLowerCase()) {
-    case 'staging':
-      return ENVIRONMENTS.staging;
-    case 'production':
-    case 'prod':
-      return ENVIRONMENTS.production;
+    case 'uat':
+      return ENVIRONMENTS.uat;
     case 'qa':
-    case 'test':
     default:
       return ENVIRONMENTS.qa;
   }
 };
 
 /**
- * Environment-specific test data overrides
+ * Helper function to get user credentials for current environment
  */
-export const ENVIRONMENT_OVERRIDES = {
-  qa: {
-    // QA-specific overrides
-    slowMo: 100, // Slow down actions for debugging
-    headless: false, // Show browser for debugging
-    enableScreenshots: true,
-    enableVideoRecording: true
-  },
-  
-  staging: {
-    // Staging-specific overrides
-    slowMo: 0,
-    headless: true,
-    enableScreenshots: false,
-    enableVideoRecording: false
-  },
-  
-  production: {
-    // Production-specific overrides (limited testing)
-    slowMo: 0,
-    headless: true,
-    enableScreenshots: false,
-    enableVideoRecording: false,
-    readOnlyMode: true // Prevent any data modifications
-  }
+export const getCurrentUserCredentials = (userType: keyof typeof ENVIRONMENTS.qa.users) => {
+  const currentEnv = getCurrentEnvironment();
+  return currentEnv.users[userType];
 };

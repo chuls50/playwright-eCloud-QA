@@ -12,7 +12,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.1 Physician Login - Valid Credentials
 
-**File:** `tests/regression/physician/authentication/physician-login-valid.spec.ts`
+**File:** `tests/regression/clinician/physician/authentication/physician-login-valid.spec.ts`
 
 **Steps:**
 
@@ -97,7 +97,7 @@ This comprehensive test plan documents all features and functionality for the Ph
 
 #### 1.5 Session Management and Timeout
 
-**File:** `tests/regression/physician/authentication/session-timeout.spec.ts`
+**File:** `tests/regression/physician/session-timeout.spec.ts`
 
 **Steps:**
 

@@ -7,8 +7,10 @@
  * Environment-sensitive data (credentials, URLs) should use environment variables.
  * Static test data (names, IDs, etc.) are defined based on actual test data.
  * 
+ * UI selectors and locators have been moved to page object models for better organization.
+ * 
  * @author eCloud QA Team
- * @version 1.0.0
+ * @version 2.0.0
  */
 
 export const TEST_DATA = {
@@ -21,18 +23,48 @@ export const TEST_DATA = {
       firstname: 'CodyMD001',
       role: 'Physician',
       institution: 'eCloudModern',
-      displayName: 'CodyMD001 Physician eCloudModern',
-      credentials: {
-        username: process.env.PHYSICIAN_USERNAME,
-        password: process.env.PHYSICIAN_PASSWORD,
-      }
+      displayName: 'CodyMD001 Physician eCloudModern'
     },
     
     newUser: {
-      credentials: {
-        username: process.env.NEW_USER_USERNAME,
-        password: process.env.NEW_USER_PASSWORD,
-      }
+      role: 'New User',
+      displayName: 'First Time User'
+    },
+
+    admin: {
+      role: 'Administrator',
+      institution: 'eCloudModern',
+      displayName: 'Admin User'
+    },
+
+    nurse: {
+      role: 'Nurse',
+      institution: 'eCloudModern',
+      displayName: 'Nurse User'
+    },
+
+    technician: {
+      role: 'Technician',
+      institution: 'eCloudModern', 
+      displayName: 'Technician User'
+    },
+
+    technology: {
+      role: 'Technology',
+      institution: 'eCloudModern',
+      displayName: 'Technology User'
+    },
+
+    guest: {
+      role: 'Guest',
+      institution: 'eCloudModern',
+      displayName: 'Guest User'
+    },
+
+    institutionManager: {
+      role: 'Institution Manager',
+      institution: 'eCloudModern',
+      displayName: 'Institution Manager'
     }
   },
 
@@ -48,20 +80,7 @@ export const TEST_DATA = {
     }
   },
 
-  /**
-   * External links used in the application
-   */
-  externalLinks: {
-    globalMed: {
-      sendFeedback: 'https://www.globalmed.com/contact-us/',
-      legalInformation: 'https://www.globalmed.com/legal',
-      privacyStatement: 'https://www.globalmed.com/legal/privacy-statement',
-      facebook: 'https://www.facebook.com/globalmed',
-      twitter: 'https://twitter.com/GlobalMed_USA',
-      youtube: 'https://www.youtube.com/user/GlobalMediaTelemed',
-      linkedin: 'https://www.linkedin.com/company/839991'
-    }
-  },
+
 
   /**
    * Test data for search functionality
@@ -89,45 +108,32 @@ export const TEST_DATA = {
   },
 
   /**
-   * Navigation and UI element selectors based on existing tests
+   * Authentication test data for login scenarios
    */
-  ui: {
-    loginForm: {
-      username: '#username',
-      password: '#password',
-      signInButton: 'text=Sign in'
+  authentication: {
+    invalidCredentials: {
+      username: 'invalid_user123',
+      password: 'WrongPassword456!'
     },
-    
-    dashboardTabs: {
-      pending: '#button-pending',
-      reviewed: '#button-reviewed',
-      studies: '#button-studies',
-      account: '#button-account',
-      admin: '#button-admin'
-    },
-    
-    searchButtons: {
-      today: '#button-search-today',
-      yesterday: '#button-search-yesterday',
-      last7Days: '#button-search-last-7-days',
-      last30Days: '#button-search-last-30-days',
-      search: '#button-search'
-    },
-    
-    adminTabs: {
-      patients: '#button-patients',
-      worklist: '#button-worklist',
-      viewStudies: '#button-view-studies',
-      account: '#button-account'
-    },
-    
-    content: {
-      data: '#content-data',
-      title: '#content-title'
-    },
-    
-    buttons: {
-      save: '#button-save'
+    errorMessages: {
+      authenticationFailed: 'authentication failed',
+      invalidUsername: 'Invalid username',
+      invalidPassword: 'Invalid password'
+    }
+  },
+
+  /**
+   * External links test data for GlobalMed resources
+   */
+  externalLinks: {
+    sendFeedback: 'https://www.globalmed.com/contact-us/',
+    legalInfo: 'https://www.globalmed.com/legal',
+    privacyStatement: 'https://www.globalmed.com/legal/privacy-statement',
+    socialMedia: {
+      facebook: 'https://www.facebook.com/globalmed',
+      twitter: 'https://twitter.com/GlobalMed_USA',
+      youtube: 'https://www.youtube.com/user/GlobalMediaTelemed',
+      linkedin: 'https://www.linkedin.com/company/839991'
     }
   }
 } as const;
