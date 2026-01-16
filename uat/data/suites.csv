@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2970","Verify EULA Decline Handling @[123783] @physician @ui","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/eula-decline.spec.ts","",""
-"","3941","Verify GlobalMed Social Media Links @[123786] @physician @ui","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/socialmedia-links.spec.ts","",""
-"","2295","Verify Invalid Credentials Handling @[123781] @physician @ui","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/login-invalid.spec.ts","",""
-"","8631","Verify GlobalMed External Links @[123785] @physician @ui","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/external-links.spec.ts","",""
-"","4251","Physician Authentication using Fixture","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/clinician/physician/physician-login.spec.js","",""
-"","2915","Verify Complete Valid Login Flow @[123780] @physician @ui","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/login-valid.spec.ts","",""
-"","3200","Verify Session Timeout and Security","chrome-desktop","2026-01-16","passed","2026-01-16","","regression/shared/session-timeout.spec.ts","",""
