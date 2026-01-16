@@ -75,7 +75,7 @@ import { getCurrentEnvironment } from '../../../data/environments';
 import { TEST_DATA } from '../../../data/test-data';
 import { LoginPage } from '../../../pages/login.page';
 
-test('Descriptive Test Name @[TestRailID] @role @ui', async ({ fixture }) => {
+test('Descriptive Test Name @[AzureDevOpsID] @role @ui', async ({ fixture }) => {
   const env = getCurrentEnvironment();
   const testData = TEST_DATA.[category].[item];
   const page = new PageObject(pageFromFixture);
@@ -201,11 +201,11 @@ export class PageName extends BasePage {
 
 - Use descriptive test names that explain the scenario
 - Include the user role and test type in the name
-- Follow pattern: `Verify [Action/Feature] [Context] @[TestRailID] @[role] @[type]`
+- Follow pattern: `Verify [Action/Feature] [Context] @[AzureDevOpsID] @[role] @[type]`
 
 ### Tagging Standards
 
-- `@[TestRailID]`: Link to test management system
+- `@[AzureDevOpsID]`: Link to test management system
 - `@physician`, `@admin`, `@nurse`: User role being tested
 - `@ui`, `@api`, `@integration`: Test type classification
 - `@smoke`, `@regression`: Test priority/suite classification

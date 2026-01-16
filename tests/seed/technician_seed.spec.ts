@@ -29,7 +29,7 @@ test.describe('Technician Seed Test', () => {
 
       // Fill password - use TECHNICIAN_PASSWORD
       await page.locator('#password').fill(technicianPassword!);
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(500);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area

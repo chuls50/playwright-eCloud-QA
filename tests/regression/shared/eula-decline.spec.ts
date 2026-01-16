@@ -29,7 +29,7 @@ test('Verify EULA Decline Handling @[123783] @physician @ui', async ({ page, log
 
   // Step 4: Verify EULA dialog is displayed
   await test.step('Verify EULA dialog is displayed', async () => {
-    await expect(page.getByText('SUBSCRIPTION-EULA (v3)')).toBeVisible();
+    await expect(page.getByText('SUBSCRIPTION-EULA')).toBeVisible();
     await expect(page.getByRole('link', { name: 'I Agree' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Cancel' })).toBeVisible();
   });

@@ -17,13 +17,22 @@ export const TEST_DATA = {
   /**
    * User account data for supported roles in the eCloud system
    * Based on actual test data from existing test files
+   * Environment-aware data structure follows best practices
    */
   users: {
     physician: {
-      firstname: 'CodyMD001',
-      role: 'Physician',
-      institution: 'eCloudModern',
-      displayName: 'CodyMD001 Physician eCloudModern'
+      qa: {
+        firstname: 'CodyMD',
+        role: 'Physician',
+        institution: 'DavidTestInstModern',
+        displayName: 'CodyMD Physician DavidTestInstModern'
+      },
+      uat: {
+        firstname: 'CodyMD001',
+        role: 'Physician', 
+        institution: 'eCloudModern',
+        displayName: 'CodyMD001 Physician eCloudModern'
+      }
     },
     
     newUser: {
@@ -137,6 +146,29 @@ export const TEST_DATA = {
     }
   }
 } as const;
+
+/**
+ * Helper function to get environment-specific user data
+ * Follows best practices for environment-aware test data access
+ * 
+ * @param userType - The type of user (physician, admin, etc.)
+ * @param currentEnv - The current environment object from getCurrentEnvironment()
+ * @returns Environment-specific user data
+ */
+export const getEnvironmentUserData = (userType: keyof typeof TEST_DATA.users, currentEnv: { name: string }) => {
+  const userData = TEST_DATA.users[userType];
+  
+  // Determine environment key based on environment name
+  const envKey = currentEnv.name.toLowerCase().includes('uat') ? 'uat' : 'qa';
+  
+  // Return environment-specific data if available, otherwise fallback to base data
+  if (userData && typeof userData === 'object' && envKey in userData) {
+    return (userData as any)[envKey];
+  }
+  
+  // Fallback for users that don't have environment-specific data yet
+  return userData;
+};
 
 /**
  * Type definitions for better TypeScript support

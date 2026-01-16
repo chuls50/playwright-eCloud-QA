@@ -3,13 +3,13 @@
 
 import { test, expect } from '../../fixtures/auth.fixtures';
 import { getCurrentEnvironment } from '../../data/environments';
-import { TEST_DATA } from '../../data/test-data';
+import { TEST_DATA, getEnvironmentUserData } from '../../data/test-data';
 import { LoginPage } from '../../pages/login.page';
 
 test('Verify Session Timeout and Security', async ({ physicianAuth }) => {
   const env = getCurrentEnvironment();
   const { page } = physicianAuth;
-  const physicianData = TEST_DATA.users.physician;
+  const physicianData = getEnvironmentUserData('physician', env);
   const loginPage = new LoginPage(page);
 
   // Step 1: Login as physician user (handled by physicianAuth fixture)

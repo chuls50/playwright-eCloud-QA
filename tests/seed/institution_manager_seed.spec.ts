@@ -29,7 +29,7 @@ test.describe('Institution Manager Seed Test', () => {
 
       // Fill password - use INSTITUTION_MANAGER_PASSWORD
       await page.locator('#password').fill(institutionManagerPassword!);
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(500);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area

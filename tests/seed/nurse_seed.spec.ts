@@ -29,7 +29,7 @@ test.describe('Nurse Seed Test', () => {
 
       // Fill password - use NURSE_PASSWORD
       await page.locator('#password').fill(nursePassword!);
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(500);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area

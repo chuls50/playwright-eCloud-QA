@@ -29,7 +29,7 @@ test.describe('Guest Seed Test', () => {
 
       // Fill password - use GUEST_PASSWORD
       await page.locator('#password').fill(guestPassword!);
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(500);
       await page.getByText('Sign in').click();
 
       // Wait for successful login - assuming physicians go to admin area
