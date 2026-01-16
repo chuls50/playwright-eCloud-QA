@@ -1,0 +1,100 @@
+name: eCloud QA Environment Tests with Allure Report
+on:
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+  schedule:
+    # Runs every Saturday at midnight UTC
+    - cron: '0 0 * * 6'
+
+# Set permissions for GitHub Pages deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: 'pages-qa'
+  cancel-in-progress: false
+
+jobs:
+  test:
+    timeout-minutes: 240
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run eCloud QA Regression Tests
+        env:
+          # Environment Configuration
+          NODE_ENV: qa
+          QA_ENV: ${{ secrets.QA_ENV }}
+
+          # QA Test User Credentials
+          QA_NEW_USER_USERNAME: ${{ secrets.QA_NEW_USER_USERNAME }}
+          QA_NEW_USER_PASSWORD: ${{ secrets.QA_NEW_USER_PASSWORD }}
+          QA_PHYSICIAN_USERNAME: ${{ secrets.QA_PHYSICIAN_USERNAME }}
+          QA_PHYSICIAN_PASSWORD: ${{ secrets.QA_PHYSICIAN_PASSWORD }}
+          QA_ADMIN_USERNAME: ${{ secrets.QA_ADMIN_USERNAME }}
+          QA_ADMIN_PASSWORD: ${{ secrets.QA_ADMIN_PASSWORD }}
+          QA_NURSE_USERNAME: ${{ secrets.QA_NURSE_USERNAME }}
+          QA_NURSE_PASSWORD: ${{ secrets.QA_NURSE_PASSWORD }}
+          QA_TECHNICIAN_USERNAME: ${{ secrets.QA_TECHNICIAN_USERNAME }}
+          QA_TECHNICIAN_PASSWORD: ${{ secrets.QA_TECHNICIAN_PASSWORD }}
+          QA_TECHNOLOGY_USERNAME: ${{ secrets.QA_TECHNOLOGY_USERNAME }}
+          QA_TECHNOLOGY_PASSWORD: ${{ secrets.QA_TECHNOLOGY_PASSWORD }}
+          QA_GUEST_USERNAME: ${{ secrets.QA_GUEST_USERNAME }}
+          QA_GUEST_PASSWORD: ${{ secrets.QA_GUEST_PASSWORD }}
+          QA_INSTITUTION_MANAGER_USERNAME: ${{ secrets.QA_INSTITUTION_MANAGER_USERNAME }}
+          QA_INSTITUTION_MANAGER_PASSWORD: ${{ secrets.QA_INSTITUTION_MANAGER_PASSWORD }}
+
+          # CI flag for playwright config
+          CI: true
+        run: npx playwright test tests/regression --project=chrome-desktop
+
+      - name: Generate Allure Report
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report-qa --clean
+        if: always()
+
+      - name: Deploy QA Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report-qa
+          publish_branch: gh-pages
+          destination_dir: qa
+          keep_files: true
+          force_orphan: false
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: qa-playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: qa-allure-results
+          path: allure-results/
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: qa-allure-report
+          path: allure-report-qa/
+          retention-days: 30

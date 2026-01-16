@@ -2,7 +2,8 @@
 
 ![eCloud Logo](https://via.placeholder.com/150x50/0066cc/ffffff?text=eCloud+QA)
 
-[![eCloud Regression Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/playwright.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/playwright.yml)
+[![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
+[![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
 [![Quality Gate](https://img.shields.io/badge/Quality-Gate-brightgreen)](https://github.com/chuls50/playwright-eCloud-QA)
 [![Playwright](https://img.shields.io/badge/Playwright-1.57.0-blue)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
@@ -13,18 +14,17 @@ TypeScript-based test automation framework for eNcounterCloud (eCloud) using Pla
 
 ### 🎯 **Test Reports:**
 
-- **[🔥 Full Regression Report](https://chuls50.github.io/playwright-eCloud-QA/)** - Complete eCloud test suite results with Allure reporting
+- **[🔥 QA Environment Report](https://chuls50.github.io/playwright-eCloud-QA/qa/)** - QA environment test results with Allure reporting
+- **[🚀 UAT Environment Report](https://chuls50.github.io/playwright-eCloud-QA/uat/)** - UAT environment test results with Allure reporting
 - **[📈 Test Trends & Analytics](https://chuls50.github.io/playwright-eCloud-QA/)** - Historical test data and performance metrics
 
-[![eCloud Regression Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/playwright.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/playwright.yml)
+[![QA Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/qa-tests.yml)
+[![UAT Environment Tests](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml/badge.svg)](https://github.com/chuls50/playwright-eCloud-QA/actions/workflows/uat-tests.yml)
 
-**Test Automation Coverage:**
+**Automated Test Schedule:**
 
-- 🏥 **Full Regression Suite** - Complete eCloud functionality testing
-- 👩‍⚕️ **Multi-Role Testing** - Physician, Nurse, Admin, Technician workflows
-- 🔒 **Security & Authentication** - HIPAA-compliant security testing
-- 📱 **Cross-Browser Support** - Chrome, Firefox compatibility
-- ⚡ **Performance Monitoring** - Response time validation
+- 🏁 **QA Environment** - Saturdays at midnight UTC → Deploys to `/qa`
+- 🔄 **UAT Environment** - Sundays at midnight UTC → Deploys to `/uat`
 
 ---
 
@@ -66,15 +66,17 @@ npm run test:regression -- --grep="@smoke"
 ### Environment Configuration
 
 1. **Copy the environment template:**
+
    ```bash
    cp .env.example .env
    ```
 
 2. **Configure your `.env` file:**
+
    ```env
    # eCloud QA Environment
    QA_ENV=https://ecloud-modern.qa-encounterservices.com/
-   
+
    # Test User Credentials
    PHYSICIAN_USERNAME=your-physician-username
    PHYSICIAN_PASSWORD=your-physician-password
@@ -249,13 +251,13 @@ test('Physician patient search @smoke @physician', async ({ page }) => {
   await allure.feature('Patient Management');
   await allure.story('Patient Search');
   await allure.severity('critical');
-  
+
   await test.step('Navigate to patient search', async () => {
     // Test implementation
   });
-  
+
   await test.step('Search for patient by ID', async () => {
-    // Test implementation  
+    // Test implementation
   });
 });
 ```
@@ -301,15 +303,17 @@ INSTITUTION_MANAGER_PASSWORD     # Institution manager password
 ### 🔄 Contributing Process
 
 1. **🌿 Create Feature Branch**
+
    ```bash
    git checkout -b feature/patient-search-improvements
    ```
 
 2. **✍️ Write Tests** in appropriate role directory
+
    ```typescript
    // tests/regression/clinician/physician/patient-search.spec.ts
    import { test, expect } from '@playwright/test';
-   
+
    test.describe('Patient Search @physician @smoke', () => {
      test('Search by patient ID', async ({ page, physicianAuth }) => {
        // Test implementation
@@ -318,12 +322,14 @@ INSTITUTION_MANAGER_PASSWORD     # Institution manager password
    ```
 
 3. **🧪 Run Tests Locally**
+
    ```bash
    npm run test:regression
    npm run allure:serve  # View results
    ```
 
 4. **📝 Commit & Push**
+
    ```bash
    git add .
    git commit -m "feat: add patient search validation tests"
@@ -356,7 +362,7 @@ INSTITUTION_MANAGER_PASSWORD     # Institution manager password
 const username = process.env.PHYSICIAN_USERNAME;
 
 // ❌ Bad: Hardcoded credentials
-const username = "test.physician@example.com";
+const username = 'test.physician@example.com';
 ```
 
 ## 📈 Test Monitoring & Analytics
@@ -382,8 +388,10 @@ test('Physician can search patient by ID successfully @smoke @physician', async 
   // Test implementation
 });
 
-test('Admin can create new user account with valid data @admin @user-management', async ({ page }) => {
-  // Test implementation  
+test('Admin can create new user account with valid data @admin @user-management', async ({
+  page,
+}) => {
+  // Test implementation
 });
 ```
 
@@ -398,7 +406,7 @@ test('Patient image viewing workflow', async ({ page, physicianAuth }) => {
   await allure.story('Image Viewing');
   await allure.tag('dicom', 'physician', 'imaging');
   await allure.severity('blocker');
-  
+
   await test.step('Navigate to patient images', async () => {
     await allure.attachment('screenshot', await page.screenshot(), 'image/png');
     // Test step implementation
@@ -411,6 +419,7 @@ test('Patient image viewing workflow', async ({ page, physicianAuth }) => {
 ### 🐛 Common Issues & Solutions
 
 **❌ Issue: Tests fail with authentication errors**
+
 ```bash
 # ✅ Solution: Verify environment variables
 cat .env  # Check credentials are set
@@ -418,6 +427,7 @@ npm run test:debug -- tests/shared/authentication/
 ```
 
 **❌ Issue: Allure report not generating**
+
 ```bash
 # ✅ Solution: Install Allure CLI and regenerate
 npm install -g allure-commandline
@@ -425,6 +435,7 @@ npm run allure:generate
 ```
 
 **❌ Issue: Browser not launching in CI**
+
 ```bash
 # ✅ Solution: Ensure proper CI configuration
 CI=true npx playwright install --with-deps
@@ -439,7 +450,7 @@ npm run test:debug
 # Headed mode for observation
 npm run test:headed
 
-# Trace viewer for detailed analysis  
+# Trace viewer for detailed analysis
 npx playwright show-trace trace.zip
 ```
 
@@ -463,11 +474,13 @@ npx playwright show-trace trace.zip
 ## 📞 Support & Contact
 
 **🆘 Need Help?**
+
 - **Create an Issue**: [GitHub Issues](https://github.com/chuls50/playwright-eCloud-QA/issues)
 - **Team Lead**: Contact your assigned team lead
 - **Documentation**: Check [project wiki](https://github.com/chuls50/playwright-eCloud-QA/wiki)
 
 **🎯 Quick Links**
+
 - [🔥 Live Test Results](https://chuls50.github.io/playwright-eCloud-QA/)
 - [🚀 GitHub Actions](https://github.com/chuls50/playwright-eCloud-QA/actions)
 - [📊 Test Coverage](https://chuls50.github.io/playwright-eCloud-QA/)
@@ -478,7 +491,7 @@ npx playwright show-trace trace.zip
 
 **🎭 Happy Testing with Playwright + Allure! 🎯**
 
-*Built with ❤️ for eCloud Quality Assurance*
+_Built with ❤️ for eCloud Quality Assurance_
 
 [![Quality Gate](https://img.shields.io/badge/Quality-Gate%20Passed-brightgreen)](https://github.com/chuls50/playwright-eCloud-QA)
 [![Test Coverage](https://img.shields.io/badge/Coverage-95%25-brightgreen)](https://chuls50.github.io/playwright-eCloud-QA/)

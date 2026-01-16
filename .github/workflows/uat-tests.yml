@@ -1,0 +1,100 @@
+name: eCloud UAT Environment Tests with Allure Report
+on:
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+  schedule:
+    # Runs every Sunday at midnight UTC
+    - cron: '0 0 * * 0'
+
+# Set permissions for GitHub Pages deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: 'pages-uat'
+  cancel-in-progress: false
+
+jobs:
+  test:
+    timeout-minutes: 240
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run eCloud UAT Regression Tests
+        env:
+          # Environment Configuration
+          NODE_ENV: uat
+          UAT_ENV: ${{ secrets.UAT_ENV }}
+
+          # UAT Test User Credentials
+          UAT_NEW_USER_USERNAME: ${{ secrets.UAT_NEW_USER_USERNAME }}
+          UAT_NEW_USER_PASSWORD: ${{ secrets.UAT_NEW_USER_PASSWORD }}
+          UAT_PHYSICIAN_USERNAME: ${{ secrets.UAT_PHYSICIAN_USERNAME }}
+          UAT_PHYSICIAN_PASSWORD: ${{ secrets.UAT_PHYSICIAN_PASSWORD }}
+          UAT_ADMIN_USERNAME: ${{ secrets.UAT_ADMIN_USERNAME }}
+          UAT_ADMIN_PASSWORD: ${{ secrets.UAT_ADMIN_PASSWORD }}
+          UAT_NURSE_USERNAME: ${{ secrets.UAT_NURSE_USERNAME }}
+          UAT_NURSE_PASSWORD: ${{ secrets.UAT_NURSE_PASSWORD }}
+          UAT_TECHNICIAN_USERNAME: ${{ secrets.UAT_TECHNICIAN_USERNAME }}
+          UAT_TECHNICIAN_PASSWORD: ${{ secrets.UAT_TECHNICIAN_PASSWORD }}
+          UAT_TECHNOLOGY_USERNAME: ${{ secrets.UAT_TECHNOLOGY_USERNAME }}
+          UAT_TECHNOLOGY_PASSWORD: ${{ secrets.UAT_TECHNOLOGY_PASSWORD }}
+          UAT_GUEST_USERNAME: ${{ secrets.UAT_GUEST_USERNAME }}
+          UAT_GUEST_PASSWORD: ${{ secrets.UAT_GUEST_PASSWORD }}
+          UAT_INSTITUTION_MANAGER_USERNAME: ${{ secrets.UAT_INSTITUTION_MANAGER_USERNAME }}
+          UAT_INSTITUTION_MANAGER_PASSWORD: ${{ secrets.UAT_INSTITUTION_MANAGER_PASSWORD }}
+
+          # CI flag for playwright config
+          CI: true
+        run: npx playwright test tests/regression --project=chrome-desktop
+
+      - name: Generate Allure Report
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report-uat --clean
+        if: always()
+
+      - name: Deploy UAT Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report-uat
+          publish_branch: gh-pages
+          destination_dir: uat
+          keep_files: true
+          force_orphan: false
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: uat-playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: uat-allure-results
+          path: allure-results/
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: uat-allure-report
+          path: allure-report-uat/
+          retention-days: 30
